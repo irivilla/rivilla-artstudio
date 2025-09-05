@@ -1,0 +1,21 @@
+
+{"LANG":{
+    "SPANISH": "ES",
+    "ENGLISH": "ENG"
+},
+"MENU":{
+    "HOME": "HOME",
+    "LIVE-ART": "LIVE-ART",
+    "INVITATIONS": "INVITATIONS",
+    "CRAFTS": "CRAFTS",
+    "COMMISSIONS": "COMMISSIONS",
+    "ABOUT": "ABOUT US"
+
+},
+"PAGES" : {
+    "HOME": {
+        "TITLE": "Home"
+    }
+
+}
+}

@@ -1,0 +1,20 @@
+{"LANG":{
+    "SPANISH": "ES",
+    "ENGLISH": "ENG"
+},
+"MENU":{
+    "HOME": "INICIO",
+    "LIVE-ART": "LIVE-ART",
+    "INVITATIONS": "INVITACIONES",
+    "CRAFTS": "PAPELERÍA",
+    "COMMISSIONS": "ENCARGOS",
+    "ABOUT": "CONÓCENOS"
+
+},
+"PAGES" : {
+    "HOME": {
+        "TITLE": "Inicio"
+    }
+
+}
+}

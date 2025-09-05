@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Habibi&family=Montaga&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Montaga', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}

@@ -1,1 +1,23 @@
-<p>header-info works!</p>
+<div class="header-wrapper">
+    <div class="header-container">
+        <div class="header-container__telephone">
+            <i class="fa-brands fa-whatsapp"></i> <span>610828491</span>
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="header-container__email">
+            <span>info@rivilla.com</span>
+        </div>
+        <div class="language">
+
+            <a (click)="translate.use('es')">
+                <img src="../../../assets/img/flags/flag-esp.webp" alt="Spain flag">
+                <span>{{ 'LANG.SPANISH' | translate }}</span>
+            </a>
+            |
+            <a (click)="translate.use('en')">
+                <img src="../../../assets/img/flags/flag-uk.webp" alt="England flag">
+                <span>{{ 'LANG.ENGLISH' | translate }}</span>
+            </a>
+        </div>
+    </div>
+</div>
