@@ -1,5 +1,5 @@
 <div class="wrapper header-info">
-    <div class="row-12 container container-info">
+    <div class="row container container-info">
 
         <a class="col container container-info__telephone app-a" (click)="openWhatsApp()">
             <i class="fa-brands fa-whatsapp"></i>
@@ -15,38 +15,18 @@
         </a>
         <div class="col">
             <div class="language ">
-                <a (click)="translate.use('es')" class="app-a">
+                <a (click)="use('es')" [ngClass]="{ 'active-lang': selectedLang === 'es' }">
+
+
                     <img src="../../../assets/img/flags/flag-esp.webp" alt="Spain flag">
-                    <span>{{ 'LANG.SPANISH' | translate }}</span>
+                    <span class="app-a">{{ 'LANG.SPANISH' | translate }}</span>
                 </a>
                 |&nbsp;&nbsp;
-                <a (click)="translate.use('en')" class="app-a">
+                <a (click)="use('en')" [ngClass]="{ 'active-lang': selectedLang === 'en' }">
                     <img src="../../../assets/img/flags/flag-uk.webp" alt="England flag">
-                    <span>{{ 'LANG.ENGLISH' | translate }}</span>
+                    <span class="app-a">{{ 'LANG.ENGLISH' | translate }}</span>
                 </a>
             </div>
         </div>
-
-
-
-        <!-- <div class="header-container__telephone">
-            <i class="fa-brands fa-whatsapp"></i> <span>610828491</span>
-            <i class="fa-regular fa-envelope"></i>
-        </div>
-        <div class="header-container__email">
-            <span>info@rivilla.com</span>
-        </div>
-        <div class="language">
-
-            <a (click)="translate.use('es')">
-                <img src="../../../assets/img/flags/flag-esp.webp" alt="Spain flag">
-                <span>{{ 'LANG.SPANISH' | translate }}</span>
-            </a>
-            |
-            <a (click)="translate.use('en')">
-                <img src="../../../assets/img/flags/flag-uk.webp" alt="England flag">
-                <span>{{ 'LANG.ENGLISH' | translate }}</span>
-            </a>
-        </div> -->
     </div>
 </div>

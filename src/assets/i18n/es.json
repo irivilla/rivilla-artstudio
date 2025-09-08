@@ -17,6 +17,11 @@
     },
     "HOME": {
         "TITLE": "Home"
+    },
+   "FOOTER": {
+        "FOLLOW": "SÍGUENOS",
+        "CONTACT": "CONTACTO",
+        "INFO": "INFORMACIÓN"
     }
 
 }

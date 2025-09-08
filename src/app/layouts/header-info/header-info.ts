@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 
@@ -9,17 +9,24 @@ import {TranslateModule, TranslateService} from '@ngx-translate/core';
   templateUrl: './header-info.html',
   styleUrls: ['./header-info.scss']
 })
-export class HeaderInfo {
 
-  public  translate = inject(TranslateService);
+export class HeaderInfo implements OnInit {
+  public translate = inject(TranslateService);
+  public selectedLang: string = 'es';
 
-  constructor() {
-    this.translate.addLangs(['es', 'en']);
-    this.translate.setFallbackLang('en');
-    this.translate.use('es'); // opcional: establecer al iniciar
+  ngOnInit() {
+    // Al iniciar, lee el idioma selecionado si existe
+    const lang = localStorage.getItem('lang') || 'es';
+    this.selectedLang = lang;
+    this.translate.use(lang);
   }
 
-  use(lang: string) { this.translate.use(lang); }
+  use(lang: string) {
+    this.selectedLang = lang;
+    this.translate.use(lang);
+    // guarda el idioma en memoria local
+    localStorage.setItem('lang', lang); 
+  }
 
   openWhatsApp() {
     window.open('https://wa.me/610828491', '_blank');
@@ -28,5 +35,4 @@ export class HeaderInfo {
   openEmail() {
     window.open('mailto:rivilla.artstudio@gmail.com', '_blank');
   }
-
 }
