@@ -25,4 +25,27 @@ export class Footer implements OnInit {
   goHome(): void {
     this.router.navigate(['/home']);
   }
+
+    openWhatsApp() {
+    window.open('https://wa.me/610828491', '_blank');
+  }
+
+  openEmail() {
+    window.open('mailto:rivilla.artstudio@gmail.com', '_blank');
+  }
+
+  goAbout(): void {
+    this.router.navigate(['/about']);
+  }
+
+  goCookies(): void {
+    this.router.navigate(['/politica-cookies']);
+  }
+  goPrivacy(): void {
+    this.router.navigate(['/politica-privacidad']);
+  }
+  goQuestions(): void {
+    this.router.navigate(['/preguntas-frecuentes']);
+  }
+  
 }

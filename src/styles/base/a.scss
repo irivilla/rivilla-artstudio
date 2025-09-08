@@ -28,3 +28,22 @@
             color: $primary-dark;
         }
     }
+
+.text-a{
+    text-decoration: none;
+    list-style: none;   
+    transition: 0.25s;
+    cursor: pointer;
+    color: $gray;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+
+    &:hover {
+        color: $primary;
+    }
+
+    &_active {
+        color: $primary-dark;
+        font-weight: bold;
+    }
+}

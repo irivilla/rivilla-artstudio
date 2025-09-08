@@ -16,7 +16,19 @@
         "TELEPHONE": "610828491"
     },
     "HOME": {
-        "TITLE": "Home"
+        "TITLE": "Inicio"
+    },
+    "ABOUT-US": {
+        "TITLE": "Conócenos"
+    },
+    "QUESTIONS": {
+        "TITLE": "Preguntas Frecuentes"
+    },
+    "POLICIES": {
+        "TITLE": "Políticas de Privacidad"
+    },
+    "COOKIES": {
+        "TITLE": "Política de Cookies"
     },
    "FOOTER": {
         "FOLLOW": "SÍGUENOS",

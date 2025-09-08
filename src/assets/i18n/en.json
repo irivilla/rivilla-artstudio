@@ -19,10 +19,22 @@
     "HOME": {
         "TITLE": "Home"
     },
+    "ABOUT-US": {
+        "TITLE": "About Us"
+    },
+    "QUESTIONS": {
+        "TITLE": "Frequent Questions"
+    },
+    "POLICIES": {
+        "TITLE": "Privacy Policies"
+    },
+    "COOKIES": {
+        "TITLE": "Cookies Policy"
+    },
     "FOOTER": {
         "FOLLOW": "FOLLOW US",
         "CONTACT": "CONTACT US",
-        "INFO": "INFO"
+        "INFO": "MORE INFO"
     }
 
 }
