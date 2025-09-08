@@ -21,4 +21,12 @@ export class HeaderInfo {
 
   use(lang: string) { this.translate.use(lang); }
 
+  openWhatsApp() {
+    window.open('https://wa.me/610828491', '_blank');
+  }
+
+  openEmail() {
+    window.open('mailto:rivilla.artstudio@gmail.com', '_blank');
+  }
+
 }

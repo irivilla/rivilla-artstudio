@@ -3,6 +3,13 @@
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+@import './styles/colors.scss';
+@import './styles/fonts.scss';
+@import './styles/base/typography.scss';
+@import './styles/base/a.scss';
+
+
+    
 
 * {
     margin: 0;
@@ -11,16 +18,16 @@
 
 body {
     position: relative;
-    font-family: 'Montaga', sans-serif;
 }
 
 .wrapper {
     width: 100%;
-
 }
 
 .container {
+    
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding: 0;
 }

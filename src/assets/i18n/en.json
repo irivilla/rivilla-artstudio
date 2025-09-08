@@ -13,6 +13,9 @@
 
 },
 "PAGES" : {
+    "HEADER-INFO": {
+        "TELEPHONE": "+34 610828491"
+    },
     "HOME": {
         "TITLE": "Home"
     }

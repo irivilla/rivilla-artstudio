@@ -1,6 +1,35 @@
-<div class="header-wrapper">
-    <div class="header-container">
-        <div class="header-container__telephone">
+<div class="wrapper header-info">
+    <div class="row-12 container container-info">
+
+        <a class="col container container-info__telephone app-a" (click)="openWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>{{ 'PAGES.HEADER-INFO.TELEPHONE' | translate }}</span>
+        </a>
+
+        <a class="col container-info__email app-a d-flex justify-content-center align-content-center"
+            (click)="openEmail()">
+            <div><i class="fa-regular fa-envelope"></i>
+                <span>rivilla.artstudio@gmail.com</span>
+            </div>
+
+        </a>
+        <div class="col">
+            <div class="language ">
+                <a (click)="translate.use('es')" class="app-a">
+                    <img src="../../../assets/img/flags/flag-esp.webp" alt="Spain flag">
+                    <span>{{ 'LANG.SPANISH' | translate }}</span>
+                </a>
+                |&nbsp;&nbsp;
+                <a (click)="translate.use('en')" class="app-a">
+                    <img src="../../../assets/img/flags/flag-uk.webp" alt="England flag">
+                    <span>{{ 'LANG.ENGLISH' | translate }}</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="header-container__telephone">
             <i class="fa-brands fa-whatsapp"></i> <span>610828491</span>
             <i class="fa-regular fa-envelope"></i>
         </div>
@@ -18,6 +47,6 @@
                 <img src="../../../assets/img/flags/flag-uk.webp" alt="England flag">
                 <span>{{ 'LANG.ENGLISH' | translate }}</span>
             </a>
-        </div>
+        </div> -->
     </div>
 </div>

@@ -1,11 +1,15 @@
+//@import '../colors.scss';
+
 .app-a {
-    color: $primary;
+    text-decoration: none;
+    list-style: none;   
     transition: 0.25s;
     cursor: pointer;
     margin-right: 1em;
+    color: $gray;
 
     &:hover {
-        color: $primary-dark;
+        color: $primary;
     }
 
     &_active {

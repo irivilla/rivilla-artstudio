@@ -12,8 +12,11 @@
 
 },
 "PAGES" : {
+    "HEADER-INFO": {
+        "TELEPHONE": "610828491"
+    },
     "HOME": {
-        "TITLE": "Inicio"
+        "TITLE": "Home"
     }
 
 }

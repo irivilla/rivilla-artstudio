@@ -1,0 +1,30 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.container-footer {
+    
+    
+    background-color: $primary-dark;
+    margin: 0;
+    padding: 0;
+
+    &__links {
+       
+        
+        
+    }
+    &__brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        
+        span{
+            font-family: $subtitle-font-family;
+            font-size: 0.9rem;
+            color: $white;
+        }
+      
+    }
+}
