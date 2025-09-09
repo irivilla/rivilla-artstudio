@@ -2,7 +2,8 @@
     <div class="container-footer">
         <div class="row container-footer__links">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 logo">
-                <img src="../../../assets/img/logo/logo2.webp" alt="logo" (click)="goHome()" class="footer-logo">
+                <img src="../../../assets/img/logo/logo2.webp" alt="logo" (click)="goHome()"
+                    class="footer-logo img-fluid">
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 rrss ">
                 <div class="row">
@@ -35,11 +36,17 @@
                 <div class="row">
                     <p>{{ 'PAGES.FOOTER.CONTACT' | translate }}</p>
                 </div>
+                <!--  <div class="row">
+                    <h5 (click)="goContact()" class="text-a">{{ 'PAGES.CONTACT.TITLE' | translate }}</h5>
+                </div> -->
+                <div class="row">
+                    <h5 (click)="goAbout()" class="text-a">{{ 'PAGES.ABOUT-US.TITLE' | translate }}</h5>
+                </div>
                 <div class="row">
                     <h5 (click)="openWhatsApp()" class="text-a">{{ 'PAGES.HEADER-INFO.TELEPHONE' | translate }}</h5>
                 </div>
                 <div class="row">
-                    <h5 (click)="openEmail()" class="text-a">rivilla.artstudio@gmail.com</h5>
+                    <h5 (click)="openEmail()" class="text-a">{{ 'PAGES.CONTACT.EMAIL' | translate }}</h5>
                 </div>
 
             </div>
@@ -47,9 +54,7 @@
                 <div class="row">
                     <p>{{ 'PAGES.FOOTER.INFO' | translate }}</p>
                 </div>
-                <div class="row">
-                    <h5 (click)="goAbout()" class="text-a">{{ 'PAGES.ABOUT-US.TITLE' | translate }}</h5>
-                </div>
+
                 <div class="row">
                     <h5 (click)="goQuestions()" class="text-a">{{ 'PAGES.QUESTIONS.TITLE' | translate }}</h5>
                 </div>

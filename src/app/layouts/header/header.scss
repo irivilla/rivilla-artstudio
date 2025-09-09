@@ -1,0 +1,64 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+
+.header-navbar{
+   // background-color: transparent;
+   
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    position: fixed;
+    top: 2rem;
+    width: 100%;
+    z-index: 999;
+    
+
+   
+    img{
+        height: 2.3rem;
+        cursor: pointer;
+    }
+}
+
+/*  .header-navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} 
+*/
+
+
+ //lg ≥992px para cuando está navbar-expand-lg
+@media (min-width: 992px) {
+    #navbarNav .links {
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+    .header-navbar.scrolled {
+        background-color: white;
+        //box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/* Para navbar colapsada */
+@media (max-width: 991.98px) {
+    .header-navbar{
+ background-color: white    ;
+    }
+    #navbarNav .links {
+   
+        margin: 1rem 0 1rem 1rem;
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    
+}

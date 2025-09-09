@@ -37,6 +37,9 @@ export class Footer implements OnInit {
   goAbout(): void {
     this.router.navigate(['/about']);
   }
+  goContact(): void {
+    this.router.navigate(['/contact']);
+  }
 
   goCookies(): void {
     this.router.navigate(['/politica-cookies']);

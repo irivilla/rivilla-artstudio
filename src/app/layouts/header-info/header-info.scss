@@ -2,8 +2,11 @@
 
 .header-info {
     height: 2rem;
+    background-color: $white;
     box-shadow: 0px 0px 10px 0 rgb(34 41 47 / 10%);
     top: 0;
+    position: fixed;
+    z-index: 1000;
 }
 
  .container-info {

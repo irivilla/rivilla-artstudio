@@ -16,10 +16,14 @@ export class HeaderInfo implements OnInit {
 
   ngOnInit() {
     // Al iniciar, lee el idioma selecionado si existe
-    const lang = localStorage.getItem('lang') || 'es';
-    this.selectedLang = lang;
-    this.translate.use(lang);
+    setTimeout(() => {
+      const lang = localStorage.getItem('lang') || 'es';
+      this.selectedLang = lang;
+      this.translate.use(lang);
+    });
   }
+
+
 
   use(lang: string) {
     this.selectedLang = lang;

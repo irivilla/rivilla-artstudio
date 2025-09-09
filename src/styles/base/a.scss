@@ -17,6 +17,27 @@
     }
 }
 
+.menu-a {
+    text-decoration: none;
+    list-style: none;   
+    transition: 0.25s;
+    cursor: pointer;
+    color: $gray-dark;
+    font-family: $title-font-family;
+    font-size: 1.8em;
+    font-weight: 800;
+
+    &:hover {
+        color: $primary;
+    }
+
+    &:active {
+        color: $primary-dark;
+        font-weight: bold;
+    }
+
+}
+
 .icon-a{
         //margin: 0.2rem;
         cursor: pointer;

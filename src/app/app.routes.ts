@@ -7,6 +7,9 @@ import { Conocenos } from './pages/comun/conocenos/conocenos';
 import { PoliticaCookies } from './pages/comun/politica-cookies/politica-cookies';
 import { PoliticaPrivacidad } from './pages/comun/politica-privacidad/politica-privacidad';
 import { PreguntasFrecuentes } from './pages/comun/preguntas-frecuentes/preguntas-frecuentes';
+import { Papel } from './pages/invitaciones/papel/papel';
+import { Papeleria } from './pages/papeleria/papeleria';
+import { Contacto } from './pages/comun/contacto/contacto';
 
 export const routes: Routes = [
 
@@ -18,6 +21,13 @@ export const routes: Routes = [
     { path: 'live-art/cuadro',
         loadComponent: () => import('./pages/live-art/cuadro/cuadro').then(m => m.Cuadro)
     },
+    { path: 'papeleria', component: Papeleria},
+    { path: 'papeleria/minuta',
+        loadComponent: () => import('./pages/papeleria/minuta/minuta').then(m => m.Minuta)
+    },
+    { path: 'papeleria/seating-plan',
+        loadComponent: () => import('./pages/papeleria/seating-plan/seating-plan').then(m => m.SeatingPlan)
+    },
     { path: 'invitaciones', component: Invitaciones },
     { path: 'invitaciones/papel',
         loadComponent: () => import('./pages/invitaciones/papel/papel').then(m => m.Papel)
@@ -27,6 +37,7 @@ export const routes: Routes = [
     },
     { path: 'encargos', component: Encargos },
     { path: 'about', component: Conocenos },
+    { path: 'contact', component: Contacto },
     { path: 'politica-cookies', component: PoliticaCookies },
     { path: 'politica-privacidad', component: PoliticaPrivacidad },
     { path: 'preguntas-frecuentes', component: PreguntasFrecuentes },
