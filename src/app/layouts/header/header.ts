@@ -18,11 +18,15 @@ export class Header {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    setTimeout(() => {
-    const lang = localStorage.getItem('lang') || 'es';
-    this.translate.use(lang);
-     });
-  }
+  setTimeout(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const lang = localStorage.getItem('lang') || 'es';
+      this.translate.use(lang);
+    } else {
+      this.translate.use('es');
+    }
+  });
+}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

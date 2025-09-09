@@ -1,0 +1,92 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/base/typography.scss';
+
+
+.card-photo{
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 100%; 
+    //overflow: hidden;
+    cursor: pointer;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    .cuadrado-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 70%;
+            height: 70%;
+            transition: background 0.4s ease;
+    
+            .cuadrado-border {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0;
+                border: 0.1rem solid $primary;
+                width: 95%;
+                height: 95%;
+    
+            }
+    
+    
+            .card-title {
+                margin: 0;
+                text-align: center;
+            }
+        }
+}
+
+.card-img{
+       
+    width: 100%;
+    height: 100%;
+     //object-fit: cover;
+    // display: block;
+     border-radius: 0;
+
+ }
+.hover-control {
+    position: absolute;
+    //top: 0;
+    //left: 0;
+     width: 100%;
+     height: 100%;
+    background: rgba(0, 0, 0, 0);
+                    /* invisible por defecto */
+     transition: background 0.4s ease;
+                    /* animación suave */
+     z-index: 1;
+                    /* encima de la imagen, debajo del texto */
+     }
+        
+      .hover-control:hover {
+        background: rgba(0, 0, 0, 0.5);
+            .cuadrado-title {
+                 background-color: rgba(255, 255, 255, 10.9);
+                }
+    }
+
+        .card-img-overlay {
+            //position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            //display: flex;
+            //justify-content: center;
+            //align-items: center;
+            padding: 0;
+            z-index: 2;
+        }
+
+   
+
+       

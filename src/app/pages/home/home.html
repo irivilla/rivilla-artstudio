@@ -1,19 +1,77 @@
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
+<div class="wrapper">
+    <div class="coltainer container-header">
+        <div class="row">
+            <app-carrousel></app-carrousel>
+        </div>
+        <div class="row">
+            <div class="col-12 logo-header img-fluid">
+                <img src="../../../assets/img/logo/logo1.webp" alt="logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 slogan-header">
+                <div class="row-12">
+                    <p>
+                        "{{ 'PAGES.HOME.SLOGAN1' | translate }}
+                    </p>
+
+                </div>
+                <div class="row-12">
+                    <p>{{ 'PAGES.HOME.SLOGAN2' | translate }}"</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 ">
+                <h5>
+                    {{ 'PAGES.HOME.SERVICES-TITLE' | translate }}
+                </h5>
+
+            </div>
+        </div>
+        <div class="row justify-content-center g-4 row-cards">
+            <div class="col-12 col-md-6 col-lg-4 card-photo-home" *ngFor="let card of cards">
+                <app-card-photo [title]="card.title" [imageSrc]="card.image" [route]="card.route"></app-card-photo>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 ">
+                <h5>
+                    {{ 'PAGES.HOME.QUESTIONS' | translate }}
+                </h5>
+
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center ">
+            <div class="col-8">
+                <app-accordion></app-accordion>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 ">
+                <h5>
+                    {{ 'PAGES.HOME.REVIEWS' | translate }}
+                </h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <i class="fas fa-star   "></i>
+                <i class="fas fa-star    "></i>
+                <i class="fas fa-star    "></i>
+                <i class="fas fa-star    "></i>
+                <i class="fas fa-star    "></i>
+            </div>
+        </div>
+        <div class="row flex justify-content-center mb-3">
+            <div class="col-8">
+                <app-reviews></app-reviews>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

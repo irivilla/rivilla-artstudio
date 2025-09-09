@@ -1,4 +1,6 @@
 @import '../../../styles/colors.scss';
+@import '../../../styles/fonts.scss';
+@import '../../../styles/base/typography.scss';
 
 .header-info {
     height: 2rem;
@@ -21,6 +23,7 @@
      &__telephone {
          cursor: pointer;
          gap: 0.2rem;
+         margin-left: 2%;
 
      }
      &__email {
@@ -57,13 +60,18 @@
 
 }
 
-@media (max-width: 768px) {
+//md ≥768px
+//lg ≥992px
+@media (max-width: 992px) {
 
-
+    span{
+        //ocultarlos
+        display: none;
+    }
   
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
 
    
 

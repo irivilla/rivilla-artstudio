@@ -1,1 +1,61 @@
 @import '../../../styles/colors.scss';
+
+
+.container-header{
+
+    text-align: center;
+}
+.logo-header{
+   
+    margin: 1rem;;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    //para que no se corte la imagnen y aparezca completa
+    img {
+        width: 10%;
+        height: auto
+    }
+    
+    
+}
+
+.slogan-header{
+    margin-top: 1rem;
+    p{color: $primary-dark;
+
+    }
+    
+
+    
+
+}
+
+
+.fas{
+    color: $primary-light;
+}
+ //lg ≥992px LG
+ @media (min-width: 992px) {
+    .row-cards {
+            margin: 1rem 11rem 3rem 11rem;
+        }
+
+    
+ }
+
+
+ /* más pequeño que LG */
+ @media (max-width: 991.98px) {
+.logo-header {
+    img{    
+        width: 20%;
+        height: auto;
+    }
+       
+    }
+        .row-cards {
+            margin: 1rem 8rem 3rem 8rem;
+        }
+
+ }

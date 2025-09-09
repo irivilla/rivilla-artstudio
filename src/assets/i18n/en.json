@@ -17,7 +17,50 @@
         "TELEPHONE": "+34 610828491"
     },
     "HOME": {
-        "TITLE": "Home"
+        "TITLE": "Home",
+        "SLOGAN1":"Each brushstroke reflects the magic of the moment and turns a story into something unforgettable. ",
+        "SLOGAN2":"Let live art elevate your celebrations",
+        "SERVICES-TITLE":"FEATURED SERVICES",
+        "QUESTIONS":"QUESTIONS",
+        "REVIEWS":"REVIEWS"
+    },
+    "LIVE-ART" :{
+        "TITLE":"LIVE-ART",
+        "ILLUSTRATIONS":{
+            "TITLE": "ILUSTRATIONS"
+
+        },
+        "PAINTING":{
+            "TITLE": "PAINTINGS"
+
+        }
+    },
+    "INVITATIONS":{
+        "TITLE":"INVITATIONS",
+        "PAPER":{
+            "TITLE": "PAPER"
+
+        },
+        "WEB":{
+            "TITLE": "WEB"
+
+        }
+
+    },
+    "CRAFT":{
+        "TITLE":"CRAFT",
+        "SEATING-PLAN":{
+            "TITLE": "SEATING PLAN"
+
+        },
+        "MENU":{
+            "TITLE": "MENU"
+
+        }
+
+    },
+    "COMMISSIONS": {
+        "TITLE":"COMMISSIONS"
     },
     "ABOUT-US": {
         "TITLE": "About Us"

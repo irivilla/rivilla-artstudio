@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 
@@ -13,15 +13,23 @@ import {TranslateModule, TranslateService} from '@ngx-translate/core';
 export class HeaderInfo implements OnInit {
   public translate = inject(TranslateService);
   public selectedLang: string = 'es';
+  public scrolled = false;
 
+ 
   ngOnInit() {
-    // Al iniciar, lee el idioma selecionado si existe
     setTimeout(() => {
-      const lang = localStorage.getItem('lang') || 'es';
-      this.selectedLang = lang;
-      this.translate.use(lang);
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const lang = localStorage.getItem('lang') || 'es';
+        this.selectedLang = lang;
+        this.translate.use(lang);
+      } else {
+        // fallback si no hay localStorage (SSR o Node)
+        this.selectedLang = 'es';
+        this.translate.use('es');
+      }
     });
   }
+
 
 
 
@@ -39,4 +47,6 @@ export class HeaderInfo implements OnInit {
   openEmail() {
     window.open('mailto:rivilla.artstudio@gmail.com', '_blank');
   }
+
+
 }

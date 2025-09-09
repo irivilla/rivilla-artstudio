@@ -16,7 +16,50 @@
         "TELEPHONE": "610828491"
     },
     "HOME": {
-        "TITLE": "Inicio"
+        "TITLE": "Inicio",
+        "SLOGAN1":"Cada pincelada refleja la magia del momento y convierte una historia en un momento inolvidable.",
+        "SLOGAN2":"Deja que el arte en vivo eleve tus celebraciones",
+        "SERVICES-TITLE":"SERVICIOS DESTACADOS",
+        "QUESTIONS":"PREGUNTAS",
+        "REVIEWS":"RESEÑAS"
+    },
+    "LIVE-ART" :{
+        "TITLE":"LIVE-ART",
+        "ILLUSTRATIONS":{
+            "TITLE": "ILUSTRACIONES"
+
+        },
+        "PAINTING":{
+            "TITLE": "CUADROS"
+
+        }
+    },
+    "INVITATIONS":{
+        "TITLE":"INVITACIONES",
+        "PAPER":{
+            "TITLE": "PAPEL"
+
+        },
+        "WEB":{
+            "TITLE": "WEB"
+
+        }
+
+    },
+    "CRAFT":{
+        "TITLE":"PAPELERÍA",
+        "SEATING-PLAN":{
+            "TITLE": "SEATING PLAN"
+
+        },
+        "MENU":{
+            "TITLE": "MUNUTA"
+
+        }
+
+    },
+    "COMMISSIONS": {
+        "TITLE":"ENCARGOS"
     },
     "ABOUT-US": {
         "TITLE": "Conócenos"

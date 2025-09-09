@@ -17,10 +17,17 @@ export class Footer implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit() {
-    const lang = localStorage.getItem('lang') || 'es';
-    this.translate.use(lang);
-  }
+   ngOnInit() {
+  setTimeout(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const lang = localStorage.getItem('lang') || 'es';
+      this.translate.use(lang);
+    } else {
+      this.translate.use('es');
+    }
+  });
+}
+
 
   goHome(): void {
     this.router.navigate(['/home']);

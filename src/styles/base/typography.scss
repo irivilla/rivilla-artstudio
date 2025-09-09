@@ -46,6 +46,7 @@ h5, .h5 {
     font-size: .83em;
     margin-top: 1.67em;
     margin-bottom: 1.67em;
+    color: $gray-dark;
 }
 
 h6, .h6 {
@@ -63,10 +64,11 @@ strong {
 p {
 
     display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    //margin-top: 1em;
+    //margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
+    color: $gray-dark;
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
