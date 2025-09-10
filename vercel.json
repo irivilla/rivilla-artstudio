@@ -4,16 +4,10 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist/web-rivilla-artstudio/browser/browser" }
+      "config": { "distDir": "dist/web-rivilla-artstudio/browser" }
     }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "rewrites": [
-    {
-      "source": "/.*",
-      "destination": "/index.html"
-    }
+ "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
