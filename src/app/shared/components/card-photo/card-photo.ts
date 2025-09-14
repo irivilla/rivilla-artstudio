@@ -9,14 +9,11 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrl: './card-photo.scss'
 })
 export class CardPhoto {
-  //titulo que viene de donde se llama 
    @Input() title: string = '';
 
-   //foto que queremos que tenga, que tambien se manda
    @Input() imageSrc: string = '';
 
-   //para la ruta que se le pasa, al pulsar vaya a la página
-  @Input() route!: string;
+   @Input() route!: string;
 
    translate = inject(TranslateService);
   public selectedLang: string = 'es';
