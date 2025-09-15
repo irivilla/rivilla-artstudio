@@ -27,11 +27,13 @@
     "LIVE-ART" :{
         "TITLE":"LIVE-ART",
         "ILLUSTRATIONS":{
-            "TITLE": "ILUSTRATIONS"
+            "TITLE": "ILUSTRATIONS",
+            "SUBTITLE": "Custom illustrations of your guests live for weddings and events"
 
         },
         "PAINTING":{
-            "TITLE": "PAINTINGS"
+            "TITLE": "PAINTINGS",
+            "SUBTITLE": "Live painting sessions for weddings and events"
 
         }
     },
@@ -50,11 +52,13 @@
     "CRAFT":{
         "TITLE":"CRAFT",
         "SEATING-PLAN":{
-            "TITLE": "SEATING PLAN"
+            "TITLE": "SEATING PLAN",
+            "SUBTITLE": "Custom Seating Plan design for weddings and events"
 
         },
         "MENU":{
-            "TITLE": "MENU"
+            "TITLE": "MENU",
+            "SUBTITLE": "Custom Menu design for weddings and events"
 
         }
 

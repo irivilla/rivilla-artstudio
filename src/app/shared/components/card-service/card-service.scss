@@ -1,0 +1,46 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/base/typography.scss';
+
+.card-service {
+    border-color: $primary-light;
+    border-radius: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.4s ease, color 0.4s ease;
+    color: $gray-dark;
+
+
+   
+   
+        img {
+            transition: filter 0.4s ease;
+            border-radius: 0;
+        }
+    
+        &:hover {
+    
+            background: $primary-light;
+            color: $primary-dark;
+            
+            img {
+                filter: grayscale(100%);
+                
+            }
+        }
+         &:active {
+             transform: scale(0.97);
+            background: $primary;
+            color: white;
+            
+         }
+
+
+    .hover-control {
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.4s ease;
+        border-radius: 0;
+
+        
+
+    }
+}

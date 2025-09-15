@@ -1,13 +1,13 @@
-<div class="card mb-3" style="max-width: 540px;" (click)="navigate()">
+<div class="card mb-3 card-service" (click)="navigate()">
   <div class="row g-0">
-    <div class="col-md-4">
-      <img [src]="imageSrc" class="img-fluid rounded-start" alt="live art boda">
+    <div class="col-md-6 hover-control">
+      <img [src]="imageSrc" class="img-fluid s" alt="live art boda">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-6 cuadrado-title">
       <div class="card-body">
-        <h5 class="card-title">{{ title }}</h5>
+        <h3 class="card-title">{{ title }}</h3>
         <p class="card-text">{{ subtitle }}</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+
       </div>
     </div>
   </div>

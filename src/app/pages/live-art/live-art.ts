@@ -2,10 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateModule, LangChangeEvent, TranslateService} from '@ngx-translate/core';
 import {Subscription} from 'rxjs';
+import { CardService } from "../../shared/components/card-service/card-service";
 
 @Component({
   selector: 'app-live-art',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, CardService],
   templateUrl: './live-art.html',
   styleUrl: './live-art.scss'
 })
@@ -58,12 +59,12 @@ this.translate.get([
       this.cards = [
         { title: translations['PAGES.LIVE-ART.ILLUSTRATIONS.TITLE'],
            subtitle: translations['PAGES.LIVE-ART.ILLUSTRATIONS.SUBTITLE'], 
-           image: 'assets/images/live-art1.jpg', 
-           route: '/live-art/illustrations' },
+           image: '../../../assets/img/card/ilustracion1x1.webp', 
+           route: '/live-art/ilustracion' },
         { title: translations['PAGES.LIVE-ART.PAINTING.TITLE'],
            subtitle: translations['PAGES.LIVE-ART.PAINTING.SUBTITLE'], 
-           image: 'assets/images/live-art1.jpg', 
-           route: '/live-art/paintings' },
+           image: '../../../assets/img/card/cuadro1x1.webp', 
+           route: '/live-art/cuadro' },
 
     ];
     });

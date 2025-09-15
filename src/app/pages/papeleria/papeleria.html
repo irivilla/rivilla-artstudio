@@ -7,19 +7,11 @@
                 </h1>
             </div>
         </div>
-        <!--  <div class="row justify-content-center g-4 row-cards">
-            <div class="col-12 col-md-6 col-lg-4">
-                <app-card-photo [imageSrc]="'assets/images/papeleria1.jpg'"
-                    [title]="'PAGES.PAPELERIA.CARD-1.TITLE' | translate"></app-card-photo>
+        <div class="row justify-content-center g-4 m-1 row-cards">
+            <div class="col-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 card-service" *ngFor="let card of cards">
+                <app-card-service [title]="card.title" [subtitle]="card.subtitle" [imageSrc]="card.image"
+                    [route]="card.route"></app-card-service>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <app-card-photo [imageSrc]="'assets/images/papeleria2.jpg'"
-                    [title]="'PAGES.PAPELERIA.CARD-2.TITLE' | translate"></app-card-photo>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <app-card-photo [imageSrc]="'assets/images/papeleria3.jpg'"
-                    [title]="'PAGES.PAPELERIA.CARD-3.TITLE' | translate"></app-card-photo>
-            </div>
-        </div> -->
+        </div>
     </div>
 </div>

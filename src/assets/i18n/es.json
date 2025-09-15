@@ -51,11 +51,13 @@
     "CRAFT":{
         "TITLE":"PAPELERÍA",
         "SEATING-PLAN":{
-            "TITLE": "SEATING PLAN"
+            "TITLE": "SEATING PLAN",
+            "SUBTITLE": "Diseño personalizado de Seating Plan para bodas y eventos"
 
         },
         "MENU":{
-            "TITLE": "MINUTA"
+            "TITLE": "MINUTA",
+            "SUBTITLE": "Diseño personalizado de Menú para bodas y eventos"
 
         }
 
