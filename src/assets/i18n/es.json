@@ -26,11 +26,13 @@
     "LIVE-ART" :{
         "TITLE":"LIVE-ART",
         "ILLUSTRATIONS":{
-            "TITLE": "ILUSTRACIONES"
+            "TITLE": "ILUSTRACIONES",
+            "SUBTITLE": "Ilustraciones personalizadas de tus invitados en vivo para bodas y eventos"
 
         },
         "PAINTING":{
-            "TITLE": "CUADROS"
+            "TITLE": "CUADROS",
+            "SUBTITLE": "Cuadros de los protagonistas en vivo para bodas y eventos"
 
         }
     },

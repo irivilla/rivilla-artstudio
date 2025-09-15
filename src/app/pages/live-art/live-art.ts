@@ -15,8 +15,8 @@ export class LiveArt implements OnInit{
 
   public selectedLang: string = 'es';
   private langChangeSub!: Subscription;
-    cards: { title: string, image: string, route:string }[] = [];
-    
+    cards: { title: string, subtitle: string, image: string, route:string }[] = [];
+
 ngOnInit(): void {
       setTimeout(() => {
         if (typeof window !== 'undefined' && window.localStorage) {
@@ -48,5 +48,24 @@ ngOnInit(): void {
   }
 
  
-   defineCards() : void { }
+   defineCards() : void { 
+this.translate.get([
+      'PAGES.LIVE-ART.ILLUSTRATIONS.TITLE',
+      'PAGES.LIVE-ART.ILLUSTRATIONS.SUBTITLE',
+      'PAGES.LIVE-ART.PAINTING.TITLE',
+      'PAGES.LIVE-ART.PAINTING.SUBTITLE',
+    ]).subscribe(translations => {
+      this.cards = [
+        { title: translations['PAGES.LIVE-ART.ILLUSTRATIONS.TITLE'],
+           subtitle: translations['PAGES.LIVE-ART.ILLUSTRATIONS.SUBTITLE'], 
+           image: 'assets/images/live-art1.jpg', 
+           route: '/live-art/illustrations' },
+        { title: translations['PAGES.LIVE-ART.PAINTING.TITLE'],
+           subtitle: translations['PAGES.LIVE-ART.PAINTING.SUBTITLE'], 
+           image: 'assets/images/live-art1.jpg', 
+           route: '/live-art/paintings' },
+
+    ];
+    });
+  }
 }
