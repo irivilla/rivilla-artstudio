@@ -28,7 +28,10 @@
         "TITLE":"LIVE-ART",
         "ILLUSTRATIONS":{
             "TITLE": "ILUSTRATIONS",
-            "SUBTITLE": "Custom illustrations of your guests live for weddings and events"
+            "TITLE_PAGE": "Live Illustrations",
+            "SUBTITLE": "Custom illustrations of your guests live for weddings and events",
+            "SUBTITLE_PAGE": "Custom illustrations of your guests"
+            
 
         },
         "PAINTING":{

@@ -36,6 +36,11 @@
         color: $primary-dark;
         font-weight: bold;
     }
+
+&.active-link {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+}
      
 
   /*   &:visited{

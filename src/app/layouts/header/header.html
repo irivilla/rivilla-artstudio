@@ -1,5 +1,3 @@
-<!-- //la idea es meter una animacion para que con posición fixed que asi se monte sobre la imagen el fondo se transparente y
-se vea la imagen de a y al hacer scrol se vuelva blanca. -->
 <div class="wrapper">
     <div class="container-fluid p-0 m-0">
         <nav class="navbar  navbar-expand-lg header-navbar" [class.scrolled]="scrolled">
@@ -16,20 +14,35 @@ se vea la imagen de a y al hacer scrol se vuelva blanca. -->
                     <div class="links">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link  menu-a" href="/live-art">{{ 'MENU.LIVE-ART' | translate }}</a>
+                                <!--  <a class="nav-link  menu-a" href="/live-art">{{ 'MENU.LIVE-ART' | translate }}</a> -->
+                                <a class="nav-link menu-a" [routerLink]="'/live-art'" routerLinkActive="active-link"
+                                    [routerLinkActiveOptions]="{ exact: false }">
+                                    {{ 'MENU.LIVE-ART' | translate }}
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  menu-a" href="/invitaciones">{{ 'MENU.INVITATIONS' | translate
-                                    }}</a>
+                                <a class="nav-link  menu-a" [routerLink]="'/invitaciones'"
+                                    routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: false }">
+                                    {{ 'MENU.INVITATIONS' | translate }}
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu-a" href="/papeleria">{{ 'MENU.CRAFTS' | translate }}</a>
+                                <a class="nav-link menu-a" [routerLink]="'/papeleria'" routerLinkActive="active-link"
+                                    [routerLinkActiveOptions]="{ exact: false }">
+                                    {{ 'MENU.CRAFTS' | translate }}
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu-a" href="/encargos">{{ 'MENU.COMMISSIONS' | translate }}</a>
+                                <a class="nav-link menu-a" [routerLink]="'/encargos'" routerLinkActive="active-link"
+                                    [routerLinkActiveOptions]="{ exact: false }">
+                                    {{ 'MENU.COMMISSIONS' | translate }}
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  menu-a" href="/about">{{ 'MENU.ABOUT' | translate }}</a>
+                                <a class="nav-link  menu-a" [routerLink]="'/about'" routerLinkActive="active-link"
+                                    [routerLinkActiveOptions]="{ exact: false }">
+                                    {{ 'MENU.ABOUT' | translate }}
+                                </a>
                             </li>
                         </ul>
                     </div>

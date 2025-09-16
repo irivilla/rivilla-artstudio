@@ -1,13 +1,13 @@
 import {Component, HostListener, inject} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
-import {Router} from '@angular/router';
+import {Router, RouterModule} from '@angular/router';
 import {LanguageService} from '../../shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-header',
   imports: [CommonModule,
-        TranslateModule],
+        TranslateModule, RouterModule],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
