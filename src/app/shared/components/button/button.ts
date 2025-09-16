@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
-  selector: 'app-button-primary',
-  imports: [],
-  templateUrl: './button-primary.html',
-  styleUrl: './button-primary.scss'
+  selector: 'app-button',
+  imports: [CommonModule],
+  templateUrl: './button.html',
+  styleUrl: './button.scss'
 })
-export class ButtonPrimary {
+export class Button {
    @Input() type:  'primary'  |  'secondary' =  'primary';
    @Input()  text:  string  = 'Click';
   @Input() placement:  'header'  |  'footer' |  'sidebar'  =  'header';
@@ -14,7 +16,7 @@ export class ButtonPrimary {
 
    isHovered  =  false;
 
-   getClasses()  {
+   getType()  {
       return  [
           'btn',
            this.type ===  'primary'  ?  'btn-primary' :  'btn-secondary',
@@ -30,4 +32,3 @@ export class ButtonPrimary {
    }
 }
 
-}

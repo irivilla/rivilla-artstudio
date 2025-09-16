@@ -3,10 +3,11 @@ import {CommonModule} from '@angular/common';
 import {TranslateModule, LangChangeEvent, TranslateService} from '@ngx-translate/core';
 import {Subscription} from 'rxjs';
 import { CardService } from "../../shared/components/card-service/card-service";
+import { Button } from "../../shared/components/button/button";
 
 @Component({
   selector: 'app-live-art',
-  imports: [CommonModule, TranslateModule, CardService],
+  imports: [CommonModule, TranslateModule, CardService, Button],
   templateUrl: './live-art.html',
   styleUrl: './live-art.scss'
 })
