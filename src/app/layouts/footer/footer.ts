@@ -2,6 +2,7 @@ import {Component, inject, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
+import {LanguageService} from '../../shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-footer',
@@ -12,20 +13,17 @@ import {TranslateModule, TranslateService} from '@ngx-translate/core';
 })
 export class Footer implements OnInit {
   
-  public translate = inject(TranslateService);
   currentYear: number = new Date().getFullYear();
+  
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, 
+    private languageService: LanguageService) {}
 
    ngOnInit() {
-  setTimeout(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      const lang = localStorage.getItem('lang') || 'es';
-      this.translate.use(lang);
-    } else {
-      this.translate.use('es');
-    }
-  });
+ 
+}
+get selectedLang(): string {
+  return this.languageService.getCurrentLanguage();
 }
 
 

@@ -4,6 +4,7 @@ import {TranslateModule, LangChangeEvent, TranslateService} from '@ngx-translate
 import {CardService} from '../../shared/components/card-service/card-service';
 import {Button} from '../../shared/components/button/button';
 import {Subscription} from 'rxjs';
+import {LanguageService} from '../../shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-invitaciones',
@@ -13,24 +14,14 @@ import {Subscription} from 'rxjs';
 })
 export class Invitaciones implements OnInit{
 
-  constructor(private translate: TranslateService) {}
+ 
 
-  public selectedLang: string = 'es';
   private langChangeSub!: Subscription;
     cards: { title: string, subtitle: string, image: string, route:string }[] = [];
+    constructor(private languageService: LanguageService) {}
 
 ngOnInit(): void {
-      setTimeout(() => {
-        if (typeof window !== 'undefined' && window.localStorage) {
-          const lang = localStorage.getItem('lang') || 'es';
-          this.selectedLang = lang;
-          this.translate.use(lang);
-        } else {
-          // fallback si no hay localStorage (SSR o Node)
-          this.selectedLang = 'es';
-          this.translate.use('es');
-        }
-      });
+    
       this.defineCards();
       this.lenguageCards();
   }
@@ -42,16 +33,14 @@ ngOnInit(): void {
   }
 
   lenguageCards(){
-  this.langChangeSub = this.translate.onLangChange.subscribe(
-      (event: LangChangeEvent) => {
-        this.defineCards();
-      }
-    );
+ this.langChangeSub = this.languageService.onLanguageChange().subscribe(() => {
+      this.defineCards();
+    });
   }
 
  
    defineCards() : void { 
-this.translate.get([
+this.languageService.get([
       'PAGES.INVITATIONS.PAPER.TITLE',
       'PAGES.INVITATIONS.PAPER.SUBTITLE',
       'PAGES.INVITATIONS.WEB.TITLE',
@@ -61,11 +50,11 @@ this.translate.get([
         { title: translations['PAGES.INVITATIONS.PAPER.TITLE'],
            subtitle: translations['PAGES.INVITATIONS.PAPER.SUBTITLE'], 
            image: '../../../assets/img/card/invitacion1x1.webp', 
-           route: '/live-art/ilustracion' },
+           route: '/invitaciones/papel' },
         { title: translations['PAGES.INVITATIONS.WEB.TITLE'],
            subtitle: translations['PAGES.INVITATIONS.WEB.SUBTITLE'], 
            image: '../../../assets/img/card/web1x1.webp', 
-           route: '/live-art/cuadro' },
+           route: '/invitaciones/web' },
     ];
     });
   }

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import {Component, inject, OnInit} from '@angular/core';
-import {LangChangeEvent, TranslateModule, TranslateService} from '@ngx-translate/core';
+import {Component,  OnInit} from '@angular/core';
+import {TranslateModule} from '@ngx-translate/core';
 import { Carrousel } from "../../shared/components/carrousel/carrousel";
 import { CardPhoto } from "../../shared/components/card-photo/card-photo";
 import { Subscription } from 'rxjs';
 import { Reviews } from "../../shared/components/reviews/reviews";
 import { Accordion } from "../../shared/components/accordion/accordion";
+import {LanguageService} from '../../shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-home',
@@ -14,25 +15,18 @@ import { Accordion } from "../../shared/components/accordion/accordion";
   styleUrl: './home.scss'
 })
 export class Home implements OnInit {
-//  public translate = inject(TranslateService);
-  public selectedLang: string = 'es';
+
   cards: { title: string, image: string, route:string }[] = [];
   private langChangeSub!: Subscription;
 
-  constructor(private translate: TranslateService) {}
 
+constructor(private languageService: LanguageService) {}
+
+get selectedLang(): string {
+  return this.languageService.getCurrentLanguage();
+}
   ngOnInit(): void {
-      setTimeout(() => {
-        if (typeof window !== 'undefined' && window.localStorage) {
-          const lang = localStorage.getItem('lang') || 'es';
-          this.selectedLang = lang;
-          this.translate.use(lang);
-        } else {
-          // fallback si no hay localStorage (SSR o Node)
-          this.selectedLang = 'es';
-          this.translate.use('es');
-        }
-      });
+    
       this.defineCards();
       this.lenguageCards();
   }
@@ -43,16 +37,14 @@ export class Home implements OnInit {
   }
 
   lenguageCards(){
-  this.langChangeSub = this.translate.onLangChange.subscribe(
-      (event: LangChangeEvent) => {
-        this.defineCards();
-      }
-    );
+ this.langChangeSub = this.languageService.onLanguageChange().subscribe(() => {
+      this.defineCards();
+    });
   }
 
  
    defineCards() : void {
-    this.translate.get([
+    this.languageService.get([
       'PAGES.LIVE-ART.ILLUSTRATIONS.TITLE',
       'PAGES.LIVE-ART.PAINTING.TITLE',
       'PAGES.INVITATIONS.TITLE',

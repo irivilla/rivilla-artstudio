@@ -4,6 +4,7 @@ import { Footer } from "./layouts/footer/footer";
 import { Header } from "./layouts/header/header";
 import { HeaderInfo } from "./layouts/header-info/header-info";
 import { Body } from "./layouts/body/body";
+import { LanguageService } from './shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,5 @@ import { Body } from "./layouts/body/body";
 })
 export class App {
   protected readonly title = signal('web-rivilla-artstudio');
+  constructor(private languageService: LanguageService) {}
 }

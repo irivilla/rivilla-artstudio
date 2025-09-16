@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import {LanguageService} from '../../shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-encargos',
@@ -11,23 +12,16 @@ import { Subscription } from 'rxjs';
 })
 export class Encargos implements OnInit{
 
-  constructor(private translate: TranslateService) {}
+constructor(private languageService: LanguageService) {}
 
-  public selectedLang: string = 'es';
-  private langChangeSub!: Subscription;
+
 ngOnInit(): void {
-      setTimeout(() => {
-        if (typeof window !== 'undefined' && window.localStorage) {
-          const lang = localStorage.getItem('lang') || 'es';
-          this.selectedLang = lang;
-          this.translate.use(lang);
-        } else {
-          // fallback si no hay localStorage (SSR o Node)
-          this.selectedLang = 'es';
-          this.translate.use('es');
-        }
-      });
+
   }
+  
+get selectedLang(): string {
+  return this.languageService.getCurrentLanguage();
+}
 
 
 }

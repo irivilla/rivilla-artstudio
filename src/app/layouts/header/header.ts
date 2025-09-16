@@ -2,6 +2,7 @@ import {Component, HostListener, inject} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import {Router} from '@angular/router';
+import {LanguageService} from '../../shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-header',
@@ -12,20 +13,18 @@ import {Router} from '@angular/router';
 })
 export class Header {
 
-  public translate = inject(TranslateService);
+ 
   public scrolled = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, 
+    private languageService: LanguageService
+  ) {}
 
   ngOnInit() {
-  setTimeout(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      const lang = localStorage.getItem('lang') || 'es';
-      this.translate.use(lang);
-    } else {
-      this.translate.use('es');
-    }
-  });
+ 
+}
+get selectedLang(): string {
+  return this.languageService.getCurrentLanguage();
 }
 
   @HostListener('window:scroll', [])

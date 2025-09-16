@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {TranslateModule, LangChangeEvent, TranslateService} from '@ngx-translate/core';
+import {TranslateModule} from '@ngx-translate/core';
 import {Subscription} from 'rxjs';
 import {CardService} from '../../shared/components/card-service/card-service';
+import {LanguageService} from '../../shared/services/languageService/language-service';
 
 @Component({
   selector: 'app-papeleria',
@@ -12,24 +13,14 @@ import {CardService} from '../../shared/components/card-service/card-service';
 })
 export class Papeleria implements OnInit{
 
-  constructor(private translate: TranslateService) {}
+  constructor(private languageService: LanguageService) {}
 
-  public selectedLang: string = 'es';
+
   private langChangeSub!: Subscription;
     cards: { title: string, subtitle: string, image: string, route:string }[] = [];
     
 ngOnInit(): void {
-      setTimeout(() => {
-        if (typeof window !== 'undefined' && window.localStorage) {
-          const lang = localStorage.getItem('lang') || 'es';
-          this.selectedLang = lang;
-          this.translate.use(lang);
-        } else {
-          // fallback si no hay localStorage (SSR o Node)
-          this.selectedLang = 'es';
-          this.translate.use('es');
-        }
-      });
+     
       this.defineCards();
       this.lenguageCards();
   }
@@ -41,15 +32,13 @@ ngOnInit(): void {
   }
 
   lenguageCards(){
-  this.langChangeSub = this.translate.onLangChange.subscribe(
-      (event: LangChangeEvent) => {
-        this.defineCards();
-      }
-    );
+  this.langChangeSub = this.languageService.onLanguageChange().subscribe(() => {
+      this.defineCards();
+    });
   }
 
   defineCards() : void { 
-this.translate.get([
+this.languageService.get([
       'PAGES.CRAFT.SEATING-PLAN.TITLE',
       'PAGES.CRAFT.SEATING-PLAN.SUBTITLE',
       'PAGES.CRAFT.MENU.TITLE',
