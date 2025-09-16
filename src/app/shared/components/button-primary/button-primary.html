@@ -1,1 +1,8 @@
-<p>button-primary works!</p>
+<button
+   type="button" class="btn"
+   [ngClass]="getClasses()"
+   [ngStyle]="getStyles()"
+    (mouseenter)="isHovered =  true"
+   (mouseleave)="isHovered  =  false">
+   {{  text  }}
+</button>

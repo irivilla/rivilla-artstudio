@@ -1,0 +1,63 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/base/typography.scss';
+
+.btn  {
+    padding:  0.5rem  1rem;
+    border-radius:  6px;
+    font-weight:  bold;
+    transition:  all 0.3s  ease;
+    cursor:  pointer;
+
+      &:active{
+            transform: scale(0.97);
+        }
+ }
+ 
+ .btn-primary {
+     background-color: $primary-light;
+     color: $primary-dark;
+     border: 2px solid  $primary-dark;
+
+        &:hover{
+            background-color: $primary-dark;
+            color:  $white;
+            border: 2px solid  $primary-dark;
+
+        }
+
+        &:active{
+            background-color: $white;
+            color:  $primary-dark;
+            border: 2px solid  $primary-dark;
+        }
+
+      
+
+ }
+
+ 
+
+ 
+
+ .btn-secondary  {
+    background-color:  $secondary-light;
+    color:  $secondary-dark;
+    border:  2px solid  $secondary-dark;
+
+    &:hover  {
+        background-color:  $secondary-dark;
+        color:  $white;
+        border:  2px solid  $secondary-dark;
+    }
+
+    &:active  {
+        background-color:  $white;
+        color:  $secondary-dark;
+        border:  2px solid  $secondary-dark;
+    }
+ }
+ 
+
+
+
