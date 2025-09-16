@@ -40,11 +40,13 @@
     "INVITATIONS":{
         "TITLE":"INVITATIONS",
         "PAPER":{
-            "TITLE": "PAPER"
+            "TITLE": "PAPER",
+            "SUBTITLE": "Custom paper invitations for weddings and events"
 
         },
         "WEB":{
-            "TITLE": "WEB"
+            "TITLE": "WEB",
+            "SUBTITLE": "Custom web invitations for weddings and events"
 
         }
 

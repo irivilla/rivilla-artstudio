@@ -39,11 +39,13 @@
     "INVITATIONS":{
         "TITLE":"INVITACIONES",
         "PAPER":{
-            "TITLE": "PAPEL"
+            "TITLE": "PAPEL",
+            "SUBTITLE": "Invitaciones personalizadas en papel para bodas y eventos"
 
         },
         "WEB":{
-            "TITLE": "WEB"
+            "TITLE": "WEB",
+            "SUBTITLE": "Invitaciones personalizadas en formato digital para bodas y eventos"
 
         }
 

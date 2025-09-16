@@ -1,1 +1,31 @@
-<p>invitaciones works!</p>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 title-invitaciones">
+                <h1>
+                    {{ 'PAGES.INVITATIONS.TITLE' | translate }}
+                </h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-4 m-1 row-cards">
+            <div class="col-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 card-service" *ngFor="let card of cards">
+                <app-card-service [title]="card.title" [subtitle]="card.subtitle" [imageSrc]="card.image"
+                    [route]="card.route"></app-card-service>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card card-contact w-50">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <app-button class="m-2" type="primary" [text]="'BOTON'"></app-button>
+                        <app-button class="m-2" type="secondary" [text]="'BOTON 2'"></app-button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
