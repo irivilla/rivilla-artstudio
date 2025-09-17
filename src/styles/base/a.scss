@@ -29,7 +29,7 @@
 
     &:hover {
         color: $primary;
-        border-bottom: 2px solid $primary-dark; 
+        border-bottom: 2px solid $primary; 
     }
 
     &:active {
@@ -38,8 +38,8 @@
     }
 
 &.active-link {
-    color: $primary;
-    border-bottom: 2px solid $primary;
+    color: $secondary;
+    border-bottom: 2px solid $secondary;
 }
      
 

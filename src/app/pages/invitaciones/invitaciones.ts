@@ -43,16 +43,16 @@ ngOnInit(): void {
 this.languageService.get([
       'PAGES.INVITATIONS.PAPER.TITLE',
       'PAGES.INVITATIONS.PAPER.SUBTITLE',
-      'PAGES.INVITATIONS.WEB.TITLE',
-      'PAGES.INVITATIONS.WEB.SUBTITLE',
+      'PAGES.INVITATIONS.DIGITAL.TITLE',
+      'PAGES.INVITATIONS.DIGITAL.SUBTITLE',
     ]).subscribe(translations => {
       this.cards = [
         { title: translations['PAGES.INVITATIONS.PAPER.TITLE'],
            subtitle: translations['PAGES.INVITATIONS.PAPER.SUBTITLE'], 
            image: '../../../assets/img/card/invitacion1x1.webp', 
            route: '/invitaciones/papel' },
-        { title: translations['PAGES.INVITATIONS.WEB.TITLE'],
-           subtitle: translations['PAGES.INVITATIONS.WEB.SUBTITLE'], 
+        { title: translations['PAGES.INVITATIONS.DIGITAL.TITLE'],
+           subtitle: translations['PAGES.INVITATIONS.DIGITAL.SUBTITLE'], 
            image: '../../../assets/img/card/web1x1.webp', 
            route: '/invitaciones/web' },
     ];

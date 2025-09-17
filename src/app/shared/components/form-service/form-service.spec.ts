@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Ilustracion } from './ilustracion';
+import { FormService } from './form-service';
 
-describe('Ilustracion', () => {
-  let component: Ilustracion;
-  let fixture: ComponentFixture<Ilustracion>;
+describe('FormService', () => {
+  let component: FormService;
+  let fixture: ComponentFixture<FormService>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Ilustracion]
+      imports: [FormService]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Ilustracion);
+    fixture = TestBed.createComponent(FormService);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,6 +20,4 @@ describe('Ilustracion', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  
 });
