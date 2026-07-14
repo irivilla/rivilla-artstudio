@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormService } from './form-service';
+import { FormPresupuesto } from './form-presupuesto';
 
-describe('FormService', () => {
-  let component: FormService;
-  let fixture: ComponentFixture<FormService>;
+describe('FormPresupuesto', () => {
+  let component: FormPresupuesto;
+  let fixture: ComponentFixture<FormPresupuesto>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormService]
+      imports: [FormPresupuesto]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FormService);
+    fixture = TestBed.createComponent(FormPresupuesto);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

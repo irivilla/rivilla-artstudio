@@ -11,6 +11,18 @@
     "ABOUT": "CONÓCENOS"
 
 },
+"LISTADO-SERVICIOS": {
+    "TITLE": "Listado de servicios",
+    "SUBTITLE": "Descubre todos los servicios que ofrecemos para bodas y eventos",
+    "ILLUSTRATIONS": "Ilustraciones de invitados",
+    "PAINTING": "Cuadro en vivo",
+    "SILHOUETTES": "Siluetas en vivo",
+    "INVITATIONS": "Invitaciones en papel",
+    "DIGITAL": "Invitaciones web",
+    "SEATING-PLAN": "Seating Plan",
+    "MENU": "Menú",
+    "OTHER": "Otros servicios"
+},
 "PAGES" : {
     "HEADER-INFO": {
         "TELEPHONE": "610828491"
@@ -98,5 +110,22 @@
         "INFO": "INFORMACIÓN"
     }
 
-}
+},
+ "FORM-PRESUPUESTO":{
+        "TITLE": "Formulario de presupuesto",
+        "NAME": "Nombre y Apellidos",
+        "EMAIL": "Correo electrónico",
+        "PHONE": "Teléfono",
+        "SERVICE": "Servicio",
+        "NUMBER-GUESTS": "Número de invitados",
+        "DATE": "Fecha del evento",
+        "LOCATION": "Lugar del evento",
+        "MESSAGE": "Cuentanos tu idea o cualquier detalle que consideres importante para tu presupuesto",
+        "SUBMIT": "Enviar",
+        "REQUIRED": "Este campo es obligatorio",
+        "INVALID-EMAIL": "Correo electrónico inválido",
+        "CLEAR": "LIMPIAR",
+        "SENT": "ENVIAR",
+        "SUCCESS": "¡Formulario enviado con éxito!" 
+    }
 }

@@ -12,6 +12,18 @@
     "ABOUT": "ABOUT US"
 
 },
+"LISTADO-SERVICIOS": {
+    "TITLE": "List of services",
+    "SUBTITLE": "Discover all the services we offer for weddings and events",
+    "ILLUSTRATIONS": "Guest Illustrations",
+    "PAINTING": "Live Painting",
+    "SILHOUETTES": "Live Silhouettes",
+    "INVITATIONS": "Paper Invitations",
+    "DIGITAL": "Web Invitations",
+    "SEATING-PLAN": "Seating Plan",
+    "MENU": "Menu",
+    "OTHER": "Other services"
+},
 "PAGES" : {
     "HEADER-INFO": {
         "TELEPHONE": "+34 610828491"
@@ -97,6 +109,24 @@
         "CONTACT": "CONTACT US",
         "INFO": "MORE INFO"
     }
+   
 
-}
+},
+ "FORM-PRESUPUESTO":{
+        "TITLE": "Budget Form",
+        "NAME": "Name and Surname",
+        "EMAIL": "Email",
+        "PHONE": "Phone",
+        "SERVICE": "Service",
+        "NUMBER-GUESTS": "Number of Guests",
+        "DATE": "Event Date",
+        "LOCATION": "Event Location",
+        "MESSAGE": "Tell us your idea or any detail you consider important for your budget",
+        "SUBMIT": "Submit",
+        "REQUIRED": "This field is required",
+        "INVALID-EMAIL": "Invalid email address",
+        "CLEAR": "CLEAR",
+        "SENT": "SENT",
+        "SUCCESS": "Form submitted successfully!"
+    }
 }

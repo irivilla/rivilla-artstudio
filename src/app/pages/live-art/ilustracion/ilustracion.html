@@ -98,18 +98,15 @@
 
         <div class="row-12">
             <div class="col-12">
-                <h3>PREGUNTA POR NUESTRO PORTFOLIO</h3>
+                <h3>PREGUNTA POR UN PRESUPUESTO PERSONALIZADO</h3>
             </div>
         </div>
 
 
         <div class="row mt-4 mb-4">
-            <div class="col-12">
-                <app-form-service (formSubmitted)="procesarDatos($event)" [servicioId]="1"> </app-form-service>
+            <div class="col-12 p-0">
+                <app-form-presupuesto (formSubmitted)="procesarDatos($event)" [servicioId]="1"> </app-form-presupuesto>
+
             </div>
-
-
-
-
         </div>
     </div>

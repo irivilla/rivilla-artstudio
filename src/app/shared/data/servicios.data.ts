@@ -2,10 +2,10 @@
 import { Servicio } from '../models/servicio.model';
 
 export const SERVICIOS: Servicio[] = [
-  { id: 1, nombre: 'Ilustraciones de invitados' },
-  { id: 2, nombre: 'Cuadros en vivo' },
-  { id: 3, nombre: 'Silhouettes de invitados' },
-  { id: 4, nombre: 'Invitaciones de papel' },
-  { id: 5, nombre: 'Invitaciones web' },
-  { id: 6, nombre: 'Otros' }
+  { id: 1, nombre: 'LISTADO-SERVICIOS.ILLUSTRATIONS', requiereNumeroInvitados: true },
+  { id: 2, nombre: 'LISTADO-SERVICIOS.PAINTING', requiereNumeroInvitados: false },
+  { id: 3, nombre: 'LISTADO-SERVICIOS.SILHOUETTES', requiereNumeroInvitados: true },
+  { id: 4, nombre: 'LISTADO-SERVICIOS.INVITATIONS', requiereNumeroInvitados: false },
+  { id: 5, nombre: 'LISTADO-SERVICIOS.DIGITAL', requiereNumeroInvitados: false },
+  { id: 6, nombre: 'LISTADO-SERVICIOS.OTHER', requiereNumeroInvitados: false }
 ];

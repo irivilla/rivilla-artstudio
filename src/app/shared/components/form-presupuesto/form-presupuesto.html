@@ -1,11 +1,11 @@
 <form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="mx-3">
     <div class="row mb-3 ">
         <div class="col-6">
-            <label for="nombre" class="form-label">Nombre y Apellido*</label>
+            <label for="nombre" class="form-label">{{ 'FORM-PRESUPUESTO.NAME' | translate }}*</label>
             <input id="nombre" formControlName="nombre" class="form-control" />
         </div>
         <div class="col-6">
-            <label for="email" class="form-label">Email*</label>
+            <label for="email" class="form-label">{{ 'FORM-PRESUPUESTO.EMAIL' | translate }}*</label>
             <input id="email" formControlName="email" class="form-control" />
         </div>
 
@@ -13,27 +13,33 @@
 
     <div class="row mb-3">
         <div class="col-6">
-            <label for="telefono" class="form-label">Teléfono*</label>
+            <label for="telefono" class="form-label">{{ 'FORM-PRESUPUESTO.PHONE' | translate }}*</label>
             <input id="telefono" formControlName="telefono" class="form-control" />
         </div>
         <div class="col-6">
-            <label for="servicio" class="form-label">Servicio*</label>
-            <p-select formControlName="servicio" [options]="servicios" optionLabel="nombre" optionValue="id"
+            <label for="servicio" class="form-label">{{ 'FORM-PRESUPUESTO.SERVICE' | translate }}*</label>
+            <p-select formControlName="servicio" [options]="servicios" optionLabel="nombre"
                 placeholder="Selecciona un servicio" styleClass="w-100">
+                <ng-template let-servicio #item>
+                    {{ servicio.nombre | translate }}
+                </ng-template>
+
+                <ng-template let-servicio #selectedItem>
+                    {{ servicio.nombre | translate }}
+                </ng-template>
             </p-select>
         </div>
     </div>
 
-    @if (necesitaInvitados) {
+    @if (mostrarNumeroInvitados) {
     <div class="row mb-3">
 
         <div class="col-6">
 
-            <label for="numeroInvitados"> Número de invitados*</label>
+            <label for="numeroInvitados">{{ 'FORM-PRESUPUESTO.NUMBER-GUESTS' | translate }}*</label>
 
             <input id="numeroInvitados" type="number" formControlName="numeroInvitados" class="form-control" min="1"
-                defaultValue="100" />
-
+                defaultValue="100" autocomplete="off" inputmode="numeric" name="numeroInvitados">
         </div>
 
     </div>
@@ -42,7 +48,7 @@
     <div class="row mb-3">
         <div class="col-6">
             <label for="fecha" class="form-label">
-                Fecha del evento*
+                {{ 'FORM-PRESUPUESTO.DATE' | translate }}*
             </label>
 
             <p-datepicker formControlName="fecha" inputId="fecha" appendTo="body" [showIcon]="true" iconDisplay="input"
@@ -50,19 +56,19 @@
             </p-datepicker>
         </div>
         <div class="col-6">
-            <label for="lugar" class="form-label">Lugar del evento*</label>
+            <label for="lugar" class="form-label">{{ 'FORM-PRESUPUESTO.LOCATION' | translate }}*</label>
             <input id="lugar" formControlName="lugar" class="form-control" />
         </div>
     </div>
     <div class="row mb-3">
         <div class="col-12">
-            <label for="mensaje" class="form-label">Mensaje</label>
+            <label for="mensaje" class="form-label">{{ 'FORM-PRESUPUESTO.MESSAGE' | translate }}</label>
             <textarea id="mensaje" formControlName="mensaje" class="form-control"></textarea>
         </div>
     </div>
 
-    <app-button class="m-2" type="secondary" [text]="'LIMPIAR'">
+    <app-button class="m-2" type="secondary" [text]="'FORM-PRESUPUESTO.CLEAR' | translate">
 
-    </app-button><app-button class="m-2" type="primary" [text]="'ENVIAR'"></app-button>
+    </app-button><app-button class="m-2" type="primary" [text]="'FORM-PRESUPUESTO.SENT' | translate"></app-button>
     <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
 </form>
