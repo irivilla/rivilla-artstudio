@@ -1,8 +1,33 @@
 @import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+//@import '../../../../styles/base/primeng.scss';
+
 
 form{
-
-    input{
-        background-color: $secondary-light;
+    label{
+        color: $primary-dark;
+        display: flex;
+        justify-content: start;
+        font-family: $base-font-family;
+        font-size: $base-font-size;
     }
+
+    input, textarea{
+        background-color: $secondary-light;
+        border: 1px solid $secondary-light;
+        border-radius: 10px;
+        font-family: $base-font-family;
+        font-size: $base-font-size;
+        color: $gray-dark;
+
+        &:focus,
+            &:active {
+                background-color: $secondary-light;
+                border-color: $secondary;
+                box-shadow: 0 0 0 .2rem rgba($secondary, .25);
+                outline: none;
+            }
+    }
+
+      
 }

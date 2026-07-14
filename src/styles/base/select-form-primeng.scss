@@ -1,0 +1,102 @@
+@import '../colors.scss';
+@import '../fonts.scss';
+
+.p-select {
+
+    background: $secondary-light !important;
+    border: 1px solid $secondary-light !important;
+    border-radius: 10px !important;
+    min-height: 38px;
+
+    transition: all .25s ease;
+
+    .p-select-label {
+        
+        display: flex;
+        justify-content: start;
+        font-family: $base-font-family !important;
+        font-size: $base-font-size !important;
+        color: $gray-dark !important;
+
+    }
+
+    .p-select-dropdown {
+        
+        color: $gray-dark !important;
+
+    }
+        &:hover {
+    
+            border-color: $secondary !important;
+    
+        }
+    
+        &:focus,
+        &:focus-within,
+        &.p-focus {
+    
+            border-color: $secondary !important;
+            box-shadow: 0 0 0 .2rem rgba($secondary, .25) !important;
+            outline: none !important;
+    
+        }
+
+        
+
+
+}
+
+//desplegable
+.p-select-list {
+
+    font-family: $base-font-family !important;
+
+}
+.p-select-overlay {
+
+    background: $secondary-light !important;
+
+    border: 1px solid $secondary-light !important;
+
+    border-radius: 10px !important;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+
+    //font-family: $base-font-family !important;
+
+}
+
+.p-select-option {
+
+    font-family: $base-font-family !important;
+
+    font-size: $base-font-size !important;
+
+    color: $gray-dark !important;
+
+    transition: all .2s;
+
+
+}
+
+.p-select-option:hover {
+    background-color: $primary-light !important;
+    color: $primary-dark !important;
+}
+
+.p-select-option.p-select-option-selected {
+
+    background: $primary !important;
+
+    color: $primary-dark !important;
+
+}
+
+.p-select-option.p-select-option-selected:hover {
+
+    background: $primary-dark !important;
+
+    color: $white !important;
+
+}
+

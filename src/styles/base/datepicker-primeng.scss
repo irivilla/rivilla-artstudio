@@ -1,0 +1,204 @@
+.p-datepicker {
+
+    width: 100%;
+
+}
+
+.p-datepicker-input {
+
+    background: $secondary-light !important;
+    border: 1px solid $secondary-light !important;
+    border-radius: 10px !important;
+
+    color: $gray-dark !important;
+
+    font-family: $base-font-family !important;
+    font-size: $base-font-size !important;
+
+}
+
+.p-datepicker-dropdown,
+.p-datepicker-trigger {
+
+    color: $gray-dark !important;
+
+}
+
+.p-datepicker-panel {
+
+    background: $secondary-light !important;
+
+    border: 1px solid $secondary-light !important;
+
+    border-radius: 10px !important;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+
+    font-family: $base-font-family !important;
+
+}
+
+.p-datepicker-header {
+
+    background: $secondary-light !important;
+
+    color: $gray-dark !important;
+
+    border-bottom: 1px solid $secondary !important;
+
+}
+
+.p-datepicker-title {
+
+    font-family: $base-font-family !important;
+
+    color: $gray-dark !important;
+
+    font-weight: 600;
+
+}
+
+.p-datepicker-month,
+.p-datepicker-year {
+
+    color: $gray-dark !important;
+
+    font-family: $base-font-family !important;
+
+    font-size: $base-font-size !important;
+
+    font-weight: 600;
+
+    border-radius: 8px;
+
+    transition: all .2s ease;
+
+    &:hover {
+
+        background: $primary-light !important;
+
+        color: $primary-dark !important;
+
+    }
+
+}
+.p-datepicker-month-selected,
+.p-datepicker-year-selected {
+
+    background: $primary !important;
+
+    color: $white !important;
+
+    &:hover {
+
+        background: $primary-dark !important;
+
+        color: $primary-light !important;
+
+    }
+
+}
+
+.p-datepicker-select-month,
+.p-datepicker-select-year {
+
+    color: $secondary-dark !important;
+    border-radius: 8px;
+
+    padding: .25rem .5rem;
+
+    transition: all .2s ease;
+
+    &:hover {
+
+        background-color: $primary-light !important;
+
+        color: $primary-dark !important;
+
+        cursor: pointer;
+
+    }
+
+    &:focus {
+
+        outline: none;
+
+        box-shadow: 0 0 0 .2rem rgba($secondary, .25);
+
+    }
+
+}
+
+.p-datepicker-prev-button,
+.p-datepicker-next-button {
+
+    color: $secondary-dark !important;
+
+    border-radius: 50%;
+
+    transition: .2s;
+
+    &:hover {
+
+        background: $primary-light !important;
+        color: $primary-dark !important;
+
+    }
+
+}
+
+.p-datepicker-weekday {
+
+    color: $secondary-dark !important;
+
+    font-weight: 600;
+
+    font-family: $base-font-family !important;
+
+}
+
+.p-datepicker-day {
+
+    color: $gray-dark !important;
+
+    border-radius: 8px;
+
+    transition: .2s;
+
+}
+
+.p-datepicker-day:hover {
+
+    background: $primary-light !important;
+
+    color: $primary-dark !important;
+
+}
+
+.p-datepicker-day-selected {
+
+    background: $primary !important;
+
+    color: $white !important;
+
+    border: none;
+
+    border-radius: 8px;
+
+}
+
+.p-datepicker-day-selected:hover {
+
+    background: $primary-dark !important;
+    color: $primary-light !important;
+
+}
+
+.p-datepicker-today .p-datepicker-day {
+
+    border: 1px solid $secondary !important;
+
+    font-weight: bold;
+
+}
+
