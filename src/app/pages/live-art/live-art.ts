@@ -45,6 +45,8 @@ this.languageService.get([
       'PAGES.LIVE-ART.ILLUSTRATIONS.SUBTITLE',
       'PAGES.LIVE-ART.PAINTING.TITLE',
       'PAGES.LIVE-ART.PAINTING.SUBTITLE',
+      'PAGES.LIVE-ART.SILHOUETTES.TITLE',
+      'PAGES.LIVE-ART.SILHOUETTES.SUBTITLE',
     ]).subscribe(translations => {
       this.cards = [
         { title: translations['PAGES.LIVE-ART.ILLUSTRATIONS.TITLE'],
@@ -55,6 +57,10 @@ this.languageService.get([
            subtitle: translations['PAGES.LIVE-ART.PAINTING.SUBTITLE'], 
            image: '../../../assets/img/card/cuadro1x1.webp', 
            route: '/live-art/cuadro' },
+        { title: translations['PAGES.LIVE-ART.SILHOUETTES.TITLE'],
+           subtitle: translations['PAGES.LIVE-ART.SILHOUETTES.SUBTITLE'], 
+           image: '../../../assets/img/card/silueta1x1.webp', 
+           route: '/live-art/silhouettes' }
 
     ];
     });

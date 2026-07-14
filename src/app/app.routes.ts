@@ -21,6 +21,12 @@ export const routes: Routes = [
     { path: 'live-art/cuadro',
         loadComponent: () => import('./pages/live-art/cuadro/cuadro').then(m => m.Cuadro)
     },
+    { path: 'live-art/cuadro',
+        loadComponent: () => import('./pages/live-art/cuadro/cuadro').then(m => m.Cuadro)
+    },
+    { path: 'live-art/silhouettes',
+        loadComponent: () => import('./pages/live-art/silhouettes/silhouettes').then(m => m.Silhouettes)
+    },
     { path: 'papeleria', component: Papeleria},
     { path: 'papeleria/minuta',
         loadComponent: () => import('./pages/papeleria/minuta/minuta').then(m => m.Minuta)
