@@ -1,0 +1,52 @@
+/* ===========================
+   Carousel
+=========================== */
+
+.p-carousel {
+
+    .p-carousel-indicator-list {
+
+        gap: .5rem;
+
+    }
+
+    .p-carousel-indicator-button {
+
+    /*     width: 0.9rem !important;
+        height: .75rem !important;
+
+        border-radius: 50% !important; */
+
+        background-color: $secondary-light !important;
+
+        transition: all .25s ease;
+
+        &:hover {
+
+            background-color: $primary-light !important;
+
+        }
+
+    }
+
+    .p-carousel-indicator-active {
+
+        .p-carousel-indicator-button {
+
+            background-color: $primary !important;
+
+            transform: scale(1.25);
+
+        }
+
+    }
+
+        .p-carousel-indicator-button {
+    
+            transition: all .25s ease;
+    
+        }
+
+        
+
+}
