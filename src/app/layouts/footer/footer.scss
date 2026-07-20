@@ -11,10 +11,10 @@
     padding: 0;
 
     &__links {
-        width: 100%;
-        display: flex;
-            justify-content: space-between;
-            align-items: center;
+        //width: 100%;
+       // display: flex;
+           // justify-content: space-between;
+            //align-items: center;
             background-color: $primary-light;
        .logo {
            display: flex;
@@ -58,9 +58,7 @@
     }
     &__brand {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         height: 2rem;
         background-color: $primary-dark;
         

@@ -3,4 +3,6 @@ export interface Review {
   rating: number;
   comment: string;
   image?: string; // opcional, por si quieres avatar
+  avatarLetter?: string;
+  avatarColor?: string;
 }

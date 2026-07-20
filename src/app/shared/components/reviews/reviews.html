@@ -1,23 +1,50 @@
 <p-carousel [value]="reviews" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions"
     autoplayInterval="5000">
-    <ng-template let-product #item>
-        <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
-            <div class="mb-4">
-                <div class="relative mx-auto">
-                    <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"
-                        [alt]="product.name" class="w-full rounded-border" />
-                    <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)"
-                        class="absolute dark:!bg-surface-900" [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+    <ng-template let-review pTemplate="item">
+        <div class="review-card">
+
+            <div class="review-card__header">
+
+                @if (review.image) {
+
+                <img [src]="review.image" [alt]="review.author" class="review-card__avatar">
+
+                } @else {
+
+                <div class="review-card__avatar review-card__avatar--placeholder text-white"
+                    [style.background-color]="review.avatarColor">
+
+                    {{ review.avatarLetter }}
+
                 </div>
+
+                }
+
+                <div class="review-card__info">
+
+                    <h4>{{ review.author }}</h4>
+
+
+                </div>
+
             </div>
-            <div class="mb-4 font-medium">{{ product.name }}</div>
-            <div class="flex justify-between items-center">
-                <div class="mt-0 font-semibold text-xl">{{ '$' + product.price }}</div>
-                <span>
-                    <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
-                    <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
-                </span>
+            <div class="review-card__rating">
+
+                @for (star of [1,2,3,4,5]; track star) {
+
+                <i class="fa-star text-warning" [class.fa-solid]="star <= review.rating"
+                    [class.fa-regular]="star > review.rating">
+                </i>
+
+                }
+
             </div>
+
+            <p class="review-card__comment">
+                {{ review.comment }}
+            </p>
+
         </div>
+
     </ng-template>
 </p-carousel>
