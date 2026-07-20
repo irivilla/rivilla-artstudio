@@ -45,54 +45,53 @@ export class FormPresupuesto implements OnInit{
     });
   }
 
-ngOnInit(): void {
+  ngOnInit(): void {
 
-  // Si el componente padre indica un servicio por defecto
-  if (this.servicioId) {
+    // Si el componente padre indica un servicio por defecto
+    if (this.servicioId) {
 
-    const servicio = this.servicios.find(s => s.id === this.servicioId);
+      const servicio = this.servicios.find(s => s.id === this.servicioId);
 
-    if (servicio) {
+      if (servicio) {
 
-      // Seleccionamos el servicio en el formulario
-      this.formulario.patchValue({
-        servicio
-      });
+        // Seleccionamos el servicio en el formulario
+        this.formulario.patchValue({
+          servicio
+        });
 
-      // Configuramos el formulario según el servicio
-      this.actualizarFormulario(servicio);
+        // Configuramos el formulario según el servicio
+        this.actualizarFormulario(servicio);
+
+      }
 
     }
+
+    // Escuchamos los cambios del selector de servicios
+    this.formulario.get('servicio')?.valueChanges.subscribe((servicio: Servicio) => {
+
+      if (servicio) {
+        this.actualizarFormulario(servicio);
+      }
+
+    });
 
   }
-
-  // Escuchamos los cambios del selector de servicios
-  this.formulario.get('servicio')?.valueChanges.subscribe((servicio: Servicio) => {
-
-    if (servicio) {
-      this.actualizarFormulario(servicio);
-    }
-
-  });
-
-}
 
 
 
   onSubmit() {
     if (this.formulario.valid) {
       this.formSubmitted.emit(this.formulario.value);
-      console.log('Formulario enviado:', this.formulario.value);
+      console.log('Formulario enviado:'+ JSON.stringify(this.formulario.value));
     }
   }
-get selectedLang(): string {
-  return this.languageService.getCurrentLanguage();
-}
-  get necesitaInvitados(): boolean {
-  return this.servicioId === 1;
-}
 
-
+  get selectedLang(): string {
+    return this.languageService.getCurrentLanguage();
+  }
+    get necesitaInvitados(): boolean {
+    return this.servicioId === 1;
+  }
 
  private actualizarFormulario(servicio: Servicio): void {
 
@@ -118,4 +117,19 @@ get selectedLang(): string {
   invitados?.updateValueAndValidity();
 
 }
+
+  public clear(): void {
+    this.formulario.reset({
+      nombre: '',
+      email: '',
+      telefono: '',
+      servicio: null,
+      fecha: this.today,
+      lugar: '',
+      mensaje: '',
+      numeroInvitados: '100' // Reset to default value
+    });
+  }
+
+  
 }
