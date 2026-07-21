@@ -9,8 +9,6 @@ import { FormPresupuesto } from '../../../shared/components/form-presupuesto/for
 })
 export class Cuadro {
 
-  procesarDatos(datos: any) {
-  console.log('Datos recibidos:', datos);
-}
+
 
 }

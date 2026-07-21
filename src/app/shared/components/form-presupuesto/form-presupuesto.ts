@@ -9,6 +9,7 @@ import { Select } from 'primeng/select';
 import { DatePickerModule } from 'primeng/datepicker';
 import { LanguageService } from '../../services/languageService/language-service';
 import {TranslateModule} from '@ngx-translate/core';
+import { PresupuestoService } from '../../services/presupuestoService/presupuesto-service';
 
 
 @Component({
@@ -28,11 +29,9 @@ export class FormPresupuesto implements OnInit{
   servicios: Servicio[] = SERVICIOS;
 
   mostrarNumeroInvitados: boolean = false;
+  isValid: boolean = true;
 
-
-  @Output() formSubmitted = new EventEmitter<any>();
-
-  constructor(private fb: FormBuilder, private languageService: LanguageService) {
+  constructor(private fb: FormBuilder, private languageService: LanguageService, private presupuestoService: PresupuestoService) {
     this.formulario = this.fb.group({
       nombre: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -79,12 +78,29 @@ export class FormPresupuesto implements OnInit{
 
 
 
-  onSubmit() {
-    if (this.formulario.valid) {
-      this.formSubmitted.emit(this.formulario.value);
-      console.log('Formulario enviado:'+ JSON.stringify(this.formulario.value));
-    }
+  onSubmit(): void {
+
+  if (this.formulario.invalid) {
+    // controlar errores 
+    this.isValid = false;
+    console.error('Formulario inválido', this.formulario.errors);
+    return;
+  }else{
+    this.isValid = true;
+    this.presupuestoService.enviar(this.formulario.value).subscribe({
+
+      next: (respuesta) => {
+        console.log('Respuesta API:', respuesta);
+      },
+
+      error: (error) => {
+        console.error(error);
+      }
+
+    });
   }
+
+}
 
   get selectedLang(): string {
     return this.languageService.getCurrentLanguage();
@@ -93,6 +109,7 @@ export class FormPresupuesto implements OnInit{
     return this.servicioId === 1;
   }
 
+  //cuando se selecciona un servicio
  private actualizarFormulario(servicio: Servicio): void {
 
   const invitados = this.formulario.get('numeroInvitados');
@@ -131,5 +148,10 @@ export class FormPresupuesto implements OnInit{
     });
   }
 
+
+  //para validar errores en html
+  get form() {
+  return this.formulario.controls;
+}
   
 }

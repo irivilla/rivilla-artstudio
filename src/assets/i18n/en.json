@@ -121,12 +121,15 @@
         "NUMBER-GUESTS": "Number of Guests",
         "DATE": "Event Date",
         "LOCATION": "Event Location",
-        "MESSAGE": "Tell us your idea or any detail you consider important for your budget",
-        "SUBMIT": "Submit",
-        "REQUIRED": "This field is required",
-        "INVALID-EMAIL": "Invalid email address",
+        "MESSAGE": "Tell us your idea",
         "CLEAR": "CLEAR",
-        "SENT": "SENT",
-        "SUCCESS": "Form submitted successfully!"
+        "SENT": "SUBMIT",
+        "SUCCESS": "Form submitted successfully!",
+         "ERRORS":{
+            "REQUIRED": "This field is required",
+            "INVALID-EMAIL": "Invalid email address"
+
+
+        }
     }
 }

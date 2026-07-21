@@ -1,10 +1,27 @@
-<form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="mx-3">
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
     <div class="row mb-3 ">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="col-12 col-md-6">
             <label for="nombre" class="form-label">{{ 'FORM-PRESUPUESTO.NAME' | translate }}*</label>
-            <input id="nombre" formControlName="nombre" class="form-control" />
+            <input id="nombre" formControlName="nombre" class="form-control" [ngClass]="{
+            'is-invalid': !isValid
+                ? form.nombre.errors
+                : ((form.nombre.dirty || form.nombre.touched) && form.nombre.errors),
+
+            'is-valid': isValid
+                ? !form.nombre.errors
+                : ((form.nombre.dirty || form.nombre.touched) && !form.nombre.errors)
+        }">
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        @if ((form.nombre.dirty || form.nombre.touched || !isValid) && form.nombre.hasError('required')) {
+        <div class="invalid-feedback">
+            {{ 'FORM-PRESUPUESTO.ERRORS.REQUIRED' | translate }}
+        </div>
+
+        }
+
+
+        <div class="col-12 col-md-6">
             <label for="email" class="form-label">{{ 'FORM-PRESUPUESTO.EMAIL' | translate }}*</label>
             <input id="email" formControlName="email" class="form-control" />
         </div>
@@ -12,11 +29,11 @@
     </div>
 
     <div class="row mb-3">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="col-12 col-md-6">
             <label for="telefono" class="form-label">{{ 'FORM-PRESUPUESTO.PHONE' | translate }}*</label>
             <input id="telefono" formControlName="telefono" class="form-control" />
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="col-12 col-md-6">
             <label for="servicio" class="form-label">{{ 'FORM-PRESUPUESTO.SERVICE' | translate }}*</label>
             <p-select formControlName="servicio" [options]="servicios" optionLabel="nombre"
                 placeholder="Selecciona un servicio" styleClass="w-100">
@@ -34,7 +51,7 @@
     @if (mostrarNumeroInvitados) {
     <div class="row mb-3">
 
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="col-12 col-md-6">
 
             <label for="numeroInvitados">{{ 'FORM-PRESUPUESTO.NUMBER-GUESTS' | translate }}*</label>
 
@@ -46,7 +63,7 @@
     }
 
     <div class="row mb-3">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="col-12 col-md-6">
             <label for="fecha" class="form-label">
                 {{ 'FORM-PRESUPUESTO.DATE' | translate }}*
             </label>
@@ -55,7 +72,7 @@
                 dateFormat="dd/mm/yy" styleClass="w-100">
             </p-datepicker>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="col-12 col-md-6">
             <label for="lugar" class="form-label">{{ 'FORM-PRESUPUESTO.LOCATION' | translate }}*</label>
             <input id="lugar" formControlName="lugar" class="form-control" />
         </div>
@@ -67,9 +84,23 @@
         </div>
     </div>
 
-    <app-button class="m-2" type="secondary" (click)="clear()" [text]="'FORM-PRESUPUESTO.CLEAR' | translate">
+    <div class="row mt-4">
 
-    </app-button><app-button class="m-2" type="primary" (click)="onSubmit()"
-        [text]="'FORM-PRESUPUESTO.SENT' | translate"></app-button>
-    <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
+        <div class="col-12 d-flex justify-content-center gap-3 flex-wrap">
+
+            <app-button type="secondary" (click)="clear()" [text]="'FORM-PRESUPUESTO.CLEAR' | translate">
+            </app-button>
+            <!--    <button type="submit">
+                Enviar prueba
+            </button> -->
+
+            <app-button type="primary" buttonType="submit" (click)="onSubmit()"
+                [text]="'FORM-PRESUPUESTO.SENT' | translate">
+            </app-button>
+
+        </div>
+
+    </div>
+
+
 </form>

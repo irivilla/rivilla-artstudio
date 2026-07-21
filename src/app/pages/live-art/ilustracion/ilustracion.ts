@@ -21,9 +21,6 @@ get selectedLang(): string {
   return this.languageService.getCurrentLanguage();
 }
 
-procesarDatos(datos: any) {
-  console.log('Datos recibidos:', datos);
-}
 
 
 }

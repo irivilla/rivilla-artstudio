@@ -1,22 +1,40 @@
 @import '../../../styles/colors.scss';
 
 
-.container-header{
+.container-home{
 
     text-align: center;
+    padding: 0;
+    margin: 0 ;
+    
+       
+       
 }
 
+.container-home__content {
+
+    width: 100%;
+    max-width: 1320px; // Bootstrap XXL
+    margin: 0 auto;
+
+    padding: 0;
+  
+
+}
 
 .logo-header{
    
-    margin: 1rem;;
+    padding: 2rem 0;
     display: flex;
-    justify-content: center;
-    align-content: center;
+        justify-content: center;
+        align-content: center;
+    
     //para que no se corte la imagnen y aparezca completa
     img {
-        width: 10%;
-        height: auto
+        width: 100px;
+            max-width: 15%;
+            height: auto;
+        
     }
     
     
@@ -35,14 +53,9 @@
 .fas{
     color: $primary-light;
 }
- //lg ≥992px LG
- @media (min-width: 992px) {
-    .row-cards {
-            margin: 1rem 11rem 3rem 11rem;
-        }
 
-    
- }
+
+
 
 
  /* más pequeño que LG */

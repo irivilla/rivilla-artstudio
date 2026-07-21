@@ -1,8 +1,9 @@
-<div class="wrapper">
-    <div class="coltainer container-header">
-        <div class="row">
-            <app-carrousel></app-carrousel>
-        </div>
+<div class="container-fluid container-home">
+    <app-carrousel></app-carrousel>
+
+    <div class="container-fluid container-home__content">
+
+
         <div class="row">
             <div class="col-12 logo-header img-fluid">
                 <img src="../../../assets/img/logo/logo1.webp" alt="logo">
@@ -10,15 +11,15 @@
         </div>
         <div class="row">
             <div class="col-12 slogan-header">
-                <div class="row-12">
-                    <p>
-                        "{{ 'PAGES.HOME.SLOGAN1' | translate }}
-                    </p>
 
-                </div>
-                <div class="row-12">
-                    <p>{{ 'PAGES.HOME.SLOGAN2' | translate }}"</p>
-                </div>
+                <p>
+                    "{{ 'PAGES.HOME.SLOGAN1' | translate }}
+                </p>
+
+
+
+                <p>{{ 'PAGES.HOME.SLOGAN2' | translate }}"</p>
+
             </div>
         </div>
         <div class="row mt-5">
@@ -29,8 +30,8 @@
 
             </div>
         </div>
-        <div class="row justify-content-center g-4 row-cards">
-            <div class="col-12 col-md-6 col-lg-4 card-photo-home" *ngFor="let card of cards">
+        <div class="row justify-content-center g-4 ">
+            <div class="col-10 col-md-6 col-lg-4 card-photo-home" *ngFor="let card of cards">
                 <app-card-photo [title]="card.title" [imageSrc]="card.image" [route]="card.route"></app-card-photo>
             </div>
         </div>
@@ -44,7 +45,7 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center ">
-            <div class="col-8">
+            <div class="col-10 col-lg-8">
                 <app-accordion></app-accordion>
             </div>
         </div>
@@ -71,7 +72,5 @@
             </div>
         </div>
 
-
     </div>
-
 </div>

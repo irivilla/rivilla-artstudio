@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
@@ -9,10 +9,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './button.scss'
 })
 export class Button {
+    @Input() buttonType: 'button' | 'submit' = 'button';
    @Input() type:  'primary'  |  'secondary' =  'primary';
    @Input()  text:  string  = 'Click';
   @Input() placement:  'header'  |  'footer' |  'sidebar'  =  'header';
    @Input()  customHoverColor?: string;
+
+   @Output() click = new EventEmitter<void>();
 
    isHovered  =  false;
 
@@ -30,5 +33,9 @@ export class Button {
       }
        return  {};
    }
+
+   onClick(): void {
+  this.click.emit();
+}
 }
 

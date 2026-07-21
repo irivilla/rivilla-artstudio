@@ -16,27 +16,29 @@
 
     
 
-*, html {
+* {
     margin: 0;
     padding: 0;
     max-width: 100%;
+    //box-sizing: border-box;
     
 }
 
-body {
-    position: relative;
+body,html {
+    //position: relative;
+    overflow-x: hidden;
     
 }
 
 .wrapper {
     width: 100%;
-    padding: 0;
-    margin: 0 auto;
+
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-}
+/* img {
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+} */
