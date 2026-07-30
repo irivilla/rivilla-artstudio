@@ -5,10 +5,10 @@ import {Subscription} from 'rxjs';
 import { CardService } from "../../shared/components/card-service/card-service";
 import { Button } from "../../shared/components/button/button";
 import {LanguageService} from '../../shared/services/languageService/language-service';
-
+import { Breadcrumb } from '../../shared/components/breadcrumb/breadcrumb';
 @Component({
   selector: 'app-live-art',
-  imports: [CommonModule, TranslateModule, CardService, Button],
+  imports: [CommonModule, TranslateModule, CardService, Button,Breadcrumb ],
   templateUrl: './live-art.html',
   styleUrl: './live-art.scss'
 })

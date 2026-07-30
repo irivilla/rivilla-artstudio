@@ -1,0 +1,31 @@
+<nav class="breadcrumb-container">
+
+    <a routerLink="/">
+        {{ 'PAGES.HOME.TITLE' | translate }}
+    </a>
+
+    @for (item of breadcrumbs; track item.url) {
+
+    <span class="separator">
+        ›
+    </span>
+
+    @if ($last) {
+
+    <span class="current">
+        {{ item.label | translate }}
+    </span>
+
+    } @else {
+
+    <a [routerLink]="item.url">
+
+        {{ item.label | translate }}
+
+    </a>
+
+    }
+
+    }
+
+</nav>
