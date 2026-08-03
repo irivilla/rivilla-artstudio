@@ -6,9 +6,7 @@
 
     @for (item of breadcrumbs; track item.url) {
 
-    <span class="separator">
-        ›
-    </span>
+    <span class="separator">›</span>
 
     @if ($last) {
 
@@ -19,9 +17,7 @@
     } @else {
 
     <a [routerLink]="item.url">
-
         {{ item.label | translate }}
-
     </a>
 
     }

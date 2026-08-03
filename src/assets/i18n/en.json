@@ -11,6 +11,16 @@
     "COMMISSIONS": "COMMISSIONS",
     "ABOUT": "ABOUT US"
 
+},"LISTADO-BLOQUES": {
+    "LIVE-ART": "Live-Art",
+    "INVITATION": "Invitations",
+    "CRAFTS": "Crafts",
+    "COMMISSIONS": "Commissions",
+    "ABOUT": "About Us",
+    "QUESTIONS": "Frequent Questions",
+    "COOKIES": "Cookies Policy",
+    "POLICIES": "Privacy Policies"
+
 },
 "LISTADO-SERVICIOS": {
     "TITLE": "List of services",

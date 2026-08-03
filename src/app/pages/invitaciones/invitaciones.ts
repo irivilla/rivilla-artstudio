@@ -5,10 +5,12 @@ import {CardService} from '../../shared/components/card-service/card-service';
 import {Button} from '../../shared/components/button/button';
 import {Subscription} from 'rxjs';
 import {LanguageService} from '../../shared/services/languageService/language-service';
+import {Breadcrumb} from '../../shared/components/breadcrumb/breadcrumb';
+
 
 @Component({
   selector: 'app-invitaciones',
-  imports: [CommonModule, TranslateModule, CardService, Button],
+  imports: [CommonModule, TranslateModule, CardService, Button, Breadcrumb],
   templateUrl: './invitaciones.html',
   styleUrl: './invitaciones.scss'
 })

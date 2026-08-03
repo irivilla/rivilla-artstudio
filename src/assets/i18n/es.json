@@ -10,6 +10,16 @@
     "COMMISSIONS": "ENCARGOS",
     "ABOUT": "CONÓCENOS"
 
+},"LISTADO-BLOQUES": {
+    "LIVE-ART": "Live-Art",
+    "INVITATION": "Invitaciones",
+    "CRAFTS": "Papelería",
+    "COMMISSIONS": "Encargos",
+    "ABOUT": "Conócenos",
+    "QUESTIONS": "Preguntas Frecuentes",
+    "COOKIES": "Política de Cookies",
+    "POLICIES": "Políticas de Privacidad"
+
 },
 "LISTADO-SERVICIOS": {
     "TITLE": "Listado de servicios",
@@ -20,7 +30,7 @@
     "INVITATIONS": "Invitaciones en papel",
     "DIGITAL": "Invitaciones web",
     "SEATING-PLAN": "Seating Plan",
-    "MENU": "Menú",
+    "MENU": "Minuta",
     "OTHER": "Otros servicios"
 },
 "PAGES" : {
