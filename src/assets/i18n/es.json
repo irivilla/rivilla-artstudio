@@ -127,7 +127,9 @@
         "EMAIL": "Correo electrónico",
         "PHONE": "Teléfono",
         "SERVICE": "Servicio",
+        "SELECT-SERVICE": "Selecciona un servicio",
         "NUMBER-GUESTS": "Número de invitados",
+        "NUMBER-COPIES": "Número de unidades",
         "DATE": "Fecha del evento",
         "LOCATION": "Lugar del evento",
         "MESSAGE": "Cuentanos tu idea",
@@ -137,7 +139,11 @@
 
         "ERRORS":{
             "REQUIRED": "Este campo es obligatorio",
-            "INVALID-EMAIL": "Correo electrónico inválido"
+            "INVALID-EMAIL": "Correo electrónico inválido",
+            "INVALID-GUESTS": "El número de invitados debe ser al menos 1",
+            "INVALID-COPIES": "El número de copias debe ser al menos 15",
+            "INVALID-DATE": "Se necesita una fecha"
+
 
 
         }

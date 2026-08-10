@@ -29,7 +29,10 @@ export class FormPresupuesto implements OnInit{
   servicios: Servicio[] = SERVICIOS;
 
   mostrarNumeroInvitados: boolean = false;
+  mostrarNumeroCopias: boolean = false;
+  requireLugar: boolean = false;
   isValid: boolean = true;
+  isSubmitted: boolean = false;
 
   constructor(private fb: FormBuilder, private languageService: LanguageService, private presupuestoService: PresupuestoService) {
     this.formulario = this.fb.group({
@@ -40,7 +43,8 @@ export class FormPresupuesto implements OnInit{
       fecha: [this.today, Validators.required],
       lugar: ['', Validators.required],
       mensaje: [''],
-      numeroInvitados: ['100', [Validators.pattern('^[0-9]+$'), Validators.min(1)]] // Default value set to 100
+      numeroInvitados: ['100', [Validators.pattern('^[0-9]+$'), Validators.min(1), Validators.required]], // Default value set to 100
+      numeroCopias: ['15', [Validators.pattern('^[0-9]+$'), Validators.min(15), Validators.required]] // Default value set to 1
     });
   }
 
@@ -79,14 +83,17 @@ export class FormPresupuesto implements OnInit{
 
 
   onSubmit(): void {
+    this.isSubmitted = true;
 
   if (this.formulario.invalid) {
     // controlar errores 
     this.isValid = false;
+    this.formulario.markAllAsTouched();
     console.error('Formulario inválido', this.formulario.errors);
     return;
   }else{
     this.isValid = true;
+    console.log('Formulario válido', this.formulario.value);
     this.presupuestoService.enviar(this.formulario.value).subscribe({
 
       next: (respuesta) => {
@@ -113,11 +120,17 @@ export class FormPresupuesto implements OnInit{
  private actualizarFormulario(servicio: Servicio): void {
 
   const invitados = this.formulario.get('numeroInvitados');
+  const copias = this.formulario.get('numeroCopias');
+  const lugar = this.formulario.get('lugar');
 
   // Reiniciamos el estado del formulario dinámico
   this.mostrarNumeroInvitados = false;
+  this.mostrarNumeroCopias = false;
+  this.requireLugar = true;
 
   invitados?.clearValidators();
+  copias?.clearValidators();
+  lugar?.clearValidators();
 
   // Configuración para servicios que requieren número de invitados
   if (servicio.requiereNumeroInvitados) {
@@ -131,11 +144,38 @@ export class FormPresupuesto implements OnInit{
 
   }
 
+  // Configuración para servicios que requieren número de copias
+  if (servicio.requiereNumeroCopias) {
+    //no necesita lugar de evento, para que no de error de validacion
+
+    this.mostrarNumeroCopias = true;
+    copias?.setValidators([
+      Validators.required,
+      Validators.min(15)
+    ]);
+  }
+
+  if (servicio.requiereLugar) {
+    this.requireLugar = true;
+    lugar?.setValidators([
+      Validators.required
+    ]);
+  }else{
+    this.requireLugar = false;
+    this.formulario.get('lugar')?.setValue('-'); //no es necesario
+  }
+
+
+
+
   invitados?.updateValueAndValidity();
 
 }
 
   public clear(): void {
+    //     Reset the form to its initial state, including the default value for numeroInvitados and pristine state for the form controls  
+
+
     this.formulario.reset({
       nombre: '',
       email: '',
@@ -144,8 +184,18 @@ export class FormPresupuesto implements OnInit{
       fecha: this.today,
       lugar: '',
       mensaje: '',
-      numeroInvitados: '100' // Reset to default value
+      numeroInvitados: '100', // Reset to default value
+      numeroCopias: '15' // Reset to default value
     });
+
+      this.formulario.markAsPristine();
+      this.formulario.markAsUntouched();
+      
+
+  this.isSubmitted = false;
+   this.mostrarNumeroInvitados = false;
+  this.mostrarNumeroCopias= false;
+  this.requireLugar = false;
   }
 
 

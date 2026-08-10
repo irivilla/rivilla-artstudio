@@ -1,42 +1,107 @@
 <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
 
-    <div class="row mb-3 ">
+    <div class="row mb-3">
         <div class="col-12 col-md-6">
-            <label for="nombre" class="form-label">{{ 'FORM-PRESUPUESTO.NAME' | translate }}*</label>
+            <label for="nombre" class="form-label">
+                {{ 'FORM-PRESUPUESTO.NAME' | translate }}*
+            </label>
             <input id="nombre" formControlName="nombre" class="form-control" [ngClass]="{
-            'is-invalid': !isValid
-                ? form.nombre.errors
-                : ((form.nombre.dirty || form.nombre.touched) && form.nombre.errors),
-
-            'is-valid': isValid
-                ? !form.nombre.errors
-                : ((form.nombre.dirty || form.nombre.touched) && !form.nombre.errors)
-        }">
+                    'is-invalid': !isValid
+                        ? form.nombre.errors
+                        : ((form.nombre.dirty || form.nombre.touched) && form.nombre.errors),
+    
+                    'is-valid': isValid
+                        ? !form.nombre.errors
+                        : ((form.nombre.dirty || form.nombre.touched) && !form.nombre.errors)
+                }">
+            <div class="invalid-feedback error-message" [class.visible]="
+                    (form.nombre.dirty ||
+                    form.nombre.touched ||
+                    !isValid) &&
+                    form.nombre.hasError('required')
+                ">
+                {{ 'FORM-PRESUPUESTO.ERRORS.REQUIRED' | translate }}
+            </div>
         </div>
-        @if ((form.nombre.dirty || form.nombre.touched || !isValid) && form.nombre.hasError('required')) {
-        <div class="invalid-feedback">
-            {{ 'FORM-PRESUPUESTO.ERRORS.REQUIRED' | translate }}
-        </div>
-
-        }
-
-
         <div class="col-12 col-md-6">
-            <label for="email" class="form-label">{{ 'FORM-PRESUPUESTO.EMAIL' | translate }}*</label>
-            <input id="email" formControlName="email" class="form-control" />
-        </div>
+            <label for="email" class="form-label">
+                {{ 'FORM-PRESUPUESTO.EMAIL' | translate }}*
+            </label>
 
+            <input id="email" formControlName="email" class="form-control" [ngClass]="{
+                    'is-invalid': !isValid
+                        ? form.email.errors
+                        : ((form.email.dirty || form.email.touched) && form.email.errors),
+    
+                    'is-valid': isValid
+                        ? !form.email.errors
+                        : ((form.email.dirty || form.email.touched) && !form.email.errors)
+                }">
+
+            <div class="invalid-feedback error-message" [class.visible]="
+                    (form.email.dirty ||
+                    form.email.touched ||
+                    !isValid) &&
+                    form.email.hasError('required')">
+                {{ 'FORM-PRESUPUESTO.ERRORS.INVALID-EMAIL' | translate }}
+
+            </div>
+
+        </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-12 col-md-6">
             <label for="telefono" class="form-label">{{ 'FORM-PRESUPUESTO.PHONE' | translate }}*</label>
-            <input id="telefono" formControlName="telefono" class="form-control" />
+            <input id="telefono" formControlName="telefono" class="form-control" [ngClass]="{
+                    'is-invalid': !isValid
+                        ? form.telefono.errors
+                        : ((form.telefono.dirty || form.telefono.touched) && form.telefono.errors),
+    
+                    'is-valid': isValid
+                        ? !form.telefono.errors
+                        : ((form.telefono.dirty || form.telefono.touched) && !form.telefono.errors)
+                }" />
+            <div class="invalid-feedback error-message" [class.visible]="
+                    (form.telefono.dirty ||
+                    form.telefono.touched ||
+                    !isValid) &&
+                    form.telefono.hasError('required')">
+                {{ 'FORM-PRESUPUESTO.ERRORS.REQUIRED' | translate }}
+            </div>
         </div>
+
+        <div class="col-12 col-md-6">
+            <label for="fecha" class="form-label">
+                {{ 'FORM-PRESUPUESTO.DATE' | translate }}*
+            </label>
+
+            <p-datepicker formControlName="fecha" inputId="fecha" appendTo="body" [showIcon]="true" iconDisplay="input"
+                dateFormat="dd/mm/yy" styleClass="w-100" [ngClass]="{
+                            'is-invalid': !isValid
+                                ? form.fecha.errors
+                                : ((form.fecha.dirty || form.fecha.touched) && form.fecha.errors),
+            
+                            'is-valid': isValid
+                                ? !form.fecha.errors
+                                : ((form.fecha.dirty || form.fecha.touched) && !form.fecha.errors)
+                        }">
+            </p-datepicker>
+            <div class="invalid-feedback error-message" [class.visible]="
+                            (form.fecha.dirty ||
+                            form.fecha.touched ||
+                            !isValid) &&
+                            form.fecha.hasError('required')">
+                {{ 'FORM-PRESUPUESTO.ERRORS.INVALID-DATE' | translate }}
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
         <div class="col-12 col-md-6">
             <label for="servicio" class="form-label">{{ 'FORM-PRESUPUESTO.SERVICE' | translate }}*</label>
             <p-select formControlName="servicio" [options]="servicios" optionLabel="nombre"
-                placeholder="Selecciona un servicio" styleClass="w-100">
+                placeholder="{{ 'FORM-PRESUPUESTO.SELECT-SERVICE' | translate }}" styleClass="w-100">
                 <ng-template let-servicio #item>
                     {{ servicio.nombre | translate }}
                 </ng-template>
@@ -48,35 +113,85 @@
         </div>
     </div>
 
-    @if (mostrarNumeroInvitados) {
     <div class="row mb-3">
-
+        @if (mostrarNumeroInvitados) {
         <div class="col-12 col-md-6">
 
             <label for="numeroInvitados">{{ 'FORM-PRESUPUESTO.NUMBER-GUESTS' | translate }}*</label>
 
             <input id="numeroInvitados" type="number" formControlName="numeroInvitados" class="form-control" min="1"
-                defaultValue="100" autocomplete="off" inputmode="numeric" name="numeroInvitados">
+                defaultValue="100" autocomplete="off" inputmode="numeric" name="numeroInvitados" [ngClass]="{
+                            'is-invalid': !isValid
+                                ? form.numeroInvitados.errors
+                                : ((form.numeroInvitados.dirty || form.numeroInvitados.touched ) && form.numeroInvitados.errors),
+            
+                            'is-valid': isValid
+                                ? !form.numeroInvitados.errors
+                                : ((form.numeroInvitados.dirty || form.numeroInvitados.touched ) && !form.numeroInvitados.errors)
+                        }">
+            <div class="invalid-feedback error-message" [class.visible]="
+                            (form.numeroInvitados.dirty ||
+                            form.numeroInvitados.touched ||
+                            !isValid) &&
+                            (form.numeroInvitados.hasError('min') || form.numeroInvitados.hasError('required'))">
+                {{ 'FORM-PRESUPUESTO.ERRORS.INVALID-GUESTS' | translate }}
+
+            </div>
+
         </div>
+        }
 
-    </div>
-    }
-
-    <div class="row mb-3">
+        @if (mostrarNumeroCopias) {
         <div class="col-12 col-md-6">
-            <label for="fecha" class="form-label">
-                {{ 'FORM-PRESUPUESTO.DATE' | translate }}*
-            </label>
 
-            <p-datepicker formControlName="fecha" inputId="fecha" appendTo="body" [showIcon]="true" iconDisplay="input"
-                dateFormat="dd/mm/yy" styleClass="w-100">
-            </p-datepicker>
+            <label for="numeroCopias">{{ 'FORM-PRESUPUESTO.NUMBER-COPIES' | translate }}*</label>
+
+            <input id="numeroCopias" type="number" formControlName="numeroCopias" class="form-control" min="15"
+                defaultValue="1" autocomplete="off" inputmode="numeric" name="numeroCopias" [ngClass]="{
+                                        'is-invalid': !isValid
+                                            ? form.numeroCopias.errors
+                                            : ((form.numeroCopias.dirty || form.numeroCopias.touched) && form.numeroCopias.errors),
+                        
+                                        'is-valid': isValid
+                                            ? !form.numeroCopias.errors
+                                            : ((form.numeroCopias.dirty || form.numeroCopias.touched) && !form.numeroCopias.errors)
+                                    }">
+            <div class="invalid-feedback error-message" [class.visible]="
+                                        (form.numeroCopias.dirty ||
+                                        form.numeroCopias.touched ||
+                                        !isValid) &&
+                                        (form.numeroCopias.hasError('min') || form.numeroCopias.hasError('required'))">
+                {{ 'FORM-PRESUPUESTO.ERRORS.INVALID-COPIES' | translate }}
+
+            </div>
+
         </div>
+        }
+        @if (requireLugar) {
         <div class="col-12 col-md-6">
             <label for="lugar" class="form-label">{{ 'FORM-PRESUPUESTO.LOCATION' | translate }}*</label>
-            <input id="lugar" formControlName="lugar" class="form-control" />
+            <input id="lugar" formControlName="lugar" class="form-control" [ngClass]="{
+                    'is-invalid': !isValid
+                        ? form.lugar.errors
+                        : ((form.lugar.dirty || form.lugar.touched) && form.lugar.errors),
+    
+                    'is-valid': isValid
+                        ? !form.lugar.errors
+                        : ((form.lugar.dirty || form.lugar.touched) && !form.lugar.errors)
+                }" />
+            <div class="invalid-feedback error-message" [class.visible]="
+                    (form.lugar.dirty ||
+                    form.lugar.touched ||
+                    !isValid) &&
+                    form.lugar.hasError('required')">
+                {{ 'FORM-PRESUPUESTO.ERRORS.REQUIRED' | translate }}
+            </div>
         </div>
+        }
     </div>
+
+
+
     <div class="row mb-3">
         <div class="col-12">
             <label for="mensaje" class="form-label">{{ 'FORM-PRESUPUESTO.MESSAGE' | translate }}</label>

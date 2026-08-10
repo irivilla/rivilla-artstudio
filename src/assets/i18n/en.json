@@ -128,7 +128,9 @@
         "EMAIL": "Email",
         "PHONE": "Phone",
         "SERVICE": "Service",
+        "SELECT-SERVICE": "Select a service",
         "NUMBER-GUESTS": "Number of Guests",
+        "NUMBER-COPIES": "Number of Units",
         "DATE": "Event Date",
         "LOCATION": "Event Location",
         "MESSAGE": "Tell us your idea",
@@ -137,7 +139,10 @@
         "SUCCESS": "Form submitted successfully!",
          "ERRORS":{
             "REQUIRED": "This field is required",
-            "INVALID-EMAIL": "Invalid email address"
+            "INVALID-EMAIL": "Invalid email address",
+            "INVALID-GUESTS": "Number of guests must be at least 1",
+            "INVALID-COPIES": "Number of copies must be at least 15",
+            "INVALID-DATE": "A date is required"
 
 
         }

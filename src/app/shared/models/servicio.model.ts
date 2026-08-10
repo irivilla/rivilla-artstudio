@@ -2,5 +2,7 @@
 export interface Servicio {
     id: number;
     nombre: string;
+    requiereLugar?: boolean;
     requiereNumeroInvitados?: boolean;
+    requiereNumeroCopias?: boolean;
 }

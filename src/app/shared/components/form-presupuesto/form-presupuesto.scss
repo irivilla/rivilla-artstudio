@@ -4,8 +4,7 @@
 
 form{
     width: 100%;
-   
-
+  
     label{
         color: $primary-dark;
         display: flex;
@@ -32,4 +31,23 @@ form{
     }
 
       
+}
+
+.invalid-feedback {
+    display: block;
+    text-align: left;
+    font-size: 0.75rem;
+}
+
+.error-message {
+    display: block;
+    min-height: 1.25rem;
+    margin-top: 0.25rem;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+}
+
+.error-message.visible {
+    visibility: visible;
+    opacity: 1;
 }
