@@ -7,11 +7,14 @@
       "config": {
         "distDir": "dist/web-rivilla-artstudio/browser"
       }
+    },
+    {
+      "src": "api/**/*.ts",
+      "use": "@vercel/node"
     }
   ],
   "rewrites": [
     {
-      
       "source": "/api/(.*)",
       "destination": "/api/$1"
     }
