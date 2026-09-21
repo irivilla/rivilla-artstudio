@@ -149,7 +149,9 @@
     },
     "TOASTS": {
         "SUCCESS": "Form submitted successfully!",
-        "ERROR": "Error submitting form. Please try again."
+        "SUCCESS.SUBTITLE": "We will contact you soon.",
+        "ERROR": "Error submitting form. Please try again.",
+        "ERROR.SUBTITLE": "Please check the form and try again."
     }
 
 }

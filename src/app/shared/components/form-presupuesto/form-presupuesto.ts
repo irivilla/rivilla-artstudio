@@ -103,7 +103,8 @@ export class FormPresupuesto implements OnInit{
 
          this.mostrarAlerta(
           'success',
-          'FORM-PRESUPUESTO.ALERTS.SUCCESS'
+          'TOASTS.SUCCESS',
+          'TOASTS.SUCCESS.SUBTITLE'
         );
       },
 
@@ -111,7 +112,8 @@ export class FormPresupuesto implements OnInit{
         console.error(error);
           this.mostrarAlerta(
             'error',
-            'FORM-PRESUPUESTO.ALERTS.ERROR'
+            'TOASTS.ERROR',
+            'TOASTS.ERROR.SUBTITLE'
           );
       }
 
@@ -215,11 +217,12 @@ export class FormPresupuesto implements OnInit{
   return this.formulario.controls;
 }
 
-private mostrarAlerta(icon: SweetAlertIcon, mensaje: string): void {
-  this.toastService.showAlert(
+private mostrarAlerta(icon: SweetAlertIcon, mensaje: string, text: string): void {
+  this.toastService.showAlertWithSubtitle(
     'center',
     icon,
     mensaje,
+    text,
     4000
   );
 }

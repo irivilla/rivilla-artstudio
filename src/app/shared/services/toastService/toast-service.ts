@@ -29,6 +29,26 @@ export class ToastService {
     });
   }
 
+  //alerta con subtitulo
+  showAlertWithSubtitle(
+    position: SweetAlertPosition,
+    icon: SweetAlertIcon,
+    title: string,
+    text: string,
+    timer: number = 1500
+  ) {
+
+    const titleTranslate = this.translate.instant(title, data);
+
+    return Swal.fire({
+      position,
+      icon,
+      title: titleTranslate,
+      showConfirmButton: false,
+      timer
+    });
+  }
+
   //alerta con datos
   showAlertWithData(
     position: SweetAlertPosition,

@@ -151,6 +151,8 @@
     },
 "TOASTS": {
         "SUCCESS": "¡Formulario enviado con éxito!",
-        "ERROR": "Error al enviar el formulario. Por favor, inténtalo de nuevo."
+        "SUCCESS.SUBTITLE": "Nos pondremos en contacto contigo pronto",
+        "ERROR": "Error al enviar el formulario",
+        "ERROR.SUBTITLE": "Por favor, revisa los campos e inténtalo de nuevo"
     }
 }
