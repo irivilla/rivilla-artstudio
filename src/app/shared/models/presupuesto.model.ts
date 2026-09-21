@@ -9,4 +9,5 @@ export interface Presupuesto {
   lugar: string;
   mensaje: string;
   numeroInvitados?: number;
+  numeroCopias?: number;
 }
