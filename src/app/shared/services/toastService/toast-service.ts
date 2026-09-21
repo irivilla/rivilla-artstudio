@@ -38,12 +38,14 @@ export class ToastService {
     timer: number = 1500
   ) {
 
-    const titleTranslate = this.translate.instant(title, data);
+    const titleTranslate = this.translate.instant(title);
+  const textTranslate = this.translate.instant(text);
 
     return Swal.fire({
       position,
       icon,
       title: titleTranslate,
+      text: textTranslate,
       showConfirmButton: false,
       timer
     });
