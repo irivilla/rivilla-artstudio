@@ -146,5 +146,10 @@
 
 
         }
+    },
+    "TOASTS": {
+        "SUCCESS": "Form submitted successfully!",
+        "ERROR": "Error submitting form. Please try again."
     }
+
 }

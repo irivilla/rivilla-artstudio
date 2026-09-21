@@ -10,6 +10,8 @@ import { DatePickerModule } from 'primeng/datepicker';
 import { LanguageService } from '../../services/languageService/language-service';
 import {TranslateModule} from '@ngx-translate/core';
 import { PresupuestoService } from '../../services/presupuestoService/presupuesto-service';
+import { ToastService } from '../../services/toastService/toast-service';
+import { SweetAlertIcon } from 'sweetalert2';
 
 
 @Component({
@@ -34,7 +36,7 @@ export class FormPresupuesto implements OnInit{
   isValid: boolean = true;
   isSubmitted: boolean = false;
 
-  constructor(private fb: FormBuilder, private languageService: LanguageService, private presupuestoService: PresupuestoService) {
+  constructor(private fb: FormBuilder, private languageService: LanguageService, private presupuestoService: PresupuestoService, private toastService: ToastService ) {
     this.formulario = this.fb.group({
       nombre: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -98,10 +100,19 @@ export class FormPresupuesto implements OnInit{
 
       next: (respuesta) => {
         console.log('Respuesta API:', respuesta);
+
+         this.mostrarAlerta(
+          'success',
+          'FORM-PRESUPUESTO.ALERTS.SUCCESS'
+        );
       },
 
       error: (error) => {
         console.error(error);
+          this.mostrarAlerta(
+            'error',
+            'FORM-PRESUPUESTO.ALERTS.ERROR'
+          );
       }
 
     });
@@ -202,6 +213,15 @@ export class FormPresupuesto implements OnInit{
   //para validar errores en html
   get form() {
   return this.formulario.controls;
+}
+
+private mostrarAlerta(icon: SweetAlertIcon, mensaje: string): void {
+  this.toastService.showAlert(
+    'center',
+    icon,
+    mensaje,
+    4000
+  );
 }
   
 }

@@ -148,5 +148,9 @@
 
         }
     
+    },
+"TOASTS": {
+        "SUCCESS": "¡Formulario enviado con éxito!",
+        "ERROR": "Error al enviar el formulario. Por favor, inténtalo de nuevo."
     }
 }
