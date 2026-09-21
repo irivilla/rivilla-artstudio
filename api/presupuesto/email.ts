@@ -1,5 +1,5 @@
 import { Resend } from 'resend';
-import { createPresupuestoEmail } from './template';
+import { createPresupuestoEmail } from './template.ts';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

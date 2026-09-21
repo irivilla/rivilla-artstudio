@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
-import { sendPresupuestoEmail } from './email';
+import { sendPresupuestoEmail } from './email.ts';
 
 export default async function handler(
   req: VercelRequest,
