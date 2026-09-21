@@ -41,7 +41,7 @@
             </div>
 
             <p class="review-card__comment">
-                {{ review.comment }}
+                {{ currentLanguage === 'en' ? review.commentEn : review.comment }}
             </p>
 
         </div>
