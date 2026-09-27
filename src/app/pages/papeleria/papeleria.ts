@@ -4,10 +4,12 @@ import {TranslateModule} from '@ngx-translate/core';
 import {Subscription} from 'rxjs';
 import {CardService} from '../../shared/components/card-service/card-service';
 import {LanguageService} from '../../shared/services/languageService/language-service';
+import {Breadcrumb} from '../../shared/components/breadcrumb/breadcrumb';
+
 
 @Component({
   selector: 'app-papeleria',
-  imports: [CommonModule, TranslateModule, CardService],
+  imports: [CommonModule, TranslateModule, CardService, Breadcrumb],
   templateUrl: './papeleria.html',
   styleUrl: './papeleria.scss'
 })
