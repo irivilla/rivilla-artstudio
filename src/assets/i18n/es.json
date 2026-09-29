@@ -109,10 +109,43 @@
         "TITLE": "Preguntas Frecuentes"
     },
     "POLICIES": {
-        "TITLE": "Políticas de Privacidad"
+        "TITLE": "Políticas de Privacidad",
+        "P1TITLE" : "Protección de Datos",
+        "P1": "De conformidad con lo dispuesto en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (RGPD), y en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos sobre el tratamiento de los datos personales facilitados a través de este sitio web.",
+        "P2TITLE" : "Responsable del tratamiento",
+        "P2": " La responsable del tratamiento de los datos personales es",
+        "P2-2": "Puede contactar con la responsable a través del correo electrónico",
+        "P2-3": "o del teléfono",
+        "P3TITLE" : "Finalidad del tratamiento",
+        "P3": "Los datos personales facilitados por la persona interesada serán tratados bajo la responsabilidad de Inés Rivilla López con la única finalidad de atender las solicitudes realizadas a través del sitio web, elaborar presupuestos y ofrecer las obras, servicios o productos solicitados.",
+        "P4TITLE" : "Base jurídica",
+        "P4": "La base jurídica del tratamiento será la aplicación de medidas precontractuales adoptadas a petición de la persona interesada, cuando los datos sean necesarios para atender su solicitud de presupuesto o información y, en su caso, para preparar la prestación de los servicios solicitados.",
+        "P5TITLE" : "Conservación de los datos",
+        "P5": "Los datos personales se conservarán durante el tiempo necesario para atender la solicitud realizada y, cuando proceda, durante el tiempo necesario para cumplir las obligaciones legales y determinar las posibles responsabilidades derivadas del tratamiento.",
+        "P6TITLE" : "Comunicación de los datos",
+        "P6": "Los datos personales no serán comunicados a terceros, salvo cuando exista una obligación legal o cuando resulte necesario para la prestación de un servicio solicitado, en cuyo caso se adoptarán las garantías correspondientes.",
+        "P7TITLE" : "Derechos de la persona interesada",
+        "P7": "La persona interesada puede ejercer, en los términos establecidos en la normativa aplicable, los derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición al tratamiento de sus datos personales.",
+        "P8TITLE" : "Derecho a presentar una reclamación",
+        "P8": "Si considera que el tratamiento de sus datos personales no se ajusta a la normativa vigente, puede presentar una reclamación ante la autoridad de control competente, la",
+        "P8-2": "Agencia Española de Protección de Datos (AEPD)",
+        "P9TITLE" : "Actualización de la Política de Privacidad",
+        "P9": "Esta Política de Privacidad podrá actualizarse cuando sea necesario para adaptarla a cambios legislativos, jurisprudenciales o a las modificaciones realizadas en los tratamientos de datos personales efectuados a través de este sitio web."
+
+      
     },
     "COOKIES": {
-        "TITLE": "Política de Cookies"
+        "TITLE": "Política de Cookies",
+        "P1TITLE" : "¿Qué son las cookies?",
+        "P1": "Las cookies son pequeños archivos que pueden almacenarse en el dispositivo de la persona usuaria cuando visita un sitio web.",
+        "P1-2": "Pueden utilizarse para permitir determinadas funcionalidades, recordar preferencias o recopilar información sobre la navegación.",
+        "P2TITLE" : "Uso de cookies en RIVILLA art studio",
+        "P2": "Actualmente, este sitio web tiene una finalidad principalmente informativa y no utiliza cookies propias con fines de análisis, publicidad o elaboración de perfiles.",
+        "P2-2": "Asimismo, RIVILLA art studio no utiliza herramientas de analítica o publicidad basadas en cookies para realizar un seguimiento de la navegación de las personas usuarias.",
+        "P3TITLE" : "Enlaces y servicios de terceros",
+        "P3": "Este sitio web puede contener enlaces a servicios y plataformas de terceros, como Instagram, Linktree o Google Maps.",
+        "P3-2": "Estos enlaces dirigen a sitios web externos y, una vez que la persona usuaria accede a ellos, se aplican las políticas de privacidad y cookies de sus respectivos proveedores.",
+        "P3-3": "RIVILLA art studio no controla las cookies ni las tecnologías utilizadas por dichos sitios externos. Se recomienda consultar sus correspondientes políticas de privacidad y cookies."
     },
    "FOOTER": {
         "FOLLOW": "SÍGUENOS",

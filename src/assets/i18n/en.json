@@ -109,10 +109,41 @@
         "TITLE": "Frequent Questions"
     },
     "POLICIES": {
-        "TITLE": "Privacy Policies"
+        "TITLE": "Privacy Policies",
+        "P1TITLE" : "Data Protection",
+        "P1": "In compliance with the provisions of Regulation (EU) 2016/679 of the European Parliament and Council, of April 27, 2016 (GDPR), and with the Organic Law 3/2018, of December 5, on Personal Data Protection and guarantee of digital rights (LOPDGDD), we inform you about the treatment of personal data provided through this website.",
+        "P2TITLE" : "Data Controller",
+        "P2": "The data controller for the treatment of personal data is",
+        "P2-2": "You can contact the controller via email",
+        "P2-3": "or phone",
+        "P3TITLE" : "Purpose of Processing",
+        "P3": "The personal data provided by the interested party will be processed under the responsibility of Inés Rivilla López with the sole purpose of addressing requests made through the website, preparing quotes, and offering the artworks, services, or products requested.",
+        "P4TITLE" : "Legal Basis",
+        "P4": "The legal basis for processing will be the implementation of pre-contractual measures adopted at the request of the interested party, when the data is necessary to address their quote or information request and, in case, to prepare the provision of the requested services.",
+        "P5TITLE" : "Data Retention",
+        "P5": "Personal data will be retained for the time necessary to address the request made and, when applicable, for the time necessary to comply with legal obligations and determine possible responsibilities derived from the processing.",
+        "P6TITLE" : "Data Communication",
+        "P6": "Personal data will not be communicated to third parties, except when there is a legal obligation or when it is necessary for the provision of a requested service, in which case appropriate guarantees will be adopted.",
+        "P7TITLE" : "Rights of the Interested Party",
+        "P7": "The interested party may exercise, in the terms established in the applicable legislation, the rights of access, rectification, suppression, portability, limitation and opposition to the processing of their personal data.",
+        "P8TITLE" : "Right to File a Complaint",
+        "P8": "If you consider that the processing of your personal data does not comply with the current regulations, you may file a complaint with the competent control authority, the",
+        "P8-2": "Spanish Data Protection Agency (AEPD)",
+        "P9TITLE" : "Privacy Policy Update",
+        "P9": "This Privacy Policy may be updated when necessary to adapt it to legislative, jurisprudential or modifications made in the processing of personal data carried out through this website."
     },
     "COOKIES": {
-        "TITLE": "Cookies Policy"
+        "TITLE": "Cookies Policy",
+        "P1TITLE" : "What are cookies?",
+        "P1": "Cookies are small files that can be stored on the user's device when visiting a website.",
+        "P1-2": "They can be used to enable certain functionalities, remember preferences, or collect information about navigation.",
+        "P2TITLE" : "Use of Cookies in RIVILLA art studio",
+        "P2": "Currently, this website has a primarily informational purpose and does not use its own cookies for analysis, advertising, or profiling.",
+        "P2-2": "Moreover, RIVILLA art studio does not use analytics or advertising tools based on cookies to track the navigation of website users.",
+        "P3TITLE" : "Links and Third-Party Services",
+        "P3": "This website may contain links to services and platforms of third parties, such as Instagram, Linktree, or Google Maps.",
+        "P3-2": "These links direct to external websites, and once the user accesses them, the privacy policies and cookies policies of their respective providers apply.",
+        "P3-3": "RIVILLA art studio does not control the cookies or technologies used by these external sites. It is recommended to consult their respective privacy policies and cookies policies."
     },
     "FOOTER": {
         "FOLLOW": "FOLLOW US",
