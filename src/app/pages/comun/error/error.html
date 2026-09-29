@@ -1,1 +1,26 @@
-<p>error works!</p>
+<div class="wrapper">
+    <main class="container">
+        <div class="row title-error">
+
+
+            <section class="under-construction" aria-labelledby="under-construction-title">
+
+                <h1 id="under-construction-title">
+                    {{ 'PAGES.ERROR.TITLE' | translate }}
+                </h1>
+
+                <p>
+                    {{ 'PAGES.ERROR.P1' | translate }}
+                </p>
+                <p>{{ 'PAGES.ERROR.P2' | translate }}</p>
+
+                <app-button type="primary" buttonType="button" [text]="'BUTTON.CONTACT' | translate"
+                    (click)="navigateToContact()">
+                </app-button>
+
+
+            </section>
+        </div>
+    </main>
+
+</div>

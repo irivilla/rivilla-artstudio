@@ -1,0 +1,39 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/base/typography.scss';
+
+.under-construction {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.title-error {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.under-construction p {
+    max-width: 600px;
+    margin: 0 0 2rem 0;
+}
+
+/* Móviles */
+@media (max-width: 767.98px) {
+    .under-construction {
+        min-height: 65vh;
+        padding: 2rem 1.5rem;
+    }
+
+    .title-error {
+        margin-bottom: 1.5rem;
+    }
+}

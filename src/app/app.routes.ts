@@ -10,6 +10,7 @@ import { PreguntasFrecuentes } from './pages/comun/preguntas-frecuentes/pregunta
 import { Papel } from './pages/invitaciones/papel/papel';
 import { Papeleria } from './pages/papeleria/papeleria';
 import { Contacto } from './pages/comun/contacto/contacto';
+import { Error} from './pages/comun/error/error';
 
 export const routes: Routes = [
 
@@ -27,21 +28,26 @@ export const routes: Routes = [
     { path: 'live-art/silhouettes',
         loadComponent: () => import('./pages/live-art/silhouettes/silhouettes').then(m => m.Silhouettes)
     },
-    { path: 'papeleria', component: Papeleria},
-    { path: 'papeleria/minuta',
+    /* { path: 'papeleria', component: Papeleria}, */
+    { path: 'papeleria', component: Error },
+    /* { path: 'papeleria/minuta',
         loadComponent: () => import('./pages/papeleria/minuta/minuta').then(m => m.Minuta)
-    },
-    { path: 'papeleria/seating-plan',
+    }, */
+   
+    /* { path: 'papeleria/seating-plan',
         loadComponent: () => import('./pages/papeleria/seating-plan/seating-plan').then(m => m.SeatingPlan)
-    },
-    { path: 'invitaciones', component: Invitaciones },
-    { path: 'invitaciones/papel',
+    }, */
+    /* { path: 'invitaciones', component: Invitaciones }, */
+    { path: 'invitaciones', component: Error }, 
+
+   /*  { path: 'invitaciones/papel',
         loadComponent: () => import('./pages/invitaciones/papel/papel').then(m => m.Papel)
     },
     { path: 'invitaciones/web',
         loadComponent: () => import('./pages/invitaciones/web/web').then(m => m.Web)
-    },
-    { path: 'encargos', component: Encargos },
+    }, */
+    /* { path: 'encargos', component: Encargos }, */
+    { path: 'encargos', component: Error },
     { path: 'about', component: Conocenos },
     { path: 'contact', component: Contacto },
     { path: 'politica-cookies', component: PoliticaCookies },

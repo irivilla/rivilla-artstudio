@@ -8,7 +8,8 @@
     "INVITATIONS": "INVITACIONES",
     "CRAFTS": "PAPELERÍA",
     "COMMISSIONS": "ENCARGOS",
-    "ABOUT": "CONÓCENOS"
+    "ABOUT": "CONÓCENOS",
+    "CONTACT": "CONTACTO"
 
 },"LISTADO-BLOQUES": {
     "LIVE-ART": "Live-Art",
@@ -147,9 +148,13 @@
         "P3-2": "Estos enlaces dirigen a sitios web externos y, una vez que la persona usuaria accede a ellos, se aplican las políticas de privacidad y cookies de sus respectivos proveedores.",
         "P3-3": "RIVILLA art studio no controla las cookies ni las tecnologías utilizadas por dichos sitios externos. Se recomienda consultar sus correspondientes políticas de privacidad y cookies."
     },
+    "ERROR":{ 
+        "TITLE": "Esta página está en construcción",
+        "P1": "Si está interesado en solicitar información sobre alguno de estos servicios, o tiene una idea que desea proponer",
+        "P2": "Póngase en contacto con nosotros"
+    },
    "FOOTER": {
         "FOLLOW": "SÍGUENOS",
-        "CONTACT": "CONTACTO",
         "INFO": "INFORMACIÓN"
     }
 
@@ -166,8 +171,6 @@
         "DATE": "Fecha del evento",
         "LOCATION": "Lugar del evento",
         "MESSAGE": "Cuentanos tu idea",
-        "CLEAR": "LIMPIAR",
-        "SENT": "ENVIAR",
         "SUCCESS": "¡Formulario enviado con éxito!", 
 
         "ERRORS":{
@@ -176,9 +179,6 @@
             "INVALID-GUESTS": "El número de invitados debe ser al menos 1",
             "INVALID-COPIES": "El número de copias debe ser al menos 15",
             "INVALID-DATE": "Se necesita una fecha"
-
-
-
         }
     
     },
@@ -187,5 +187,11 @@
         "SUCCESS.SUBTITLE": "Nos pondremos en contacto contigo pronto",
         "ERROR": "Error al enviar el formulario",
         "ERROR.SUBTITLE": "Por favor, revisa los campos e inténtalo de nuevo"
+    },
+"BUTTON": {
+        "CLOSE": "CERRAR",
+        "SUBMIT": "ENVIAR",
+        "CLEAR": "LIMPIAR",
+        "CONTACT": "CONTACTO"
     }
 }

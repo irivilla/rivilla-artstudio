@@ -9,7 +9,8 @@
     "INVITATIONS": "INVITATIONS",
     "CRAFTS": "CRAFTS",
     "COMMISSIONS": "COMMISSIONS",
-    "ABOUT": "ABOUT US"
+    "ABOUT": "ABOUT US",
+    "CONTACT": "CONTACT US"
 
 },"LISTADO-BLOQUES": {
     "LIVE-ART": "Live-Art",
@@ -145,13 +146,16 @@
         "P3-2": "These links direct to external websites, and once the user accesses them, the privacy policies and cookies policies of their respective providers apply.",
         "P3-3": "RIVILLA art studio does not control the cookies or technologies used by these external sites. It is recommended to consult their respective privacy policies and cookies policies."
     },
+    "ERROR":{ 
+        "TITLE": "This page is under construction",
+        "P1": "If you are interested in requesting information about any of these services, or if you have an idea you would like to propose",
+        "P2": "Please contact us"
+    },
     "FOOTER": {
         "FOLLOW": "FOLLOW US",
-        "CONTACT": "CONTACT US",
         "INFO": "MORE INFO"
     }
    
-
 },
  "FORM-PRESUPUESTO":{
         "TITLE": "Budget Form",
@@ -165,8 +169,7 @@
         "DATE": "Event Date",
         "LOCATION": "Event Location",
         "MESSAGE": "Tell us your idea",
-        "CLEAR": "CLEAR",
-        "SENT": "SUBMIT",
+
         "SUCCESS": "Form submitted successfully!",
          "ERRORS":{
             "REQUIRED": "This field is required",
@@ -183,6 +186,12 @@
         "SUCCESS.SUBTITLE": "We will contact you soon.",
         "ERROR": "Error submitting form. Please try again.",
         "ERROR.SUBTITLE": "Please check the form and try again."
+    },
+    "BUTTON": {
+        "CLOSE": "CLOSE",
+        "SUBMIT": "SUBMIT",
+        "CLEAR": "CLEAR",
+        "CONTACT": "CONTACT"
     }
 
 }
