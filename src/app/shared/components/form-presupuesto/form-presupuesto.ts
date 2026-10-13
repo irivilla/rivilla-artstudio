@@ -12,6 +12,7 @@ import {TranslateModule} from '@ngx-translate/core';
 import { PresupuestoService } from '../../services/presupuestoService/presupuesto-service';
 import { ToastService } from '../../services/toastService/toast-service';
 import { SweetAlertIcon } from 'sweetalert2';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -36,7 +37,7 @@ export class FormPresupuesto implements OnInit{
   isValid: boolean = true;
   isSubmitted: boolean = false;
 
-  constructor(private fb: FormBuilder, private languageService: LanguageService, private presupuestoService: PresupuestoService, private toastService: ToastService ) {
+  constructor(private fb: FormBuilder, private languageService: LanguageService, private presupuestoService: PresupuestoService, private toastService: ToastService, private router: Router ) {
     this.formulario = this.fb.group({
       nombre: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -226,5 +227,9 @@ private mostrarAlerta(icon: SweetAlertIcon, mensaje: string, text: string): void
     4000
   );
 }
-  
+
+navigate(): void {
+ this.router.navigate(['/politica-privacidad']);
+
+}
 }

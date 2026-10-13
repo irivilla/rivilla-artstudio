@@ -17,6 +17,7 @@
     "CRAFTS": "Papelería",
     "COMMISSIONS": "Encargos",
     "ABOUT": "Conócenos",
+    "CONTACT": "Contacto",
     "QUESTIONS": "Preguntas Frecuentes",
     "COOKIES": "Política de Cookies",
     "POLICIES": "Políticas de Privacidad"
@@ -159,6 +160,10 @@
     }
 
 },
+"CARD-BUDGET": {
+"TITLE": "SOLICITA TU PRESUPUESTO",
+    "SUBTITLE": "Rellena el formulario y nos pondremos en contacto contigo lo antes posible"
+},
  "FORM-PRESUPUESTO":{
         "TITLE": "Formulario de presupuesto",
         "NAME": "Nombre y Apellidos",
@@ -172,6 +177,7 @@
         "LOCATION": "Lugar del evento",
         "MESSAGE": "Cuentanos tu idea",
         "SUCCESS": "¡Formulario enviado con éxito!", 
+        "NOTE": "Este formulario asegura el cumplimiento de las",
 
         "ERRORS":{
             "REQUIRED": "Este campo es obligatorio",

@@ -7,10 +7,12 @@ import { Subscription } from 'rxjs';
 import { Reviews } from "../../shared/components/reviews/reviews";
 import { Accordion } from "../../shared/components/accordion/accordion";
 import {LanguageService} from '../../shared/services/languageService/language-service';
+import { CardBudget } from '../../shared/components/card-budget/card-budget';
+
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, TranslateModule, Carrousel, CardPhoto, Reviews, Accordion],
+  imports: [CommonModule, TranslateModule, Carrousel, CardPhoto, Reviews, Accordion, CardBudget],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
@@ -62,5 +64,7 @@ get selectedLang(): string {
       ];
     });
   }
+
+
 }
 

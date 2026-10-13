@@ -2,6 +2,13 @@
 @import '../../../../styles/fonts.scss';
 @import '../../../../styles/base/typography.scss';
 
+
+.logo {
+    max-width: 10%;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 .under-construction {
     min-height: 70vh;
 

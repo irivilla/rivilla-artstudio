@@ -1,1 +1,27 @@
-<p>contacto works!</p>
+<div class="wrapper">
+    <div class="container align-items-center">
+        <div class="row">
+            <app-breadcrumb></app-breadcrumb>
+        </div>
+
+        <div class="row">
+            <div class="col-12 title-contacto">
+                <h1>
+                    {{ 'MENU.CONTACT' | translate }}
+                </h1>
+
+            </div>
+            <div class="col-12">
+                <p class="text-center">
+                    {{ 'CARD-BUDGET.SUBTITLE' | translate }}
+                </p>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-12">
+                <app-form-presupuesto></app-form-presupuesto>
+            </div>
+        </div>
+    </div>
+</div>

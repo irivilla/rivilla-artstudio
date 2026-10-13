@@ -11,6 +11,7 @@ export const BREADCRUMB_MAP: Record<string, string> = {
     'crafts': 'LISTADO-BLOQUES.CRAFTS',
     'encargos': 'LISTADO-BLOQUES.COMMISSIONS',
     'papeleria': 'LISTADO-BLOQUES.CRAFTS',
+    'contact': 'LISTADO-BLOQUES.CONTACT',
 
     //legal
     'about': 'LISTADO-BLOQUES.ABOUT',

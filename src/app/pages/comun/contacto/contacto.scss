@@ -1,0 +1,9 @@
+    @import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/base/typography.scss';
+
+.title-contacto {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $primary-dark;
+}

@@ -205,15 +205,20 @@
 
             <app-button type="secondary" (click)="clear()" [text]="'BUTTON.CLEAR' | translate">
             </app-button>
-            <!--    <button type="submit">
-                Enviar prueba
-            </button> -->
 
             <app-button type="primary" buttonType="submit" [text]="'BUTTON.SUBMIT' | translate">
             </app-button>
 
         </div>
 
+    </div>
+    <div class="row notes">
+        <div class="col-12 ">
+            <p>
+                * {{ 'FORM-PRESUPUESTO.NOTE' | translate }} <a (click)="navigate()">{{
+                    'LISTADO-BLOQUES.POLICIES' | translate }}</a>
+            </p>
+        </div>
     </div>
 
 

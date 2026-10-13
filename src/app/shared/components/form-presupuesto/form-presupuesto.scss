@@ -1,14 +1,26 @@
 @import '../../../../styles/colors.scss';
 @import '../../../../styles/fonts.scss';
+@import '../../../../styles/base/a.scss';
+@import '../../../../styles/base/typography.scss';
 
 
 form{
-    width: 100%;
-  
+    display: block;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto 2rem auto;
+        box-sizing: border-box;
+  .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: 0px;}
+
     label{
         color: $primary-dark;
-        display: flex;
-        justify-content: start;
+        display: block;
+        width: 100%;
+        //justify-content: start;
         font-family: $base-font-family;
         font-size: $base-font-size;
     }
@@ -50,4 +62,14 @@ form{
 .error-message.visible {
     visibility: visible;
     opacity: 1;
+}
+
+.notes{
+
+    
+    margin: 1rem 0;
+ 
+    
+
+   
 }

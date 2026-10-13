@@ -18,6 +18,7 @@
     "CRAFTS": "Crafts",
     "COMMISSIONS": "Commissions",
     "ABOUT": "About Us",
+    "CONTACT": "Contact Us",
     "QUESTIONS": "Frequent Questions",
     "COOKIES": "Cookies Policy",
     "POLICIES": "Privacy Policies"
@@ -157,6 +158,10 @@
     }
    
 },
+"CARD-BUDGET": {
+    "TITLE": "REQUEST YOUR BUDGET",
+    "SUBTITLE": "Fill out the form and we will contact you as soon as possible"
+},
  "FORM-PRESUPUESTO":{
         "TITLE": "Budget Form",
         "NAME": "Name and Surname",
@@ -169,6 +174,7 @@
         "DATE": "Event Date",
         "LOCATION": "Event Location",
         "MESSAGE": "Tell us your idea",
+        "NOTE": "This form ensures compliance with the",
 
         "SUCCESS": "Form submitted successfully!",
          "ERRORS":{
