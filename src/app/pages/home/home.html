@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row g-0">
             <div class="col-12">
                 <app-card-budget></app-card-budget>
             </div>
@@ -31,7 +31,7 @@
 
 
 
-        <div class="row mt-5">
+        <div class="row mt-5 g-0">
             <div class="col-12 mb-3">
                 <h5>
                     {{ 'PAGES.HOME.SERVICES-TITLE' | translate }}
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="row justify-content-center g-4 ">
-            <div class="col-10 col-md-6 col-lg-4 card-photo-home" *ngFor="let card of cards">
+            <div class="col-12 col-md-6 col-lg-4 card-photo-home" *ngFor="let card of cards">
                 <app-card-photo [title]="card.title" [imageSrc]="card.image" [route]="card.route"></app-card-photo>
             </div>
         </div>
