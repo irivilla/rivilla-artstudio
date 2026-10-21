@@ -45,11 +45,12 @@
         "SLOGAN1":"Each brushstroke reflects the magic of the moment and turns a story into something unforgettable. ",
         "SLOGAN2":"Let live art elevate your celebrations",
         "SERVICES-TITLE":"FEATURED SERVICES",
-        "QUESTIONS":"QUESTIONS",
+        "QUESTIONS":"FREQUENT QUESTIONS",
         "REVIEWS":"REVIEWS"
     },
     "LIVE-ART" :{
         "TITLE":"LIVE-ART",
+        "SUBTITLE": "Check out our live art options",
         "ILLUSTRATIONS":{
             "TITLE": "ILUSTRATIONS",
             "TITLE_PAGE": "Live Illustrations",
@@ -107,8 +108,60 @@
         "TITLE": "Contact",
         "EMAIL": "rivilla.artstudio@gmail.com"
     },
-    "QUESTIONS": {
-        "TITLE": "Frequent Questions"
+    "FAQ": {
+        "TITLE": "Frequently Asked Questions",
+        "INTRO": "Do you have any questions about Live Art, custom illustrations or how to make a booking? If you need any further information, I'll be happy to help.",
+
+        "BOOKING": {
+            "TITLE": "Bookings, Dates and Payments",
+            "Q1": "How far in advance should I book a Live Art service?",
+            "A1": "I recommend getting in touch as soon as you know your event date, especially if you're planning a wedding. Many celebrations are organised months in advance, and availability is limited. The sooner we talk, the more likely I am to be available to join you on your special day.",
+            "Q2": "How do I reserve a date, and how much is the booking deposit?",
+            "A2": "Once we've agreed on the service and you've received the quote, I'll explain the payment terms and the amount required to secure your date. The booking deposit is 20% of the total price. Your date is reserved once the agreed booking process has been completed. The deposit amount and specific terms will be included in your quote.",
+            "Q3": "How can I request a quote?",
+            "A3": "You can get in touch through the website contact form or by sending me a message. To prepare a quote tailored to your needs, I'll need to know the type of service you're interested in, the date and location, the approximate number of guests if it's an event, and any other details you think are important."
+        },
+
+        "LIVEART": {
+            "TITLE": "Live Art at Weddings and Events",
+            "Q1": "What is Live Art?",
+            "A1": "Live Art involves creating illustrations or an artwork live during a celebration. It's an original way to turn a special occasion into a personalised keepsake and offer guests a unique artistic experience.",
+            "Q2": "What types of Live Art can I book?",
+            "A2": "Depending on the available options, you can choose guest portraits in watercolour or digital format, personalised illustrations, or a live painting of the couple. Each service has its own features, so we can discuss which option best suits your celebration.",
+            "Q3": "What do I need to arrange for the event day?",
+            "A3": "I'll need access to the venue at least one hour before the event to set up my workspace. I usually require a table, two chairs, good lighting and access to water. We'll confirm all the details in advance to make sure everything is ready when the celebration begins.",
+            "Q4": "What happens if there isn't enough time to draw all the guests?",
+            "A4": "The number of portraits I can create depends on the time booked, the format chosen and the pace of the event. If it's not possible to complete every portrait during the celebration, we'll agree on how to finish the remaining portraits and send them by post afterwards."
+        },
+
+        "COMMISSIONS": {
+            "TITLE": "Custom Illustrations and Commissions",
+            "Q1": "Can I commission a personalised illustration as a gift?",
+            "A1": "Of course! Personalised illustrations are a special way to give someone a lasting memory. We can work from reference photos or combine several people from different photographs. We'll also discuss the format and style you have in mind so the artwork suits the occasion.",
+            "Q2": "How far in advance should I order an illustration?",
+            "A2": "Ideally, you should get in touch at least one month in advance, especially if you need the illustration for a specific date. This gives us time to organise the commission, create the artwork and arrange delivery if needed. The final timeframe will depend on the complexity of the piece and my availability.",
+            "A2.1": "For more realistic commissions, such as watercolour portraits or paintings on canvas, the turnaround time may be longer. I recommend checking availability and delivery times before placing your order. For these types of commissions, at least two months' notice is recommended.",
+            "Q3": "What photographs or information should I provide?",
+            "A3": "You can send me your photographs by email, WhatsApp, WeTransfer or another agreed method. Ideally, the images should be good quality and show the important details clearly. If you have any preferences regarding the composition or final result, feel free to let me know when requesting your quote."
+        },
+
+        "MATERIALS": {
+            "TITLE": "Materials and Environmental Commitment",
+            "Q1": "What materials do you use for your illustrations?",
+            "A1": "I carefully select my materials to create high-quality, long-lasting artwork, including heavyweight watercolour paper and professional-grade paints. Depending on the project, I also use professional markers and other materials suited to the technique. The choice of materials depends on the format and requirements of each commission.",
+            "Q2": "Are your materials environmentally friendly?",
+            "A2": "I aim to work responsibly by choosing local products where possible, supporting Spanish suppliers and selecting materials manufactured in Spain. I also try to minimise waste wherever possible and take care with the presentation and packaging of my artwork."
+        },
+
+        "SHIPPING": {
+            "TITLE": "Production Times and Shipping",
+            "Q1": "How long does it take to create an illustration?",
+            "A1": "Production time depends on the number of people, the format, the level of detail and the technique chosen. When you request a quote, I'll provide an estimated timeframe tailored to your commission and the date you need it by.",
+            "Q2": "Do you offer shipping?",
+            "A2": "Yes, we can arrange delivery of your illustrations to your chosen address. Shipping costs and delivery times depend on the destination, the shipping method and the details of your order. These will be confirmed before your commission is finalised. Shipping within Spain starts at €10, with tracking and an estimated delivery time of 2–4 days, depending on the destination. For international shipments, costs and delivery times may vary depending on the destination country.",
+            "Q3": "When should I order an illustration if I need it for a special date?",
+            "A3": "I recommend placing your order well in advance to allow enough time for both creating the artwork and shipping it. If it's a gift for a wedding or another special occasion, please let me know the date from the outset so we can assess what's possible."
+        }
     },
     "POLICIES": {
         "TITLE": "Privacy Policies",

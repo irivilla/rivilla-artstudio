@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="container-fluid container-footer ">
-        <div class="row container-footer__links">
+        <div class="row g-0 container-footer__links">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 logo">
                 <img src="../../../assets/img/logo/logo2.webp" alt="logo" (click)="goHome()"
                     class="footer-logo img-fluid">
@@ -36,9 +36,7 @@
                 <div class="row">
                     <p>{{ 'MENU.CONTACT' | translate }}</p>
                 </div>
-                <!--  <div class="row">
-                    <h5 (click)="goContact()" class="text-a">{{ 'PAGES.CONTACT.TITLE' | translate }}</h5>
-                </div> -->
+
                 <div class="row">
                     <h5 (click)="goAbout()" class="text-a">{{ 'PAGES.ABOUT-US.TITLE' | translate }}</h5>
                 </div>
@@ -56,7 +54,7 @@
                 </div>
 
                 <div class="row">
-                    <h5 (click)="goQuestions()" class="text-a">{{ 'PAGES.QUESTIONS.TITLE' | translate }}</h5>
+                    <h5 (click)="goQuestions()" class="text-a">{{ 'PAGES.FAQ.TITLE' | translate }}</h5>
                 </div>
                 <div class="row">
                     <h5 (click)="goPrivacy()" class="text-a">{{ 'PAGES.POLICIES.TITLE' | translate }}</h5>
@@ -70,7 +68,7 @@
 
 
         </div>
-        <div class="row container-footer__brand ">
+        <div class="row g-0 container-footer__brand ">
             <span class="d-flex justify-content-center align-items-center"> RIVILLA art studio © {{ currentYear}}</span>
 
         </div>

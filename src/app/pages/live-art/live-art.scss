@@ -15,11 +15,12 @@
 }
 
 .row-cards {
-    margin-bottom: 4rem;
-    .card-service {
-        display: flex;
-        justify-content: center;
-    }
+    width: 100%;
+    margin: 0;
+}
+
+.card-service {
+    padding: 0;
 }
 
 .card-contact{

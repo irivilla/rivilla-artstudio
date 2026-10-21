@@ -1,25 +1,10 @@
-<div class="card mb-3 card-service" (click)="navigate()">
-  <div class="row g-0">
-    <div class="col-md-6 hover-control">
-      <img [src]="imageSrc" class="img-fluid s" alt="live art boda">
-    </div>
-    <div class="col-md-6 cuadrado-title">
-      <div class="card-body">
-        <h3 class="card-title">{{ title }}</h3>
-        <p class="card-text">{{ subtitle }}</p>
+<a class="card-service" (click)="navigate()" [attr.aria-label]="'Ver servicio: ' + title">
+  <img class="card-service__image" [src]="imageSrc" [alt]="title" loading="lazy" />
 
-      </div>
+  <div class="card-service__overlay">
+    <div class="card-service__content">
+      <h3 class="card-service__title">{{ title }}</h3>
+      <p class="card-service__subtitle">{{ subtitle }}</p>
     </div>
   </div>
-</div>
-
-
-<!-- CARD  TODA LA IMAGEN COMPLETA Y TEXTO SUPERPUESTO
-<div class="card text-bg-dark">
-  <img src="..." class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-  </div>
-</div> -->
+</a>

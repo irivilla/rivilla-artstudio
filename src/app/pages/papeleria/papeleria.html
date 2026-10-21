@@ -1,18 +1,21 @@
 <div class="wrapper">
-    <div class="container">
-        <div class="row">
-            <app-breadcrumb></app-breadcrumb>
-            <div class="col-12 title-papeleria">
-                <h1>
-                    {{ 'PAGES.CRAFT.TITLE' | translate }}
-                </h1>
-            </div>
-        </div>
-        <div class="row justify-content-center g-4 m-1 row-cards">
-            <div class="col-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 card-service" *ngFor="let card of cards">
-                <app-card-service [title]="card.title" [subtitle]="card.subtitle" [imageSrc]="card.image"
-                    [route]="card.route"></app-card-service>
-            </div>
+
+    <div class="row">
+        <app-breadcrumb></app-breadcrumb>
+        <div class="col-12 title-papeleria">
+            <h1>
+                {{ 'PAGES.CRAFT.TITLE' | translate }}
+            </h1>
+            <h3>
+                {{ 'PAGES.CRAFT.SUBTITLE' | translate }}
+            </h3>
         </div>
     </div>
+    <div class="row justify-content-center g-4 m-1 row-cards">
+        <div class="col-5 col-sm-10 col-md-8 col-lg-6 col-xl-5 card-service" *ngFor="let card of cards">
+            <app-card-service [title]="card.title" [subtitle]="card.subtitle" [imageSrc]="card.image"
+                [route]="card.route"></app-card-service>
+        </div>
+    </div>
+
 </div>

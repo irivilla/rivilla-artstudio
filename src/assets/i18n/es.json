@@ -44,11 +44,12 @@
         "SLOGAN1":"Cada pincelada refleja la magia del momento y convierte una historia en un momento inolvidable.",
         "SLOGAN2":"Deja que el arte en vivo eleve tus celebraciones",
         "SERVICES-TITLE":"SERVICIOS DESTACADOS",
-        "QUESTIONS":"PREGUNTAS",
+        "QUESTIONS":"PREGUNTAS FRECUENTES",
         "REVIEWS":"RESEÑAS"
     },
     "LIVE-ART" :{
         "TITLE":"LIVE-ART",
+        "SUBTITLE": "Consulta nuestras opciones de arte en vivo",
         "ILLUSTRATIONS":{
             "TITLE": "ILUSTRACIONES",
             "SUBTITLE": "Ilustraciones personalizadas de tus invitados en vivo para bodas y eventos",
@@ -107,8 +108,60 @@
         "TITLE": "Contacto",
         "EMAIL": "rivilla.artstudio@gmail.com"
     },
-    "QUESTIONS": {
-        "TITLE": "Preguntas Frecuentes"
+     "FAQ": {
+      "TITLE": "Preguntas Frecuentes",
+      "INTRO": "¿Tienes dudas sobre el arte en vivo, las ilustraciones personalizadas o cómo reservar? Si necesitas más información, estaré encantada de ayudarte.",
+
+      "BOOKING": {
+        "TITLE": "Reservas, fechas y pagos",
+        "Q1": "¿Con cuánta antelación debo reservar un servicio de Live Art?",
+        "A1": "Te recomiendo contactar conmigo en cuanto conozcas la fecha del evento, especialmente si se trata de una boda. Muchas celebraciones se organizan con meses de antelación y las fechas disponibles son limitadas. Cuanto antes hablemos, más posibilidades habrá de que pueda acompañaros ese día.",
+        "Q2": "¿Cómo se reserva una fecha y cuál es el importe de la reserva?",
+        "A2": "Una vez que hayamos definido el servicio y recibido el presupuesto, te indicaré las condiciones de pago y el importe necesario para confirmar la fecha, siendo esta el 20% del importe total. La fecha queda reservada cuando se completa el proceso de confirmación acordado. El importe y las condiciones concretas aparecerán en tu presupuesto.",
+        "Q3": "¿Cómo puedo solicitar un presupuesto?",
+        "A3": "Puedes contactar conmigo a través del formulario de la web o por mensaje. Para preparar una propuesta adaptada a ti, necesitaré conocer el tipo de servicio, la fecha, el lugar, el número aproximado de invitados si se trata de un evento y cualquier detalle que consideres importante."
+      },
+
+      "LIVEART": {
+        "TITLE": "Live Art en bodas y eventos",
+        "Q1": "¿Qué es el Live Art?",
+        "A1": "El Live Art consiste en crear ilustraciones o una obra artística en directo durante una celebración. Es una forma original de convertir un momento especial en un recuerdo personalizado y de ofrecer a los invitados una experiencia artística diferente.",
+        "Q2": "¿Qué tipos de arte en vivo puedo contratar?",
+        "A2": "Según las opciones disponibles, puedes elegir retratos de invitados en acuarela o en formato digital, ilustraciones personalizadas y pintura en directo de una obra de la pareja. Cada propuesta tiene sus propias características, por lo que podemos valorar cuál encaja mejor con vuestra celebración.",
+        "Q3": "¿Qué necesito preparar para el día del evento?",
+        "A3": "Para montar el espacio de trabajo, necesitaré acceder al lugar con al menos una hora de antelación. Habitualmente se requiere una mesa, dos sillas, buena iluminación y acceso a agua. Los detalles se concretarán previamente para que todo esté preparado cuando comience la celebración.",
+        "Q4": "¿Qué ocurre si no da tiempo a dibujar a todos los invitados?",
+        "A4": "El número de retratos que se pueden realizar depende del tiempo contratado, del formato elegido y del ritmo del evento. Si no fuera posible terminar todos durante la celebración, acordaremos cómo completar los retratos pendientes y hacerlos llegar posteriormente por correo postal."
+      },
+
+      "COMMISSIONS": {
+        "TITLE": "Ilustraciones y encargos personalizados",
+        "Q1": "¿Puedo encargar una ilustración personalizada como regalo?",
+        "A1": "¡Por supuesto! Las ilustraciones personalizadas son una forma especial de regalar un recuerdo. Podemos partir de fotografías de referencia o juntar varias personas de diferentes fotos, el formato y el estilo que buscas para adaptar el encargo a la ocasión.",
+        "Q2": "¿Con cuánto tiempo debo encargar una ilustración?",
+        "A2": "Lo ideal es contactar con al menos un mes de antelación, especialmente si la ilustración es para una fecha concreta. Así tendremos tiempo para organizar el encargo, realizar el trabajo y gestionar el envío si lo necesitas. El plazo definitivo dependerá de la complejidad y de la disponibilidad.",
+        "A2.1":"Si se trata de un encargo en un estilo más realista como puede ser un retrato en acuarela o en un lienzo, el plazo de entrega puede ser mayor, por lo que es recomendable consultar la disponibilidad y los tiempos antes de realizar el encargo. Se recomienda al menos dos meses de antelación para este tipo de encargos.",
+        "Q3": "¿Qué fotografías o información debo enviar?",
+        "A3": "Puedes enviarme las fotografías por correo electrónico, WhatsApp, WeTransfer u otro medio acordado. Es recomendable que las imágenes tengan buena calidad y permitan ver bien los detalles importantes. Si tienes alguna preferencia sobre la composición o el resultado, puedes comentármela al solicitar el presupuesto."
+      },
+
+      "MATERIALS": {
+        "TITLE": "Materiales y compromiso con el medio ambiente",
+        "Q1": "¿Qué materiales utilizas para tus ilustraciones?",
+        "A1": "Trabajo con materiales seleccionados para conseguir un resultado cuidado y duradero, como papel de acuarela de buen gramaje y pinturas de calidad profesional. Según el proyecto, también utilizo rotuladores profesionales y otros materiales adecuados a la técnica. La elección depende del formato y de las necesidades de cada encargo.",
+        "Q2": "¿Tus materiales son respetuosos con el medio ambiente?",
+        "A2": "Intento trabajar de forma consciente, con productos de cercanía, seleccionando proveedores españoles y materiales fabricados en España, evitando desperdicios en la medida de lo posible. También cuido la presentación y el embalaje de las obras."
+      },
+
+      "SHIPPING": {
+        "TITLE": "Plazos de realización y envíos",
+        "Q1": "¿Cuánto tiempo se tarda en realizar una ilustración?",
+        "A1": "El tiempo de realización depende del número de personas, del formato, del nivel de detalle y de la técnica elegida. Por eso, al solicitar el presupuesto, te indicaré una estimación adaptada a tu encargo y a la fecha en la que lo necesitas.",
+        "Q2": "¿Realizas envíos?",
+        "A2": "Sí, podemos acordar el envío de las ilustraciones a la dirección indicada. El coste y el plazo de transporte dependerán del destino, del tipo de envío y de las características del pedido. Estos detalles se concretarán antes de confirmar el encargo. Los precios de envío son a partir de 10€ con seguimiento y entrega en 2-4 días, dependiendo del destino. Para envíos internacionales, el coste y el plazo pueden variar según el país de destino.",
+        "Q3": "¿Cuándo debo encargar una ilustración si la necesito para una fecha especial?",
+        "A3": "Te recomiendo realizar el encargo con suficiente antelación para disponer de margen tanto para la creación como para el transporte. Si es un regalo para una boda u otra celebración, indícame la fecha desde el principio para que podamos valorarlo. "
+      }
     },
     "POLICIES": {
         "TITLE": "Políticas de Privacidad",

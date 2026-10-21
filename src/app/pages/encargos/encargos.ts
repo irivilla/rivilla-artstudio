@@ -3,10 +3,11 @@ import {CommonModule} from '@angular/common';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import {LanguageService} from '../../shared/services/languageService/language-service';
+import {Breadcrumb} from '../../shared/components/breadcrumb/breadcrumb';
 
 @Component({
   selector: 'app-encargos',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, Breadcrumb],
   templateUrl: './encargos.html',
   styleUrl: './encargos.scss'
 })
