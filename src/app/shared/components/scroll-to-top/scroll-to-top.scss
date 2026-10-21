@@ -1,6 +1,6 @@
 
-@use '../../../../styles/colors.scss' as *;
-
+@import '../../../../styles/colors.scss';
+    
 .scroll-to-top {
     position: fixed;
     bottom: 2rem;

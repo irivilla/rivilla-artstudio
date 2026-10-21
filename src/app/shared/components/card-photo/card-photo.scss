@@ -79,3 +79,24 @@
         }
     }
 }
+
+@media (max-width: 575.98px) {
+    .card-photo {
+        .card-img {
+            border-radius: 1.25rem;
+        }
+
+        .hover-control:hover {
+            border-radius: 1.25rem;
+        }
+
+        .cuadrado-title {
+            width: 90%;
+            padding: 0.5rem;
+
+            .cuadrado-border {
+                padding: 0.5rem;
+            }
+        }
+    }
+}
