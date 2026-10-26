@@ -41,7 +41,7 @@
     },
     "HOME": {
         "TITLE": "Inicio",
-        "SLOGAN1":"Cada pincelada refleja la magia del momento y convierte una historia en un momento inolvidable.",
+        "SLOGAN1":"Dos años creando recuerdos inolvidables con más de 40 bodas y eventos acompañados de mucho arte en vivo",
         "SLOGAN2":"Deja que el arte en vivo eleve tus celebraciones",
         "SERVICES-TITLE":"SERVICIOS DESTACADOS",
         "QUESTIONS":"PREGUNTAS FRECUENTES",
@@ -202,7 +202,25 @@
         "P3-2": "Estos enlaces dirigen a sitios web externos y, una vez que la persona usuaria accede a ellos, se aplican las políticas de privacidad y cookies de sus respectivos proveedores.",
         "P3-3": "RIVILLA art studio no controla las cookies ni las tecnologías utilizadas por dichos sitios externos. Se recomienda consultar sus correspondientes políticas de privacidad y cookies."
     },
-    "ERROR":{ 
+    "CONOCENOS": {
+      "TITLE": "Conoce a nuestro equipo",
+      "SUBTITLE": "Descubre quién hay detrás de RIVILLA art studio",
+      "INES": {
+        "NAME": "Inés Rivilla",
+        "ROLE": "Artista Plástica y Directora Creativa",
+        "BASED": "Puertollano (Ciudad Real)",
+        "BIOGRAPHY1": "Inés es la fundadora de RIVILLA art studio. Graduada por la Universidad de Bellas Artes de Sevilla. Tiene una ampplia esperiencia como retratista. Ha participado en multitud de concursos y exposiciones de arte colectivas e individuales produciendo obra propia. ",
+        "BIOGRAPHY2": "Su pasión por el arte y la creatividad la llevó a fundar RIVILLA art studio, donde combina su talento artístico con la creación de experiencias únicas para sus clientes."
+      },
+      "AROA": {
+        "NAME": "Aroa Álvarez",
+        "ROLE": "Ilustradora",
+        "BASED": "Alcalá de Henares (Madrid)",
+        "BIOGRAPHY1": "Aroa es nuestra artista diplomada en ilustración y creación artística en la Escuela de Ilustración Profesional de Madrid.",
+        "BIOGRAPHY2": "Tiene una amplia experiencia trabajando con diferentes editoriales en ilustración infantil."
+      }
+
+    },"ERROR":{ 
         "TITLE": "Esta página está en construcción",
         "P1": "Si está interesado en solicitar información sobre alguno de estos servicios, o tiene una idea que desea proponer",
         "P2": "Póngase en contacto con nosotros"

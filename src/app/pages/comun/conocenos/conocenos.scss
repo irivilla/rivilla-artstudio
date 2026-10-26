@@ -1,0 +1,159 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/base/typography.scss';
+
+.title-conocenos {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    h1 {
+        color: $primary-dark;
+        margin-bottom: 0;
+    }
+}
+
+.subtitle-conocenos {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    p {
+        color: $gray-dark;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
+
+.container {
+    margin-bottom: 4.5rem;
+}
+
+/* Cada perfil */
+.team-profile {
+    padding: 2.5rem 0;
+}
+
+/* Fotografía */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+/* Texto */
+.profile-text {
+    min-width: 0;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    h2 {
+        color: $primary-dark;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: $gray-dark;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 0.75rem;
+    }
+
+    .profile-role {
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+    }
+
+    .profile-based {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile-biography {
+        max-width: 650px;
+        margin-bottom: 0;
+    }
+}
+
+.team-profile+.team-profile {
+    border-top: 1px solid $secondary;
+}
+
+/* Alternar el orden en escritorio */
+@media (min-width: 768px) {
+    .team-profile--reverse .profile-text {
+        order: 2;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .team-profile--reverse .profile-image {
+        order: 1;
+    }
+}
+
+/* En móvil, siempre foto arriba y texto debajo */
+@media (max-width: 767.98px) {
+
+    .team-profile--reverse .profile-image,
+    .team-profile--reverse .profile-text {
+        order: initial;
+    }
+
+    .team-profile--reverse .profile-text {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Tablet: texto a la izquierda, imagen a la derecha */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .team-profile {
+        padding: 2rem 0;
+    }
+
+    .profile-image img {
+        max-width: 220px;
+    }
+
+    .profile-text {
+        padding-right: 1rem;
+    }
+}
+
+/* Móvil: fotografía arriba y texto centrado debajo */
+@media (max-width: 767.98px) {
+    .team-profile {
+        padding: 2rem 0;
+    }
+
+    .profile-image {
+        margin-bottom: 1.5rem;
+
+        img {
+            max-width: 200px;
+        }
+    }
+
+    .profile-text {
+        text-align: center;
+        align-items: center;
+        padding: 0 1rem;
+
+        .profile-biography {
+            max-width: 550px;
+        }
+    }
+}

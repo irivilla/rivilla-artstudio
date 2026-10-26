@@ -1,0 +1,93 @@
+@import '../colors.scss';
+@import '../fonts.scss';
+@import './typography.scss';
+
+/* Contenedor general */
+.p-accordion {
+    background: $white !important;
+    border-radius: 0 !important;
+    color: $gray-dark !important;
+    font-family: $base-font-family !important;
+}
+
+/* Paneles */
+.p-accordionpanel {
+    background: $white !important;
+    border: 1px solid $primary !important;
+    border-radius: 0 !important;
+    color: $gray-dark !important;
+}
+
+/* Cabecera de cada pregunta */
+.p-accordionheader {
+    background: $white !important;
+    color: $gray-dark !important;
+    font-family: $base-font-family !important;
+    border-radius: 0 !important;
+}
+
+/* Texto de la pregunta */
+.p-accordionheader .p-accordionheader-label {
+    color: $gray-dark !important;
+    font-family: $base-font-family !important;
+}
+
+/* Hover y foco de la cabecera */
+.p-accordionheader:hover {
+    background: $primary-light !important;
+    color: $primary-dark !important;
+    border-color: $primary-dark !important;
+}
+
+.p-accordionheader:hover .p-accordionheader-label {
+    color: $primary-dark !important;
+}
+
+.p-accordionheader:focus,
+.p-accordionheader:focus-visible {
+    color: $primary-dark !important;
+    outline-color: $primary-dark !important;
+}
+
+.p-accordionheader:focus .p-accordionheader-label,
+.p-accordionheader:focus-visible .p-accordionheader-label {
+    color: $primary-dark !important;
+}
+
+/* Icono para desplegar */
+.p-accordionheader .p-accordionheader-toggle-icon {
+    color: $gray-dark !important;
+}
+
+/* Contenedor del contenido desplegado */
+.p-accordioncontent {
+    background: $white !important;
+    color: $gray-dark !important;
+}
+
+/* ESTA ES LA PARTE MÁS IMPORTANTE:
+   el fondo y el texto del contenido interior */
+.p-accordioncontent-content {
+    background: $white !important;
+    color: $gray-dark !important;
+    font-family: $base-font-family !important;
+    font-size: $base-font-size !important;
+}
+
+/* Párrafos y textos interiores */
+.p-accordioncontent-content p,
+.p-accordioncontent-content span,
+.p-accordioncontent-content li {
+    color: $gray-dark !important;
+    font-family: $base-font-family !important;
+}
+
+/* Enlaces dentro de las respuestas */
+.p-accordioncontent-content a {
+    color: $primary-dark !important;
+}
+
+/* Evita que los estados abiertos recuperen colores oscuros */
+.p-accordionpanel:has(.p-accordionpanel-active) {
+    background: $white !important;
+}

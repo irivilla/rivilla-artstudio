@@ -11,6 +11,7 @@
 @import './styles/base/select-form-primeng.scss';
 @import './styles/base/datepicker-primeng.scss';
 @import './styles/base/carousell-primeng.scss';
+@import './styles/base/accordion-primeng.scss';
 @import './styles/base/scrollbar';
 
 
@@ -24,11 +25,14 @@
     
 }
 
-body,html {
-    
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
     overflow-x: hidden;
-   
-    
 }
 
 .wrapper {

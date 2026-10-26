@@ -42,7 +42,7 @@
     },
     "HOME": {
         "TITLE": "Home",
-        "SLOGAN1":"Each brushstroke reflects the magic of the moment and turns a story into something unforgettable. ",
+        "SLOGAN1":"Two years creating unforgettable memories with more than 40 weddings and events accompanied by a lot of live art",
         "SLOGAN2":"Let live art elevate your celebrations",
         "SERVICES-TITLE":"FEATURED SERVICES",
         "QUESTIONS":"FREQUENT QUESTIONS",
@@ -199,6 +199,26 @@
         "P3": "This website may contain links to services and platforms of third parties, such as Instagram, Linktree, or Google Maps.",
         "P3-2": "These links direct to external websites, and once the user accesses them, the privacy policies and cookies policies of their respective providers apply.",
         "P3-3": "RIVILLA art studio does not control the cookies or technologies used by these external sites. It is recommended to consult their respective privacy policies and cookies policies."
+    },
+    "CONOCENOS": {
+     "TITLE": "Get to know our team",
+      "SUBTITLE": "Discover who we are and how we work to make your event something unique and unforgettable",
+      "INES": {
+        "NAME": "Inés Rivilla",
+        "ROLE": "Artist and Founder",
+        "BASED": "Puertollano (Ciudad Real)",
+         "BIOGRAPHY1": "Inés is the founder of RIVILLA art studio. She graduated from the Faculty of Fine Arts at the University of Seville and has extensive experience as a portrait artist. She has participated in numerous competitions and group and solo art exhibitions, showcasing her own work.",
+        "BIOGRAPHY2": "Her passion for art and creativity led her to found RIVILLA art studio, where she combines her artistic talent with the creation of unique experiences for her clients."
+
+      
+      },
+      "AROA": {
+        "NAME": "Aroa Álvarez",
+        "ROLE": "Illustrator",
+        "BASED": "Alcalá de Henares (Madrid)",
+         "BIOGRAPHY1": "Aroa is our artist, with a diploma in Illustration and Artistic Creation from the Professional Illustration School of Madrid.",
+        "BIOGRAPHY2": "She has extensive experience working with various publishers in the field of children's illustration."
+      }
     },
     "ERROR":{ 
         "TITLE": "This page is under construction",
