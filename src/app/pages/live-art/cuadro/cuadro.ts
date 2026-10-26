@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { FormPresupuesto } from '../../../shared/components/form-presupuesto/form-presupuesto';
 import { Breadcrumb } from '../../../shared/components/breadcrumb/breadcrumb';
+import { CardBudget } from '../../../shared/components/card-budget/card-budget';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-cuadro',
-  imports: [ FormPresupuesto, Breadcrumb],
+  imports: [ CardBudget, Breadcrumb, TranslateModule],
   templateUrl: './cuadro.html',
   styleUrl: './cuadro.scss'
 })

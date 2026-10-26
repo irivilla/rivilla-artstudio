@@ -54,14 +54,15 @@
             "TITLE": "ILUSTRACIONES",
             "SUBTITLE": "Ilustraciones personalizadas de tus invitados en vivo para bodas y eventos",
             "TITLE_PAGE": "Ilustraciones en vivo",
-            "SUBTITLE_PAGE": "Ilustraciones personalizadas de tus invitados"
+            "SUBTITLE_PAGE": "Ilustraciones personalizadas artesanales en acuarela de tus invitados"
           
         
 
         },
         "PAINTING":{
             "TITLE": "CUADROS",
-            "SUBTITLE": "Cuadros de los protagonistas en vivo para bodas y eventos"
+            "SUBTITLE": "Cuadros de los protagonistas en vivo para bodas y eventos",
+            "TITLE_PAGE": "Cuadros en vivo"
 
         },
         "SILHOUETTES":{
@@ -209,7 +210,7 @@
         "NAME": "Inés Rivilla",
         "ROLE": "Artista Plástica y Directora Creativa",
         "BASED": "Puertollano (Ciudad Real)",
-        "BIOGRAPHY1": "Inés es la fundadora de RIVILLA art studio. Graduada por la Universidad de Bellas Artes de Sevilla. Tiene una ampplia esperiencia como retratista. Ha participado en multitud de concursos y exposiciones de arte colectivas e individuales produciendo obra propia. ",
+        "BIOGRAPHY1": "Inés es la fundadora de RIVILLA art studio. Graduada por la Universidad de Bellas Artes de Sevilla. Tiene una amplia esperiencia como retratista. Ha participado en multitud de concursos y exposiciones de arte colectivas e individuales produciendo obra propia. ",
         "BIOGRAPHY2": "Su pasión por el arte y la creatividad la llevó a fundar RIVILLA art studio, donde combina su talento artístico con la creación de experiencias únicas para sus clientes."
       },
       "AROA": {

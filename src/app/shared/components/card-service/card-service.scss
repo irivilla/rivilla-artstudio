@@ -12,9 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    
 
     width: 100%;
-    height: clamp(170px, 15vw, 190px);
+    height: clamp(200px, 20vw, 250px);
     margin: 0.2rem 0 ;
 
     overflow: hidden;
@@ -24,6 +26,14 @@
     text-align: center;
     text-decoration: none;
     background-color: $gray-dark;
+    transition: transform 0.2s ease;
+
+    &:active {
+            transform: scale(0.97);
+            border-radius: 2rem;
+                overflow: hidden;
+            
+        }
 
     &__image {
         position: absolute;
@@ -83,21 +93,17 @@
         outline-offset: -3px;
     }
 
-    @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            .card-service__image {
-                transform: scale(1.04);
-            }
-
-            .card-service__overlay {
-                background: rgb(0 0 0 / 50%);
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                .card-service__overlay {
+                    background: rgb(0 0 0 / 50%);
+                }
             }
         }
-    }
 
     //tablet
     @media (max-width: 1023px) {
-        height: clamp(170px, 25vw, 230px);
+        height: clamp(180px, 25vw, 230px);
     }
 
     //movil

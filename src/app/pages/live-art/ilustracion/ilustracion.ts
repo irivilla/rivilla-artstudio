@@ -3,12 +3,11 @@ import { LanguageService } from '../../../shared/services/languageService/langua
 import {CommonModule} from '@angular/common';
 import {TranslateModule} from '@ngx-translate/core';
 import { CardService } from "../../../shared/components/card-service/card-service";
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormPresupuesto } from '../../../shared/components/form-presupuesto/form-presupuesto';
 import { Breadcrumb } from '../../../shared/components/breadcrumb/breadcrumb';
+import { CardBudget } from '../../../shared/components/card-budget/card-budget';
 @Component({
   selector: 'app-ilustracion',
-  imports: [CommonModule, TranslateModule, CardService, FormPresupuesto,Breadcrumb],
+  imports: [CommonModule, TranslateModule, CardService ,Breadcrumb, CardBudget],
   templateUrl: './ilustracion.html',
   styleUrl: './ilustracion.scss'
 })

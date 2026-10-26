@@ -1,22 +1,32 @@
 <div class="wrapper silhouettes">
-    <div class="container">
 
-        <div class="row">
-            <app-breadcrumb></app-breadcrumb>
-        </div>
-        <p>silhouettes works!</p>
 
-        <p>silhouettes works!</p>
-
-        <p>silhouettes works!</p>
-
-        <p>silhouettes works!</p>
-
-        <div class="row justify-content-center mt-4 mb-4">
-            <div class="col-12 p-0">
-                <app-form-presupuesto [servicioId]="3"> </app-form-presupuesto>
-            </div>
+    <div class="row">
+        <app-breadcrumb></app-breadcrumb>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h1>
+                {{ 'PAGES.LIVE-ART.PAINTING.TITLE_PAGE' | translate }}
+            </h1>
+            <p>
+                {{ 'PAGES.LIVE-ART.PAINTING.SUBTITLE' | translate }}
+            </p>
         </div>
     </div>
+
+    <div class="container">
+
+
+
+
+    </div>
+
+    <section class="row g-0" aria-label="Información y presupuesto para arte en vivo en bodas y eventos">
+        <div class="col-12">
+            <app-card-budget></app-card-budget>
+        </div>
+    </section>
+
 
 </div>
