@@ -1,110 +1,176 @@
 <div class="wrapper ilustracion">
 
-    <div class="row ">
+    <div class="row">
         <app-breadcrumb></app-breadcrumb>
     </div>
 
+    <!-- PORTADA -->
     <div class="row mt-4 mb-4 g-0">
         <div class="col-12">
             <img class="img-fluid" src="../../../../assets/img/portada/live_art_banner.webp"
-                alt="Ilustraciones Rivilla Art Studio">
+                alt="Ilustraciones en vivo para bodas y eventos - Rivilla Art Studio">
         </div>
     </div>
 
-    <div class="row g-0">
-        <div class="col-12">
-            <h1>
-                {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.TITLE_PAGE' | translate }}
-            </h1>
-            <p>
-                {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.SUBTITLE_PAGE' | translate }}
-            </p>
+    <!-- INTRODUCCIÓN -->
+    <section class="illustration-intro">
+        <div class="row g-0 justify-content-center">
+            <div class="col-lg-9 col-12">
+                <span class="section-eyebrow">LIVE ART · RIVILLA ART STUDIO</span>
+
+                <h1>
+                    {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.TITLE_PAGE' | translate }}
+                </h1>
+
+                <p class="intro-text">
+                    {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.SUBTITLE_PAGE' | translate }}
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
 
     <div class="container">
-        <div class="row mb-4 fila-cajas g-0">
-            <div class="col-lg-4 col-md-6 col-sm-12 columna-cajas">
-                <div class="caja-card">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>
-                                ¿Cómo funciona el live art?
-                            </h3>
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            Live art o arte en directo es un servicio porel cual se ilustran a los asistentes de
-                            unevento en el mismo momento.
-                            Se puedenutilizar distintas técnicas como la acuarelao la ilustración digital.
+        <!-- BLOQUE 1: EL SERVICIO -->
+        <section class="illustration-experience">
+            <div class="row align-items-center g-4">
 
+                <div class="col-lg-6 col-12 experience-text">
+                    <span class="section-eyebrow">UNA EXPERIENCIA ÚNICA</span>
 
-                        </div>
-                    </div>
+                    <h2>El arte de recordar cada instante</h2>
 
+                    <p>
+                        Imagina que tus invitados se llevan a casa una pequeña
+                        obra de arte creada especialmente para ellos.
+                        Durante la celebración, realizamos ilustraciones en vivo
+                        que transforman cada encuentro en un recuerdo único.
+                    </p>
+
+                    <p>
+                        Cada retrato se elabora con mimo y atención al detalle,
+                        convirtiendo el arte en parte de la experiencia de tu boda
+                        o evento.
+                    </p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 columna-cajas">
-                <div class="caja-card">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>
-                                ¿Qué necesitamos?
-                            </h3>
 
-                        </div>
+                <div class="col-lg-6 col-12 experience-image">
+                    <div class="illustration-frame illustration-frame-main">
+                        <img class="img-fluid" src="../../../../assets/img/card/cuadro1x1.webp"
+                            alt="Ilustración personalizada en acuarela para invitados de boda">
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            Para poder trabajar adecuadamente, necesitamos una mesa alargada (si es posible) con dos
-                            sillas.
-                            Esta debe de estar en un lugar muy luminoso y si es al aire libre, la mesa debe de estar en
-                            sombra con un enchufe
-                            accesible.
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 columna-cajas">
-                <div class="caja-card">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>
-                                ¿Cuánto tiempo se recomienda?
-                            </h3>
+        </section>
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+        <!-- BLOQUE 2: TRES VALORES -->
+        <section class="illustration-values">
 
-                            Las ilustraciones tienen un tamaño de 13 x 18cm y se dedica para cada una de ellas entre 6 y
-                            10 minutos por persona.
-                            Por lo que dependiendo del número de asistentes se recomienda ajustar el tiempo total a ti.
+            <div class="section-heading">
+                <span class="section-eyebrow">EL VALOR DEL DETALLE</span>
 
+                <h2>Mucho más que una ilustración</h2>
 
-                        </div>
-                    </div>
+                <p>
+                    Una experiencia artística pensada para sorprender,
+                    emocionar y conservar.
+                </p>
+            </div>
 
+            <div class="row g-4 fila-cajas">
+
+                <div class="col-lg-4 col-md-6 col-12 columna-cajas">
+                    <article class="value-card">
+                        <span class="card-number">01</span>
+
+                        <h3>
+                            {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.CARD1-TITLE' | translate }}
+                        </h3>
+
+                        <p>
+                            {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.CARD1-TEXT' | translate }}
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 columna-cajas">
+                    <article class="value-card">
+                        <span class="card-number">02</span>
+
+                        <h3>
+                            {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.CARD2-TITLE' | translate }}
+                        </h3>
+
+                        <p>
+                            {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.CARD2-TEXT' | translate }}
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 columna-cajas">
+                    <article class="value-card">
+                        <span class="card-number">03</span>
+
+                        <h3>
+                            {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.CARD3-TITLE' | translate }}
+                        </h3>
+
+                        <p>
+                            {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.CARD3-TEXT' | translate }}
+                        </p>
+                    </article>
                 </div>
 
             </div>
-        </div>
+        </section>
 
+        <!-- BLOQUE 3: EXPERIENCIA ARTÍSTICA -->
+        <section class="illustration-detail">
+            <div class="row align-items-center g-4">
 
-        <div class="row">
-            <div class="col-12">
-                <p>"En el arte, la mano nunca puede lograr nada superior a lo que el corazón puede imaginar"</p>
+                <div class="col-lg-6 col-12 detail-image">
+                    <div class="illustration-frame illustration-frame-result">
+                        <img class="img-fluid" src="../../../../assets/img/card/cuadro1x1.webp"
+                            alt="Detalle de una ilustración artística personalizada para eventos">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 detail-text">
+                    <span class="section-eyebrow">HECHO A MANO</span>
+
+                    <h2>Un recuerdo que permanece</h2>
+
+                    <p>
+                        Cada ilustración tiene su propia personalidad.
+                        El papel, los colores y los pequeños detalles hacen
+                        que cada pieza sea especial y diferente.
+                    </p>
+
+                    <p>
+                        Porque los mejores recuerdos merecen algo más que
+                        una fotografía: una obra creada para conservarlos.
+                    </p>
+                </div>
+
             </div>
-        </div>
+        </section>
+
+        <!-- CITA -->
+        <section class="illustration-quote">
+            <p>
+                «En el arte, la mano nunca puede lograr nada superior
+                a lo que el corazón puede imaginar».
+            </p>
+
+            <span>— Anónimo</span>
+        </section>
+
     </div>
 
-
-    <section class="row g-0" aria-label="Información y presupuesto para arte en vivo en bodas y eventos">
+    <!-- PRESUPUESTO -->
+    <section class="row g-0 budget-section"
+        aria-label="Información y presupuesto para ilustraciones en vivo en bodas y eventos">
         <div class="col-12">
             <app-card-budget></app-card-budget>
         </div>

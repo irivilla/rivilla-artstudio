@@ -8,11 +8,12 @@ import { Reviews } from "../../shared/components/reviews/reviews";
 import { Accordion } from "../../shared/components/accordion/accordion";
 import {LanguageService} from '../../shared/services/languageService/language-service';
 import { CardBudget } from '../../shared/components/card-budget/card-budget';
+import { Conocenos } from '../comun/conocenos/conocenos';
 
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, TranslateModule, Carrousel, CardPhoto, Reviews, Accordion, CardBudget],
+  imports: [CommonModule, TranslateModule, Carrousel, CardPhoto, Reviews, Accordion, CardBudget, Conocenos],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

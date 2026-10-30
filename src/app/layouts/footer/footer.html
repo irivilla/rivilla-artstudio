@@ -1,76 +1,98 @@
-<div class="wrapper">
-    <div class="container-fluid container-footer ">
+<footer class="wrapper" aria-label="RIVILLA art studio - Arte en vivo para bodas y eventos">
+    <div class="container-fluid container-footer">
+
         <div class="row g-0 container-footer__links">
+
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 logo">
-                <img src="../../../assets/img/logo/logo2.webp" alt="logo" (click)="goHome()"
+                <img src="../../../assets/img/logo/logo2.webp"
+                    alt="RIVILLA art studio - Ilustraciones y arte en vivo para bodas y eventos" (click)="goHome()"
                     class="footer-logo img-fluid">
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 rrss ">
+
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 rrss">
                 <div class="row">
                     <p>{{ 'PAGES.FOOTER.FOLLOW' | translate }}</p>
                 </div>
-                <div class="row icons">
-                    <div class="col-4">
-                        <a href="https://www.instagram.com/rivilla.artstudio/" target="_blank" class="icon-a">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
 
-                    </div>
+                <nav class="row icons" aria-label="Redes sociales de RIVILLA art studio">
                     <div class="col-4">
-                        <a href="https://www.tiktok.com/@rivillarte" class="icon-a" target="_blank">
-                            <i class="fa-brands fa-tiktok"></i>
+                        <a href="https://www.instagram.com/rivilla.artstudio/" target="_blank" rel="noopener noreferrer"
+                            class="icon-a" aria-label="Instagram de RIVILLA art studio">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                         </a>
                     </div>
 
                     <div class="col-4">
-                        <a href="https://www.facebook.com/profile.php?id=61570814265524" class="icon-a" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
+                        <a href="https://www.tiktok.com/@rivillarte" target="_blank" rel="noopener noreferrer"
+                            class="icon-a" aria-label="TikTok de RIVILLA art studio">
+                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
                         </a>
-
                     </div>
 
-                </div>
-
+                    <div class="col-4">
+                        <a href="https://www.facebook.com/profile.php?id=61570814265524" target="_blank"
+                            rel="noopener noreferrer" class="icon-a" aria-label="Facebook de RIVILLA art studio">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </nav>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 contacto ">
+
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 contacto">
                 <div class="row">
                     <p>{{ 'MENU.CONTACT' | translate }}</p>
                 </div>
 
                 <div class="row">
-                    <h5 (click)="goAbout()" class="text-a">{{ 'PAGES.ABOUT-US.TITLE' | translate }}</h5>
-                </div>
-                <div class="row">
-                    <h5 (click)="openWhatsApp()" class="text-a">{{ 'PAGES.HEADER-INFO.TELEPHONE' | translate }}</h5>
-                </div>
-                <div class="row">
-                    <h5 (click)="openEmail()" class="text-a">{{ 'PAGES.CONTACT.EMAIL' | translate }}</h5>
+                    <h5 (click)="goAbout()" class="text-a">
+                        {{ 'PAGES.ABOUT-US.TITLE' | translate }}
+                    </h5>
                 </div>
 
+                <div class="row">
+                    <h5 (click)="openWhatsApp()" class="text-a">
+                        {{ 'PAGES.HEADER-INFO.TELEPHONE' | translate }}
+                    </h5>
+                </div>
+
+                <div class="row">
+                    <h5 (click)="openEmail()" class="text-a">
+                        {{ 'PAGES.CONTACT.EMAIL' | translate }}
+                    </h5>
+                </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 info ">
+
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 info">
                 <div class="row">
                     <p>{{ 'PAGES.FOOTER.INFO' | translate }}</p>
                 </div>
 
                 <div class="row">
-                    <h5 (click)="goQuestions()" class="text-a">{{ 'PAGES.FAQ.TITLE' | translate }}</h5>
-                </div>
-                <div class="row">
-                    <h5 (click)="goPrivacy()" class="text-a">{{ 'PAGES.POLICIES.TITLE' | translate }}</h5>
-                </div>
-                <div class="row">
-                    <h5 (click)="goCookies()" class="text-a">{{ 'PAGES.COOKIES.TITLE' | translate }}</h5>
-
+                    <h5 (click)="goQuestions()" class="text-a">
+                        {{ 'PAGES.FAQ.TITLE' | translate }}
+                    </h5>
                 </div>
 
+                <div class="row">
+                    <h5 (click)="goPrivacy()" class="text-a">
+                        {{ 'PAGES.POLICIES.TITLE' | translate }}
+                    </h5>
+                </div>
+
+                <div class="row">
+                    <h5 (click)="goCookies()" class="text-a">
+                        {{ 'PAGES.COOKIES.TITLE' | translate }}
+                    </h5>
+                </div>
             </div>
 
-
         </div>
-        <div class="row g-0 container-footer__brand ">
-            <span class="d-flex justify-content-center align-items-center"> RIVILLA art studio © {{ currentYear}}</span>
 
+        <div class="row g-0 container-footer__brand">
+            <span class="d-flex justify-content-center align-items-center">
+                RIVILLA art studio © {{ currentYear }}
+            </span>
         </div>
+
     </div>
-</div>
+</footer>

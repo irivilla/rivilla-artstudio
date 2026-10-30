@@ -36,14 +36,26 @@
     
     //para que no se corte la imagnen y aparezca completa
     img {
-        width: 100px;
-            max-width: 15%;
+        width: 100%;
+            min-width: 7%;
+            max-width: 10%;
             height: auto;
         
     }
     
     
 }
+
+.img-deco-home{
+  
+    padding: 0;
+    margin: 2rem 0 0 0 ;
+    height: auto;
+    max-height: 60%;
+    min-height: 30%;
+  
+}
+
 
 .slogan-header{
     margin-top: 1rem;

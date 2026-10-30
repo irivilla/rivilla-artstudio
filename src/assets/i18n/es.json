@@ -54,7 +54,14 @@
             "TITLE": "ILUSTRACIONES",
             "SUBTITLE": "Ilustraciones personalizadas de tus invitados en vivo para bodas y eventos",
             "TITLE_PAGE": "Ilustraciones en vivo",
-            "SUBTITLE_PAGE": "Ilustraciones personalizadas artesanales en acuarela de tus invitados"
+            "SUBTITLE_PAGE": "Ilustraciones personalizadas artesanales en acuarela de tus invitados",
+            "CARD1-TITLE":"¿Cómo funciona el live art?",
+            "CARD1-TEXT":"Live art o arte en directo es un servicio por el cual se ilustran a los asistentes de un evento en el mismo momento. Se pueden utilizar distintas técnicas como la acuarela o la ilustración digital.",
+            "CARD2-TITLE":"¿Qué necesitamos?",
+             "CARD2-TEXT":" Para poder trabajar adecuadamente, necesitamos una mesa alargada (si es posible) con dos sillas. Esta debe de estar en un lugar muy luminoso y si es al aire libre, la mesa debe de estar en sombra con un enchufe accesible.",
+            "CARD3-TITLE":"¿Cuánto tiempo se recomienda?",
+             "CARD3-TEXT":"Las ilustraciones tienen un tamaño de 13 x 18cm y se dedica para cada una de ellas entre 6 y 10 minutos por persona. Por lo que dependiendo del número de asistentes se recomienda ajustar el tiempo total a ti."
+
           
         
 
@@ -217,8 +224,8 @@
         "NAME": "Aroa Álvarez",
         "ROLE": "Ilustradora",
         "BASED": "Alcalá de Henares (Madrid)",
-        "BIOGRAPHY1": "Aroa es nuestra artista diplomada en ilustración y creación artística en la Escuela de Ilustración Profesional de Madrid.",
-        "BIOGRAPHY2": "Tiene una amplia experiencia trabajando con diferentes editoriales en ilustración infantil."
+        "BIOGRAPHY1": "Aroa es nuestra artista diplomada en Ilustración y Creación Artística en la Escuela de Ilustración Profesional de Madrid. Tiene una amplia experiencia trabajando con diferentes editoriales en ilustración infantil y proyectos propios.",
+        "BIOGRAPHY2": "Con una amplia experiencia trabajando en bodas y eventos desde hace más de dos años, creando ilustraciones personalizadas y únicas para cada ocasión."
       }
 
     },"ERROR":{ 

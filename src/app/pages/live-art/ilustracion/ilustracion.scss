@@ -5,35 +5,262 @@
 .ilustracion {
     text-align: center;
 
+    h1,
+    h2,
+    h3 {
+        color: $primary-dark;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
+    .section-eyebrow {
+        display: block;
+        margin-bottom: 1rem;
+        color: $secondary-dark;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+    }
+
+    // INTRODUCCIÓN
+    .illustration-intro {
+        padding: 3rem 1rem 4rem;
+
         h1 {
-            color: $primary-dark;
+            margin-bottom: 1.5rem;
         }
 
-        .fila-cajas{
+        .intro-text {
+            max-width: 750px;
+            margin: 0 auto;
+            color: $gray-dark;
+            font-size: 1.1rem;
+        }
+    }
+
+    // BLOQUE 1: EXPERIENCIA
+    .illustration-experience {
+        padding: 3rem 2rem;
+
+        .experience-text {
+            padding: 2rem 3rem;
+            text-align: left;
+
+            h2 {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .experience-image {
+            padding: 1.5rem 2rem;
+        }
+    }
+
+    // MARCOS DE IMAGEN
+    .illustration-frame {
+        position: relative;
+        padding: 1rem;
+        border: 1px solid $secondary;
+        background-color: $white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0.4rem;
+            border: 1px solid $primary-light;
+            pointer-events: none;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+        }
+    }
+
+    .illustration-frame-main {
+        transform: rotate(1deg);
+    }
+
+    .illustration-frame-result {
+        transform: rotate(-1deg);
+
+        img {
+            height: 420px;
+        }
+    }
+
+    // BLOQUE 2: TARJETAS
+    .illustration-values {
+        margin-top: 4rem;
+        padding: 5rem 2rem;
+        background-color: $primary-light;
+
+        .section-heading {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+
+            p {
+                color: $gray-dark;
+            }
+        }
+
+        .fila-cajas {
             display: flex;
             flex-wrap: wrap;
-        
+            justify-content: center;
+        }
 
-            .columna-cajas{
-                display: flex;
-                flex-direction: column;
-                padding: 2rem;
+        .columna-cajas {
+            display: flex;
+            padding: 1rem;
+        }
 
-                .caja-card {
-                        padding: 2rem;
-                        border: 2px solid $primary-dark;
-                        border-radius: 15px;
-                        flex: 1;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            height: 100%;
-                    
-                    }
+        .value-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            min-height: 230px;
+            height: 100%;
+            padding: 2.5rem 2rem;
+            background-color: $white;
+            border: 1px solid rgba($primary-dark, 0.3);
+            border-radius: 4px;
+            transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
             }
 
-        }
-        
+            .card-number {
+                margin-bottom: 1.5rem;
+                color: $primary;
+                font-size: 0.85rem;
+                letter-spacing: 0.2rem;
+            }
 
+            h3 {
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin: 0;
+                color: $gray-dark;
+            }
+        }
+    }
+
+    // BLOQUE 3: RESULTADO ARTÍSTICO
+    .illustration-detail {
+        padding: 5rem 2rem;
+
+        .detail-image {
+            padding: 1.5rem 2rem;
+        }
+
+        .detail-text {
+            padding: 2rem 3rem;
+            text-align: left;
+        }
+    }
+
+    // CITA
+    .illustration-quote {
+        padding: 4rem 2rem 5rem;
+
+        p {
+            max-width: 750px;
+            margin: 0 auto 1.5rem;
+            color: $primary-dark;
+            font-family: $subtitle-font-family;
+            font-size: 1.6rem;
+            font-style: italic;
+        }
+
+        span {
+            color: $secondary-dark;
+            font-size: 0.8rem;
+            letter-spacing: 0.15rem;
+        }
+    }
+
+    .budget-section {
+        margin-top: 1rem;
+    }
+
+    // MÓVIL Y TABLET
+    @media (max-width: 767.98px) {
+
+        .illustration-intro {
+            padding: 2rem 1rem 3rem;
+        }
+
+        .illustration-experience {
+            padding: 2rem 0.5rem;
+
+            .experience-text {
+                padding: 1.5rem;
+                text-align: center;
+            }
+
+            .experience-image {
+                padding: 1rem;
+            }
+        }
+
+        .illustration-frame {
+            img {
+                height: 260px;
+            }
+        }
+
+        .illustration-frame-result {
+            img {
+                height: 300px;
+            }
+        }
+
+        .illustration-values {
+            margin-top: 2rem;
+            padding: 3rem 0.5rem;
+
+            .columna-cajas {
+                padding: 0.75rem;
+            }
+
+            .value-card {
+                min-height: auto;
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        .illustration-detail {
+            padding: 3rem 0.5rem;
+
+            .detail-image {
+                padding: 1rem;
+            }
+
+            .detail-text {
+                padding: 1.5rem;
+                text-align: center;
+            }
+        }
+
+        .illustration-quote {
+            padding: 3rem 1.5rem;
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
 }

@@ -35,22 +35,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0);
         transition: background 0.4s ease;
         z-index: 1;
 
         &:hover {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba($secondary-dark, 0.5);
             border-radius: 2rem;
 
             .cuadrado-title {
                 background-color: rgba(255, 255, 255, 0.9);
                 border-radius: 1rem;
+                transform: scale(1.05);
             }
+                     
 
             img{
                 filter: grayscale(100%);
             }
+
+            
         }
 
         .cuadrado-title {
@@ -62,6 +65,7 @@
             width: 70%;
             padding: 1rem;
             transition: background 0.4s ease;
+            transition: transform 0.4s ease;
             z-index: 2;
 
             .cuadrado-border {

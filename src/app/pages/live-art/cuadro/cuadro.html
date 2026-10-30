@@ -3,30 +3,163 @@
     <div class="row">
         <app-breadcrumb></app-breadcrumb>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <h1>
-                {{ 'PAGES.LIVE-ART.PAINTING.TITLE_PAGE' | translate }}
-            </h1>
-            <p>
-                {{ 'PAGES.LIVE-ART.PAINTING.SUBTITLE' | translate }}
-            </p>
+
+    <!-- PRESENTACIÓN -->
+    <section class="painting-intro">
+        <div class="row g-0 justify-content-center">
+            <div class="col-12">
+                <span class="section-eyebrow">LIVE PAINTING · RIVILLA ART STUDIO</span>
+
+                <h1>
+                    {{ 'PAGES.LIVE-ART.PAINTING.TITLE_PAGE' | translate }}
+                </h1>
+
+                <p class="intro-text">
+                    {{ 'PAGES.LIVE-ART.PAINTING.SUBTITLE' | translate }}
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
+
     <div class="container">
 
+        <!-- BLOQUE 1: EL CUADRO EN DIRECTO -->
+        <section class="painting-experience">
+            <div class="row align-items-center g-4">
 
+                <div class="col-lg-6 col-12 painting-text">
+                    <span class="section-eyebrow">UNA OBRA EN DIRECTO</span>
 
+                    <h2>Un instante convertido en arte</h2>
 
+                    <p>
+                        Hay momentos que merecen convertirse en algo más que
+                        un recuerdo. El cuadro en vivo permite capturar la
+                        esencia de una celebración a través de una obra
+                        pictórica creada durante el propio evento.
+                    </p>
 
+                    <p>
+                        Mientras los invitados disfrutan de la celebración,
+                        la pintura va tomando forma sobre el lienzo,
+                        convirtiéndose en una pieza única y llena de
+                        significado.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-12 painting-image">
+                    <div class="image-frame image-frame-main">
+                        <!-- Sustituir por una fotografía del proceso de pintura -->
+                        <div class="image-placeholder">
+                            <span>Fotografía del proceso de pintura</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BLOQUE 2: EL PROCESO -->
+        <section class="painting-process">
+
+            <div class="section-heading">
+                <span class="section-eyebrow">EL PROCESO CREATIVO</span>
+                <h2>Una obra que nace durante la celebración</h2>
+                <p>
+                    Cada pincelada forma parte de una experiencia artística
+                    que sucede en directo.
+                </p>
+            </div>
+
+            <div class="row g-4 process-cards">
+
+                <div class="col-lg-4 col-md-6 col-12 process-column">
+                    <article class="process-card">
+                        <span class="process-number">01</span>
+                        <h3>El comienzo</h3>
+                        <p>
+                            Preparamos el espacio y el lienzo para comenzar
+                            a dar forma a la obra durante el evento.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 process-column">
+                    <article class="process-card">
+                        <span class="process-number">02</span>
+                        <h3>La creación</h3>
+                        <p>
+                            La pintura evoluciona en directo, dejando que
+                            los invitados descubran cómo nace cada detalle.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 process-column">
+                    <article class="process-card">
+                        <span class="process-number">03</span>
+                        <h3>El recuerdo</h3>
+                        <p>
+                            Al finalizar, la pareja conserva una obra
+                            original que recoge un momento irrepetible.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BLOQUE 3: LA OBRA TERMINADA -->
+        <section class="painting-result">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-6 col-12 result-image">
+                    <div class="image-frame image-frame-result">
+                        <!-- Sustituir por una fotografía de un cuadro terminado -->
+                        <div class="image-placeholder">
+                            <span>Fotografía de una obra terminada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 result-text">
+                    <span class="section-eyebrow">UNA PIEZA IRREPETIBLE</span>
+
+                    <h2>Un recuerdo para toda la vida</h2>
+
+                    <p>
+                        A diferencia de otros recuerdos de una celebración,
+                        un cuadro en vivo es una obra original, creada
+                        especialmente para sus protagonistas.
+                    </p>
+
+                    <p>
+                        Una pieza que podrá ocupar un lugar especial en su
+                        hogar y que, cada vez que la contemplen, les permitirá
+                        revivir la emoción de aquel día.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="painting-quote">
+            <p>
+                «El arte hace eterno aquello que el tiempo convierte
+                en recuerdo».
+            </p>
+            <span>RIVILLA art studio</span>
+        </section>
 
     </div>
 
-    <section class="row g-0" aria-label="Información y presupuesto para arte en vivo en bodas y eventos">
+    <!-- PRESUPUESTO -->
+    <section class="row g-0 budget-section"
+        aria-label="Información y presupuesto para cuadros pintados en vivo en bodas y eventos">
         <div class="col-12">
             <app-card-budget></app-card-budget>
         </div>
     </section>
-
 
 </div>

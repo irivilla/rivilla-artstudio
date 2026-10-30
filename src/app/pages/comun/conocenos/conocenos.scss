@@ -135,25 +135,16 @@
 
 /* Móvil: fotografía arriba y texto centrado debajo */
 @media (max-width: 767.98px) {
-    .team-profile {
-        padding: 2rem 0;
+
+    .team-profile--reverse .profile-image,
+    .team-profile .profile-image {
+        order: 1;
     }
 
-    .profile-image {
-        margin-bottom: 1.5rem;
-
-        img {
-            max-width: 200px;
-        }
-    }
-
-    .profile-text {
+    .team-profile--reverse .profile-text,
+    .team-profile .profile-text {
+        order: 2;
         text-align: center;
         align-items: center;
-        padding: 0 1rem;
-
-        .profile-biography {
-            max-width: 550px;
-        }
     }
 }

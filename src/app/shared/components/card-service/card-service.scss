@@ -93,13 +93,19 @@
         outline-offset: -3px;
     }
 
+
+
         @media (hover: hover) and (pointer: fine) {
-            &:hover {
-                .card-service__overlay {
-                    background: rgb(0 0 0 / 50%);
-                }
-            }
+    &:hover {
+        .card-service__image {
+            transform: scale(1.05);
         }
+
+        .card-service__overlay {
+            background: rgb($primary-dark, 0.5);
+        }
+    }
+}
 
     //tablet
     @media (max-width: 1023px) {

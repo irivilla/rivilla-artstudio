@@ -3,7 +3,7 @@
 
     <main class="container-fluid container-home__content">
 
-        <div class="row">
+        <div class="row g-0">
             <div class="col-12 logo-header img-fluid">
                 <img src="../../../assets/img/logo/logo1.webp"
                     alt="RIVILLA art studio, ilustración artística y arte en vivo para bodas y eventos"
@@ -20,6 +20,13 @@
                 <p>
                     "{{ 'PAGES.HOME.SLOGAN2' | translate }}"
                 </p>
+            </div>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <img src="../../../assets/img/deco/flor1_doble.webp" alt="flor decorativa"
+                    class="img-fluid img-deco-home" fetchpriority="high">
             </div>
         </div>
 
@@ -44,6 +51,13 @@
                 </div>
             </div>
         </section>
+
+        <div class="row g-0 ">
+            <div class="col-12 ">
+                <img src="../../../assets/img/deco/flor2.webp" alt="flor decorativa" class="img-fluid img-deco-home"
+                    fetchpriority="high">
+            </div>
+        </div>
 
         <section aria-labelledby="home-questions-title">
             <div class="row mt-5">
@@ -85,6 +99,17 @@
                     <app-reviews></app-reviews>
                 </div>
             </div>
+        </section>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <img src="../../../assets/img/deco/flor1_doble.webp" alt="flor decorativa"
+                    class="img-fluid img-deco-home" fetchpriority="high">
+            </div>
+        </div>
+
+        <section aria-labelledby="conoce a nuestro equipo">
+            <app-conocenos></app-conocenos>
         </section>
 
     </main>
