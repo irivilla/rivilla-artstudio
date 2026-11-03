@@ -157,6 +157,13 @@
         }
     }
 
+         // BLOQUE 4: Marco
+         .painting-frame {
+             background-color: $primary-light;
+             padding: 5rem 2rem;
+    
+         }
+
     // FRASE FINAL
     .painting-quote {
         padding: 4rem 2rem 5rem;
@@ -176,6 +183,16 @@
             letter-spacing: 0.15rem;
         }
     }
+
+        .img-deco {
+    
+            padding: 0;
+            margin: 2rem 0 0 0;
+            height: auto;
+            max-height: 60%;
+            min-height: 30%;
+    
+        }
 
     .budget-section {
         margin-top: 1rem;

@@ -55,9 +55,38 @@
             "TITLE": "ILUSTRATIONS",
             "TITLE_PAGE": "Live Illustrations",
             "SUBTITLE": "Custom illustrations of your guests live for weddings and events",
-            "SUBTITLE_PAGE": "Custom illustrations handmade in watercolor of your guests"
-            
+            "SUBTITLE_PAGE": "Custom illustrations handmade in watercolor of your guests",
+             "BLOCK1":{
+                "TITLE":"ENJOY A UNIQUE EXPERIENCE",
+                "SUBTITLE":"An original gift to surprise your guests",
+                "TEXT1":"Imagine your guests receiving a portrait made especially for them. During the celebration, we draw live and turn that moment into an experience they can take with them.",
+                "TEXT2" : "Each illustration is created with dedication, paying attention to the small details to create a unique piece, full of personality and with which to relive a special day."
+            },
+            "BLOCK2":{
+                "TITLE":"WE GIVE VALUE TO THE DETAILS",
+                "SUBTITLE":"Much more than just an illustration",
+                "TEXT1":"An artistic experience designed to surprise, excite, and preserve."
+            },
+            "CARD1-TITLE":"How does live art work?",
+            "CARD1-TEXT":"Live art or live painting is a service where we illustrate the attendees of an event at the same time. Different techniques can be used such as watercolor or digital illustration.",
+            "CARD2-TITLE":"What do we need?",
+             "CARD2-TEXT":"To work properly, we need a long table (if possible) with two chairs. This should be in a very bright place and if it's outdoors, the table should be in the shade with an accessible power outlet.",
+            "CARD3-TITLE":"How much time is recommended?",
+             "CARD3-TEXT":"The illustrations have a size of 13 x 18cm and we dedicate between 6 and 10 minutes per person. Therefore, depending on the number of attendees, it is recommended to adjust the total time accordingly.",
+             "BLOCK3":{
+                "TITLE":"HANDMADE ILLUSTRATIONS",
+                "SUBTITLE":"An unforgettable memory",
+                "TEXT1":"Each illustration has its own personality. The selected and hand-cut paper, high-quality colors, and small details make each piece special and unique.",
+                "TEXT2":"Because the best memories deserve something more than a photograph: a work created to preserve them."
 
+             },
+             "BLOCK4":{
+                "TITLE":"DELIVERY AND PERSONALIZATION",
+                "SUBTITLE":"A memory that lasts",
+                "TEXT1":"The illustrations are delivered in a plastic sleeve. In this way, each guest takes it with them, protected for its conservation.",
+                "TEXT2":"If you wish, it is also possible to prepare the paper with your names and the date of the event or any other detail."
+             },
+             "FRASE":"The art is not something that can be taken and left. It is necessary for life"
         },
         "PAINTING":{
             "TITLE": "PAINTINGS",

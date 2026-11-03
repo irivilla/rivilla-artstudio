@@ -4,11 +4,20 @@
         <app-breadcrumb></app-breadcrumb>
     </div>
 
+    <!-- PORTADA -->
+    <div class="row mt-4 mb-4 g-0">
+        <div class="col-12">
+            <img class="img-fluid" src="../../../../assets/img/portada/live_art_banner.webp"
+                alt="Cuadro en vivo para bodas y eventos - Rivilla Art Studio">
+        </div>
+    </div>
+
     <!-- PRESENTACIÓN -->
     <section class="painting-intro">
         <div class="row g-0 justify-content-center">
             <div class="col-12">
-                <span class="section-eyebrow">LIVE PAINTING · RIVILLA ART STUDIO</span>
+                <span class="section-eyebrow">LIVE PAINTING · {{ 'WEB.NAME' |
+                    translate }}</span>
 
                 <h1>
                     {{ 'PAGES.LIVE-ART.PAINTING.TITLE_PAGE' | translate }}
@@ -28,22 +37,16 @@
             <div class="row align-items-center g-4">
 
                 <div class="col-lg-6 col-12 painting-text">
-                    <span class="section-eyebrow">UNA OBRA EN DIRECTO</span>
+                    <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.PAINTING.BLOCK1.TITLE' | translate }}</span>
 
-                    <h2>Un instante convertido en arte</h2>
+                    <h2>{{ 'PAGES.LIVE-ART.PAINTING.BLOCK1.SUBTITLE' | translate }}</h2>
 
                     <p>
-                        Hay momentos que merecen convertirse en algo más que
-                        un recuerdo. El cuadro en vivo permite capturar la
-                        esencia de una celebración a través de una obra
-                        pictórica creada durante el propio evento.
+                        {{ 'PAGES.LIVE-ART.PAINTING.BLOCK1.TEXT1' | translate }}
                     </p>
 
                     <p>
-                        Mientras los invitados disfrutan de la celebración,
-                        la pintura va tomando forma sobre el lienzo,
-                        convirtiéndose en una pieza única y llena de
-                        significado.
+                        {{ 'PAGES.LIVE-ART.PAINTING.BLOCK1.TEXT2' | translate }}
                     </p>
                 </div>
 
@@ -63,11 +66,10 @@
         <section class="painting-process">
 
             <div class="section-heading">
-                <span class="section-eyebrow">EL PROCESO CREATIVO</span>
-                <h2>Una obra que nace durante la celebración</h2>
+                <span class="section-eyebrow"> {{ 'PAGES.LIVE-ART.PAINTING.BLOCK2.TITLE' | translate }}</span>
+                <h2>{{ 'PAGES.LIVE-ART.PAINTING.BLOCK2.SUBTITLE' | translate }}</h2>
                 <p>
-                    Cada pincelada forma parte de una experiencia artística
-                    que sucede en directo.
+                    {{ 'PAGES.LIVE-ART.PAINTING.BLOCK2.TEXT1' | translate }}
                 </p>
             </div>
 
@@ -76,10 +78,9 @@
                 <div class="col-lg-4 col-md-6 col-12 process-column">
                     <article class="process-card">
                         <span class="process-number">01</span>
-                        <h3>El comienzo</h3>
+                        <h3>{{ 'PAGES.LIVE-ART.PAINTING.CARD1-TITLE' | translate }}</h3>
                         <p>
-                            Preparamos el espacio y el lienzo para comenzar
-                            a dar forma a la obra durante el evento.
+                            {{ 'PAGES.LIVE-ART.PAINTING.CARD1-TEXT' | translate }}
                         </p>
                     </article>
                 </div>
@@ -87,10 +88,9 @@
                 <div class="col-lg-4 col-md-6 col-12 process-column">
                     <article class="process-card">
                         <span class="process-number">02</span>
-                        <h3>La creación</h3>
+                        <h3>{{ 'PAGES.LIVE-ART.PAINTING.CARD2-TITLE' | translate }}</h3>
                         <p>
-                            La pintura evoluciona en directo, dejando que
-                            los invitados descubran cómo nace cada detalle.
+                            {{ 'PAGES.LIVE-ART.PAINTING.CARD2-TEXT' | translate }}
                         </p>
                     </article>
                 </div>
@@ -98,10 +98,9 @@
                 <div class="col-lg-4 col-md-6 col-12 process-column">
                     <article class="process-card">
                         <span class="process-number">03</span>
-                        <h3>El recuerdo</h3>
+                        <h3>{{ 'PAGES.LIVE-ART.PAINTING.CARD3-TITLE' | translate }}</h3>
                         <p>
-                            Al finalizar, la pareja conserva una obra
-                            original que recoge un momento irrepetible.
+                            {{ 'PAGES.LIVE-ART.PAINTING.CARD3-TEXT' | translate }}
                         </p>
                     </article>
                 </div>
@@ -123,43 +122,78 @@
                 </div>
 
                 <div class="col-lg-6 col-12 result-text">
-                    <span class="section-eyebrow">UNA PIEZA IRREPETIBLE</span>
+                    <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.PAINTING.BLOCK3.TITLE' | translate }}</span>
 
-                    <h2>Un recuerdo para toda la vida</h2>
+                    <h2>{{ 'PAGES.LIVE-ART.PAINTING.BLOCK3.SUBTITLE' | translate }}</h2>
 
                     <p>
-                        A diferencia de otros recuerdos de una celebración,
-                        un cuadro en vivo es una obra original, creada
-                        especialmente para sus protagonistas.
+                        {{ 'PAGES.LIVE-ART.PAINTING.BLOCK3.TEXT1' | translate }}
                     </p>
 
                     <p>
-                        Una pieza que podrá ocupar un lugar especial en su
-                        hogar y que, cada vez que la contemplen, les permitirá
-                        revivir la emoción de aquel día.
+                        {{ 'PAGES.LIVE-ART.PAINTING.BLOCK3.TEXT2' | translate }}
                     </p>
                 </div>
 
             </div>
         </section>
+    </div>
+    <!-- BLOQUE 4: Marco-->
+    <section class="painting-frame">
+        <div class="row align-items-center ">
+
+            <div class="col-lg-6 col-12 frame-text">
+                <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.PAINTING.BLOCK4.TITLE' | translate }}</span>
+
+                <h2>{{ 'PAGES.LIVE-ART.PAINTING.BLOCK4.SUBTITLE' | translate }}</h2>
+
+                <p>
+                    {{ 'PAGES.LIVE-ART.PAINTING.BLOCK4.TEXT1' | translate }}
+                </p>
+                <p>
+                    {{ 'PAGES.LIVE-ART.PAINTING.BLOCK4.TEXT2' | translate }}
+                </p>
+
+
+            </div>
+            <div class="col-lg-6 col-12 frame-image">
+                <div class="image-frame image-frame-delivery">
+                    <!-- Sustituir por una fotografía de un cuadro enmarcado -->
+                    <div class="image-placeholder">
+                        <span>Fotografía de un cuadro enmarcado que ocupe toda la hoja</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <!-- PRESUPUESTO -->
+        <section class="row g-0 budget-section"
+            aria-label="Información y presupuesto para cuadros pintados en vivo en bodas y eventos">
+            <div class="col-12">
+                <app-card-budget></app-card-budget>
+            </div>
+        </section>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <img src="../../../assets/img/deco/flor1_doble.webp" alt="flor decorativa" class="img-fluid img-deco"
+                    fetchpriority="high">
+            </div>
+        </div>
+
 
         <!-- CIERRE -->
         <section class="painting-quote">
             <p>
-                «El arte hace eterno aquello que el tiempo convierte
-                en recuerdo».
+                «El objetivo del arte no es representar la apariencia externa de las cosas, sino su significado
+                interior».
             </p>
-            <span>RIVILLA art studio</span>
+            <span>-Aristóteles</span>
         </section>
 
     </div>
 
-    <!-- PRESUPUESTO -->
-    <section class="row g-0 budget-section"
-        aria-label="Información y presupuesto para cuadros pintados en vivo en bodas y eventos">
-        <div class="col-12">
-            <app-card-budget></app-card-budget>
-        </div>
-    </section>
+
 
 </div>

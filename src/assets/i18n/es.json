@@ -2,6 +2,7 @@
     "SPANISH": "ES",
     "ENGLISH": "ENG"
 },
+"WEB":{"NAME": "RIVILLA art studio"},
 "MENU":{
     "HOME": "INICIO",
     "LIVE-ART": "LIVE-ART",
@@ -48,28 +49,79 @@
         "REVIEWS":"RESEÑAS"
     },
     "LIVE-ART" :{
-        "TITLE":"LIVE-ART",
+        "TITLE":"LIVE ART",
         "SUBTITLE": "Consulta nuestras opciones de arte en vivo",
         "ILLUSTRATIONS":{
             "TITLE": "ILUSTRACIONES",
             "SUBTITLE": "Ilustraciones personalizadas de tus invitados en vivo para bodas y eventos",
             "TITLE_PAGE": "Ilustraciones en vivo",
             "SUBTITLE_PAGE": "Ilustraciones personalizadas artesanales en acuarela de tus invitados",
+            "BLOCK1":{
+                "TITLE":"VIVE UNA EXPERIENCIA ÚNICA",
+                "SUBTITLE":"Un regalo original para sorprender a tus invitados",
+                "TEXT1":"Imagina que tus invitados reciben un retrato hecho especialmente para ellos. Durante la celebración, dibujamos en directo y convertimos ese momento en una experiencia que podrán llevarse consigo.",
+                "TEXT2" : "Cada ilustración se realiza con dedicación, cuidando los pequeños detalles para crear una pieza propia, llena de personalidad y con la que revivir un día especial."
+            },
+            "BLOCK2":{
+                "TITLE":"LE DAMOS EL VALOR AL DETALLE",
+                "SUBTITLE":"Mucho más que una ilustración",
+                "TEXT1":"Una experiencia artística pensada para sorprender, emocionar y conservar."
+            },
             "CARD1-TITLE":"¿Cómo funciona el live art?",
             "CARD1-TEXT":"Live art o arte en directo es un servicio por el cual se ilustran a los asistentes de un evento en el mismo momento. Se pueden utilizar distintas técnicas como la acuarela o la ilustración digital.",
             "CARD2-TITLE":"¿Qué necesitamos?",
              "CARD2-TEXT":" Para poder trabajar adecuadamente, necesitamos una mesa alargada (si es posible) con dos sillas. Esta debe de estar en un lugar muy luminoso y si es al aire libre, la mesa debe de estar en sombra con un enchufe accesible.",
             "CARD3-TITLE":"¿Cuánto tiempo se recomienda?",
-             "CARD3-TEXT":"Las ilustraciones tienen un tamaño de 13 x 18cm y se dedica para cada una de ellas entre 6 y 10 minutos por persona. Por lo que dependiendo del número de asistentes se recomienda ajustar el tiempo total a ti."
+             "CARD3-TEXT":"Las ilustraciones tienen un tamaño de 13 x 18cm y se dedica para cada una de ellas entre 6 y 10 minutos por persona. Por lo que dependiendo del número de asistentes se recomienda ajustar el tiempo total a ti.",
+             "BLOCK3":{
+                "TITLE":"HECHO A MANO",
+                "SUBTITLE":"Un recuerdo que permanece",
+                "TEXT1":" Cada ilustración tiene su propia personalidad. El papel seleccionado y cortado a mano, colores de alta calidad y los pequeños detalles hacen que cada pieza sea especial y diferente.",
+                "TEXT2":"Porque los mejores recuerdos merecen algo más que una fotografía: una obra creada para conservarlos."
 
-          
-        
+             },
+             "BLOCK4":{
+                "TITLE":"LA ENTREGA Y PERSONALIZACIÓN",
+                "SUBTITLE":"Un recuerdo que permanece",
+                "TEXT1":"Las ilustraciones se entregan en una funda de plástico. De esta manera, cada invitado se lleva consigo, protegida para su conservación.",
+                "TEXT2":"Si lo deseas, también es posible preparar el papel con vuestros nombres y la fecha del evento o algún otro detalle."
+             },
+             "FRASE":"El arte no es algo que se pueda tomar y dejar. Es necessario para vivir"
 
         },
         "PAINTING":{
             "TITLE": "CUADROS",
             "SUBTITLE": "Cuadros de los protagonistas en vivo para bodas y eventos",
-            "TITLE_PAGE": "Cuadros en vivo"
+            "TITLE_PAGE": "Cuadros en vivo",
+            "BLOCK1":{
+                "TITLE":"UNA OBRA DE ARTE EN DIRECTO",
+                "SUBTITLE":"Un instante convertido en arte",
+                "TEXT1":"Hay momentos que merecen convertirse en algo más que un recuerdo. El cuadro en vivo permite capturar la esencia de una celebración a través de una obra pictórica creada durante el propio evento. Ideal para esos novios que quieran algo más especial para recordar si gran día y su sí quiero.",
+                "TEXT2":"Mientras los invitados disfrutan de la celebración, la pintura va tomando forma sobre el lienzo, convirtiéndose en una pieza única y llena de significado que jamás se olvidará."
+            },"BLOCK2":{
+                "TITLE":"EL PROCESO CREATIVO",
+                "SUBTITLE":"Una obra de arte que nace durante la celebración",
+                "TEXT1":"Vuestros invitados podrán disfrutar de un espectáculo único: la creación de un cuadro en vivo, que se convertirá en un recuerdo irrepetible de vuestro día especial."
+            },
+            "CARD1-TITLE":"¿Qué necesitamos?",
+            "CARD1-TEXT":"Una mesa auxiliar con dos sillas.En un lugar muy luminoso y si es al aire libre, la mesa debe de estar en sombra.",
+            "CARD2-TITLE":"¿Cuánto tiempo se recomienda?",
+             "CARD2-TEXT":"Nos detenemos en cada detalle. Por lo que se suele tardar entre unas 6 u 8 horas de trabajo. Una vez terminado, la obra se entregará a los novios elmismo día del evento, lista para colgar.",
+             "CARD3-TITLE":"Sobre los materiales",
+             "CARD3-TEXT":"Nosotros llevamos todos los materiales necesarios para la realización del cuadro. Incluido el caballete, pinturas y pinceles.",
+             "BLOCK3":{
+                "TITLE":"UNA PIEZA IRREPETIBLE",
+                "SUBTITLE":"Un recuerdo para toda la vida",
+                "TEXT1":"A diferencia de otros recuerdos de una celebración,  un cuadro en vivo es una obra original, creada especialmente para sus protagonistas.",
+                "TEXT2":"Una pieza que podrá ocupar un lugar especial en su hogar y que, cada vez que la contemplen, les permitirá revivir la emoción de ese día tan especial."
+             },
+                "BLOCK4":{
+                    "TITLE":"UN CUADRO ENMARCADO",
+                    "SUBTITLE":"",
+                    "TEXT1":"Para poder entregar el cuadro ese mismo día y de la mejor manera posible, se entregará en un marco de madera flotante y listo para colgar.",
+                    "TEXT2":"Si lo deseas, también es posible preparar el marco más elegante o algún otro detalle. Preguntanos las opciones disponibles en esos momentos y te asesraremos lo mejor posible."
+                }
+
 
         },
         "SILHOUETTES":{

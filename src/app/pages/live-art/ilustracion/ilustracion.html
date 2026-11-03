@@ -6,8 +6,8 @@
 
     <!-- PORTADA -->
     <div class="row mt-4 mb-4 g-0">
-        <div class="col-12">
-            <img class="img-fluid" src="../../../../assets/img/portada/live_art_banner.webp"
+        <div class="col-12 ">
+            <img class="img-fluid img-portada" src="../../../../assets/img/portada/live_art_banner.webp"
                 alt="Ilustraciones en vivo para bodas y eventos - Rivilla Art Studio">
         </div>
     </div>
@@ -16,7 +16,8 @@
     <section class="illustration-intro">
         <div class="row g-0 justify-content-center">
             <div class="col-lg-9 col-12">
-                <span class="section-eyebrow">LIVE ART · RIVILLA ART STUDIO</span>
+                <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.TITLE' | translate }} · {{ 'WEB.NAME' |
+                    translate }}</span>
 
                 <h1>
                     {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.TITLE_PAGE' | translate }}
@@ -36,26 +37,22 @@
             <div class="row align-items-center g-4">
 
                 <div class="col-lg-6 col-12 experience-text">
-                    <span class="section-eyebrow">UNA EXPERIENCIA ÚNICA</span>
+                    <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK1.TITLE' | translate }}</span>
 
-                    <h2>El arte de recordar cada instante</h2>
+                    <h2>{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK1.SUBTITLE' | translate }}</h2>
 
                     <p>
-                        Imagina que tus invitados se llevan a casa una pequeña
-                        obra de arte creada especialmente para ellos.
-                        Durante la celebración, realizamos ilustraciones en vivo
-                        que transforman cada encuentro en un recuerdo único.
+                        {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK1.TEXT1' | translate }}
                     </p>
 
                     <p>
-                        Cada retrato se elabora con mimo y atención al detalle,
-                        convirtiendo el arte en parte de la experiencia de tu boda
-                        o evento.
+                        {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK1.TEXT2' | translate }}
                     </p>
                 </div>
 
                 <div class="col-lg-6 col-12 experience-image">
                     <div class="illustration-frame illustration-frame-main">
+                        poner imagen a atamaño completo
                         <img class="img-fluid" src="../../../../assets/img/card/cuadro1x1.webp"
                             alt="Ilustración personalizada en acuarela para invitados de boda">
                     </div>
@@ -68,14 +65,14 @@
         <section class="illustration-values">
 
             <div class="section-heading">
-                <span class="section-eyebrow">EL VALOR DEL DETALLE</span>
+                <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK2.TITLE' | translate }}</span>
 
-                <h2>Mucho más que una ilustración</h2>
+                <h2>{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK2.SUBTITLE' | translate }}</h2>
 
                 <p>
-                    Una experiencia artística pensada para sorprender,
-                    emocionar y conservar.
+                    {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK2.TEXT1' | translate }}
                 </p>
+
             </div>
 
             <div class="row g-4 fila-cajas">
@@ -137,43 +134,80 @@
                 </div>
 
                 <div class="col-lg-6 col-12 detail-text">
-                    <span class="section-eyebrow">HECHO A MANO</span>
+                    <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK3.TITLE' | translate }}</span>
 
-                    <h2>Un recuerdo que permanece</h2>
+                    <h2>{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK3.SUBTITLE' | translate }}</h2>
 
                     <p>
-                        Cada ilustración tiene su propia personalidad.
-                        El papel, los colores y los pequeños detalles hacen
-                        que cada pieza sea especial y diferente.
+                        {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK3.TEXT1' | translate }}
                     </p>
 
                     <p>
-                        Porque los mejores recuerdos merecen algo más que
-                        una fotografía: una obra creada para conservarlos.
+                        {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK3.TEXT2' | translate }}
                     </p>
                 </div>
 
             </div>
         </section>
+    </div>
+    <!-- BLOQUE 4: ENTREGA -->
+    <section class="illustration-delivery">
+        <div class="row align-items-center ">
+
+            <div class="col-lg-6 col-12 delivery-text">
+                <span class="section-eyebrow">{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK4.TITLE' | translate }}</span>
+
+                <h2>{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK4.SUBTITLE' | translate }}</h2>
+
+                <p>
+                    {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK4.TEXT1' | translate }}
+                </p>
+
+                <p>
+                    {{ 'PAGES.LIVE-ART.ILLUSTRATIONS.BLOCK4.TEXT2' | translate }}
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-12 delivery-image">
+                <div class="illustration-frame illustration-frame-delivery">
+                    poner imagen a atamaño completo
+                    <img class="img-fluid" src="../../../../assets/img/card/cuadro1x1.webp"
+                        alt="Entrega de ilustraciones personalizadas en eventos y bodas">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- PRESUPUESTO -->
+        <section class="row g-0 budget-section"
+            aria-label="Información y presupuesto para ilustraciones en vivo en bodas y eventos">
+            <div class="col-12">
+                <app-card-budget></app-card-budget>
+            </div>
+        </section>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <img src="../../../assets/img/deco/flor1_doble.webp" alt="flor decorativa" class="img-fluid img-deco"
+                    fetchpriority="high">
+            </div>
+        </div>
 
         <!-- CITA -->
         <section class="illustration-quote">
             <p>
-                «En el arte, la mano nunca puede lograr nada superior
-                a lo que el corazón puede imaginar».
+                «{{ 'PAGES.LIVE-ART.ILLUSTRATIONS.FRASE' | translate }}».
             </p>
 
-            <span>— Anónimo</span>
+            <span>—Oscar Wilde</span>
         </section>
 
     </div>
 
-    <!-- PRESUPUESTO -->
-    <section class="row g-0 budget-section"
-        aria-label="Información y presupuesto para ilustraciones en vivo en bodas y eventos">
-        <div class="col-12">
-            <app-card-budget></app-card-budget>
-        </div>
-    </section>
+
+
+
 
 </div>
