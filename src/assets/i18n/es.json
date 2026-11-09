@@ -54,7 +54,7 @@
         "ILLUSTRATIONS":{
             "TITLE": "ILUSTRACIONES",
             "SUBTITLE": "Ilustraciones personalizadas de tus invitados en vivo para bodas y eventos",
-            "TITLE_PAGE": "Ilustraciones en vivo",
+            "TITLE_PAGE": "ILUSTRACIONES EN VIVO",
             "SUBTITLE_PAGE": "Ilustraciones personalizadas artesanales en acuarela de tus invitados",
             "BLOCK1":{
                 "TITLE":"VIVE UNA EXPERIENCIA ÚNICA",
@@ -87,12 +87,11 @@
                 "TEXT2":"Si lo deseas, también es posible preparar el papel con vuestros nombres y la fecha del evento o algún otro detalle."
              },
              "FRASE":"El arte no es algo que se pueda tomar y dejar. Es necessario para vivir"
-
         },
         "PAINTING":{
             "TITLE": "CUADROS",
             "SUBTITLE": "Cuadros de los protagonistas en vivo para bodas y eventos",
-            "TITLE_PAGE": "Cuadros en vivo",
+            "TITLE_PAGE": "CUADRO EN VIVO",
             "BLOCK1":{
                 "TITLE":"UNA OBRA DE ARTE EN DIRECTO",
                 "SUBTITLE":"Un instante convertido en arte",
@@ -117,16 +116,47 @@
              },
                 "BLOCK4":{
                     "TITLE":"UN CUADRO ENMARCADO",
-                    "SUBTITLE":"",
+                    "SUBTITLE":"Añade elegancia y eleva tu pintura",
                     "TEXT1":"Para poder entregar el cuadro ese mismo día y de la mejor manera posible, se entregará en un marco de madera flotante y listo para colgar.",
                     "TEXT2":"Si lo deseas, también es posible preparar el marco más elegante o algún otro detalle. Preguntanos las opciones disponibles en esos momentos y te asesraremos lo mejor posible."
-                }
-
-
+                },
+                "FRASE":"«El objetivo del arte no es representar la apariencia externa de las cosas, sino su significado interior».",
+                "AUTOR":"-Aristóteles"
         },
         "SILHOUETTES":{
             "TITLE": "SILHOUETTES",
-            "SUBTITLE": "Siluetas en vivo a estilo victoriano para bodas y eventos"
+            "SUBTITLE": "Siluetas en vivo a estilo victoriano para bodas y eventos",
+            "TITLE_PAGE": "SILUETAS VICTORIANAS",
+            "BLOCK1":{
+                "TITLE":"UN RETRATO CON HISTORIA",
+                "SUBTITLE":"La elegancia de un retrato victoriano",
+                "TEXT1":"Inspiradas en los tradicionales retratos franceses de perfil del siglo XVIII. Las siluetas victorianas tan populares en reuniones y fiestas, recuperan una forma de retratar llena de encanto y personalidad.",
+                "TEXT2" : "Durante la celebración, cada invitado se convierte en protagonista de una pequeña obra de arte: su propio perfil transformado en un recuerdo personalizado y atemporal."
+            },
+            "BLOCK2":{
+                "TITLE":"ARTE EN DIRECTO",
+                "SUBTITLE":"Un pequeño retrato con mucha historia",
+                "TEXT1":"Una experiencia diferente para sorprender a tus invitados y regalarles un recuerdo hecho especialmente para ellos."
+            },
+            "CARD1-TITLE":"El perfil",
+            "CARD1-TEXT":"Cada invitado posa brevemente para capturar los rasgos y la personalidad de su perfil. Para crear un ambiente más realista a como se hacían los perfiles en el s. XVIII Colocamos una tela para hacer la foto de referencia",
+            "CARD2-TITLE":"¿Qué necesitamos?",
+             "CARD2-TEXT":" Para poder trabajar adecuadamente, necesitamos una mesa alargada (si es posible) con dos sillas. Esta debe de estar en un lugar muy luminoso y si es al aire libre, la mesa debe de estar en sombra.",
+            "CARD3-TITLE":"¿Cuánto tiempo se recomienda?",
+             "CARD3-TEXT":"Las siluetas tienen un tamaño de 10 x 15cm y se dedica para cada una de ellas entre 3 y 5 minutos por persona. Por lo que dependiendo del número de asistentes se recomienda ajustar el tiempo total a ti.",
+             "BLOCK3":{
+                "TITLE":"UN DETALLE PERSONAL",
+                "SUBTITLE":"Un recuerdo que habla de cada invitado",
+                "TEXT1":"No hay dos perfiles iguales. Cada silueta recoge los rasgos de una persona y los transforma en un retrato sencillo, elegante y lleno de carácter.",
+                "TEXT2":"Una alternativa original a los detalles tradicionales de boda, perfecta para quienes buscan sorprender a sus invitados con una experiencia artística diferente a lo antes visto."
+             },
+             "BLOCK4":{
+                "TITLE":"CLÁSICO · DELICADO · PERSONALIZADO",
+                "SUBTITLE":"La belleza de lo atemporal",
+                "TEXT1":"Las siluetas victorianas tienen algo especial: su sencillez permite reconocer a una persona  a través de unos pocos trazos. Una pequeña pieza artística que conserva el encanto de otra época."
+             },
+                "FRASE":"«El arte no cambia nada, el arte te cambia a ti»",
+                    "AUTOR":"-David Lynch"
 
         }
     },

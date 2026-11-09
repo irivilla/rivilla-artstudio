@@ -53,7 +53,7 @@
         "SUBTITLE": "Check out our live art options",
         "ILLUSTRATIONS":{
             "TITLE": "ILUSTRATIONS",
-            "TITLE_PAGE": "Live Illustrations",
+            "TITLE_PAGE": "LIVE ILLUSTRATIONS",
             "SUBTITLE": "Custom illustrations of your guests live for weddings and events",
             "SUBTITLE_PAGE": "Custom illustrations handmade in watercolor of your guests",
              "BLOCK1":{
@@ -90,12 +90,72 @@
         },
         "PAINTING":{
             "TITLE": "PAINTINGS",
-            "SUBTITLE": "Live painting sessions for weddings and events"
-
+            "SUBTITLE": "Live painting sessions for weddings and events",
+            "TITLE_PAGE": "LIVE PAINTING",
+            "BLOCK1":{
+                "TITLE":"A REAL-TIME PAINTING EXPERIENCE",
+                "SUBTITLE":"A moment transformed into art",
+                "TEXT1":"There are moments that deserve to become more than just a memory. The live painting allows you to capture the essence of a celebration through a pictorial work created during the event itself. Ideal for those couples who want something more special to remember their big day and their 'yes'."
+            },"BLOCK2":{
+                "TITLE":"THE CREATIVITY PROCESS",
+                "SUBTITLE":"A piece of art that is born during the celebration",
+                "TEXT1":"Your guests will be able to enjoy a unique show: the creation of a live painting, which will become an irreplaceable memory of your special day."
+            },
+            "CARD1-TITLE":"What do we need?",
+            "CARD1-TEXT":"A side table with two chairs. In a very bright place and if it is outdoors, the table must be in the shade.",
+            "CARD2-TITLE":"How much time is recommended?",
+             "CARD2-TEXT":"We stop at every detail. So it usually takes between 6 and 8 hours of work. Once completed, the artwork will be delivered to the couple on the same day of the event, ready to hang.",
+             "CARD3-TITLE":"About the materials",
+             "CARD3-TEXT":"We bring all the necessary materials for the creation of the painting. Including the easel, paints and brushes.",
+             "BLOCK3":{
+                "TITLE":"AN IRREPLACEABLE PIECE",
+                "SUBTITLE":"A memory for a lifetime",
+                "TEXT1":"Unlike other memories of a celebration, a live painting is an original work, created especially for its protagonists.",
+                "TEXT2":"A piece that will be able to occupy a special place in their home and that, every time they contemplate it, will allow them to relive the emotion of that special day."
+             },
+                "BLOCK4":{
+                    "TITLE":"A FRAMED PAINTING",
+                    "SUBTITLE":"Add elegance and elevate your painting",
+                    "TEXT1":"To be able to deliver the painting that same day and in the best possible way, it will be delivered in a floating wooden frame and ready to hang.",
+                    "TEXT2":"If you wish, it is also possible to prepare the most elegant frame or some other detail. Ask us about the available options at those moments and we will advise you on the best possible way."
+                },
+                "FRASE":"«The goal of art is not to represent the external appearance of things, but their internal meaning».",
+                "AUTOR":"-Aristotle"
         },
         "SILHOUETTES":{
             "TITLE": "SILHOUETTES",
-            "SUBTITLE": "Victorian-style live silhouettes for weddings and events"
+            "SUBTITLE": "Victorian-style live silhouettes for weddings and events",
+            "TITLE_PAGE": "VICTORIAN SILHOUETTES",
+            "BLOCK1":{
+                "TITLE":"AN ARTWORK WITH A STORY",
+                "SUBTITLE":"The elegance of a Victorian portrait",
+                "TEXT1":"Inspired by the traditional French profile portraits of the 18th century. The Victorian silhouettes, so popular in gatherings and parties, revive a way of portraying that is full of charm and personality.",
+                "TEXT2" : "During the celebration, each guest becomes the protagonist of a small piece of art: their own profile transformed into a personalized and timeless memory."
+            },
+            "BLOCK2":{
+                "TITLE":"LIVE ART",
+                "SUBTITLE":"A small portrait with a lot of history",
+                "TEXT1":"A different experience to surprise your guests and give them a memory made especially for them."
+            },
+            "CARD1-TITLE":"The Profile",
+            "CARD1-TEXT":"Each guest poses briefly to capture the features and personality of their profile. To create a more realistic environment like the profiles made in the 18th century, we place a cloth for reference photos.",
+            "CARD2-TITLE":"What do we need?",
+             "CARD2-TEXT":"To be able to work properly, we need a long table (if possible) with two chairs. It should be in a very bright place and if it's outdoors, the table should be in the shade.",
+            "CARD3-TITLE":"How much time is recommended?",
+             "CARD3-TEXT":"The silhouettes have a size of 10 x 15cm and we dedicate between 3 and 5 minutes per person. So depending on the number of attendees, it is recommended to adjust the total time accordingly.",
+             "BLOCK3":{
+                "TITLE":"A PERSONAL DETAIL",
+                "SUBTITLE":"A memory that speaks of each guest",
+                "TEXT1":"There are no two identical profiles. Each silhouette captures the features of a person and transforms them into a simple, elegant and character-filled portrait.",
+                "TEXT2":"An original alternative to traditional wedding details, perfect for those who want to surprise their guests with a different artistic experience."
+             },
+             "BLOCK4":{
+                "TITLE":"CLASSIC · DELICATE · CUSTOMIZED",
+                "SUBTITLE":"The beauty of the timeless",
+                "TEXT1":"The Victorian silhouettes have something special: their simplicity allows one to recognize a person through just a few strokes. A small artistic piece that preserves the charm of another era."
+             },
+                "FRASE":"«Art doesn't change anything, art changes you»",
+                    "AUTOR":"-David Lynch"
 
         }
     },
