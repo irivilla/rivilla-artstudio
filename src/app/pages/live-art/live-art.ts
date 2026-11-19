@@ -51,11 +51,11 @@ this.languageService.get([
       this.cards = [
         { title: translations['PAGES.LIVE-ART.ILLUSTRATIONS.TITLE'],
            subtitle: translations['PAGES.LIVE-ART.ILLUSTRATIONS.SUBTITLE'], 
-           image: '../../../assets/img/card/ilustracion1x1.webp', 
+           image: '../../../assets/img/portada/live_art_banner.webp', 
            route: '/live-art/ilustracion' },
         { title: translations['PAGES.LIVE-ART.PAINTING.TITLE'],
            subtitle: translations['PAGES.LIVE-ART.PAINTING.SUBTITLE'], 
-           image: '../../../assets/img/card/cuadro1x1.webp', 
+           image: '../../../assets/img/portada/cuadro_banner.webp', 
            route: '/live-art/cuadro' },
         { title: translations['PAGES.LIVE-ART.SILHOUETTES.TITLE'],
            subtitle: translations['PAGES.LIVE-ART.SILHOUETTES.SUBTITLE'], 

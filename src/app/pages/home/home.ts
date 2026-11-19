@@ -58,10 +58,10 @@ get selectedLang(): string {
       this.cards = [
         { title: translations['PAGES.LIVE-ART.ILLUSTRATIONS.TITLE'], image: '../../../assets/img/card/card-ilustracion.webp', route: 'live-art/ilustracion' },
         { title: translations['PAGES.LIVE-ART.PAINTING.TITLE'], image: '../../../assets/img/card/card-cuadro.webp',route: 'live-art/cuadro'  },
-        { title: translations['PAGES.INVITATIONS.TITLE'], image: '../../../assets/img/card/card-relleno.webp', route: '/invitaciones' },
-        { title: translations['PAGES.CRAFT.SEATING-PLAN.TITLE'], image: '../../../assets/img/card/card-relleno.webp', route: 'papeleria/seating-plan' },
+        { title: translations['PAGES.INVITATIONS.TITLE'], image: '../../../assets/img/card/card-invitacion.webp', route: '/invitaciones' },
+       /*  { title: translations['PAGES.CRAFT.SEATING-PLAN.TITLE'], image: '../../../assets/img/card/card-relleno.webp', route: 'papeleria/seating-plan' },
         { title: translations['PAGES.COMMISSIONS.TITLE'], image: '../../../assets/img/card/card-encargo.webp', route: '/encargos'  },
-        { title: translations['PAGES.CRAFT.MENU.TITLE'], image: '../../../assets/img/card/card-relleno.webp',  route: '/papeleria/minuta' },
+        { title: translations['PAGES.CRAFT.MENU.TITLE'], image: '../../../assets/img/card/card-relleno.webp',  route: '/papeleria/minuta' }, */
       ];
     });
   }
