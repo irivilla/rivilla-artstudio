@@ -106,3 +106,36 @@
         }
     }
 }
+// El componente ocupa todo el espacio disponible
+:host {
+    display: block;
+    width: 100%;
+}
+
+// Animación de entrada en móvil y tablet
+@media (max-width: 991.98px) {
+
+    :host {
+        transform: translateX(20rem);
+        opacity: 0;
+
+        transition:
+            transform 0.45s ease-out,
+            opacity 0.45s ease-out;
+        transition-delay: var(--animation-delay, 0s);
+    }
+
+    :host(.visible) {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+// Accesibilidad
+@media (prefers-reduced-motion: reduce) {
+    :host {
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
+}

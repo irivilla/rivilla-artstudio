@@ -46,8 +46,9 @@
             </div>
 
             <div class="row justify-content-center g-4">
-                <div class="col-12 col-md-6 col-lg-4 card-photo-home" *ngFor="let card of cards">
-                    <app-card-photo [title]="card.title" [imageSrc]="card.image" [route]="card.route"></app-card-photo>
+                <div class="col-12 col-md-6 col-lg-4 card-photo-home" *ngFor="let card of cards; let i = index">
+                    <app-card-photo [title]="card.title" [imageSrc]="card.image" [route]="card.route"
+                        [animationIndex]="i"></app-card-photo>
                 </div>
             </div>
         </section>

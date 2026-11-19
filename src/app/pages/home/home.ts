@@ -21,6 +21,8 @@ export class Home implements OnInit {
 
   cards: { title: string, image: string, route:string }[] = [];
   private langChangeSub!: Subscription;
+  private observer?: IntersectionObserver;
+
 
 
 constructor(private languageService: LanguageService) {}
@@ -34,10 +36,13 @@ get selectedLang(): string {
       this.lenguageCards();
   }
    ngOnDestroy(): void {
+
     if (this.langChangeSub) {
       this.langChangeSub.unsubscribe();
     }
   }
+
+ 
 
   lenguageCards(){
  this.langChangeSub = this.languageService.onLanguageChange().subscribe(() => {
@@ -63,8 +68,12 @@ get selectedLang(): string {
         { title: translations['PAGES.COMMISSIONS.TITLE'], image: '../../../assets/img/card/card-encargo.webp', route: '/encargos'  },
         { title: translations['PAGES.CRAFT.MENU.TITLE'], image: '../../../assets/img/card/card-relleno.webp',  route: '/papeleria/minuta' }, */
       ];
+
+       
+
     });
   }
+
 
 
 }

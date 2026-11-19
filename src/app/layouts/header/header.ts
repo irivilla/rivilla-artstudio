@@ -1,10 +1,17 @@
-import {Component, HostListener, inject} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {TranslateModule, TranslateService} from '@ngx-translate/core';
-import {Router, RouterModule} from '@angular/router';
-import {LanguageService} from '../../shared/services/languageService/language-service';
-import { ElementRef, ViewChild } from '@angular/core';
 
+import {
+    Component,
+    HostListener,
+    ElementRef,
+    ViewChild,
+    OnInit,
+    OnDestroy
+} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {TranslateModule} from '@ngx-translate/core';
+import {Router, RouterModule, NavigationEnd} from '@angular/router';
+import {LanguageService} from '../../shared/services/languageService/language-service';
+import { filter, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -13,21 +20,39 @@ import { ElementRef, ViewChild } from '@angular/core';
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
-export class Header {
+export class Header implements OnInit, OnDestroy {
 
  
   public scrolled = false;
+  public isHome = false;
+
+  private routerSubscription?: Subscription;
 
   constructor(private router: Router, 
     private languageService: LanguageService
   ) {}
 
-  ngOnInit() {
- 
-}
+  ngOnInit(): void {
+        this.updateHomeState();
+        this.onWindowScroll();
+
+        this.routerSubscription = this.router.events
+            .pipe(filter(event => event instanceof NavigationEnd))
+            .subscribe(() => {
+                this.updateHomeState();
+                this.onWindowScroll();
+            });
+    }
 get selectedLang(): string {
   return this.languageService.getCurrentLanguage();
 }
+
+private updateHomeState(): void {
+        const currentUrl = this.router.url.split('?')[0].split('#')[0];
+
+        this.isHome = currentUrl === '/' || currentUrl === '/home';
+    }
+
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -51,4 +76,8 @@ closeMenu(): void {
 
 
 }
+
+ngOnDestroy(): void {
+        this.routerSubscription?.unsubscribe();
+    }
 }
